@@ -33,38 +33,6 @@
         "seasonsCount": 1
       },
       {
-        "id": "anivault_rt_demon_slayer_kimetsu_no_yaiba_mugen_train_arc",
-        "title": "Demon Slayer: Kimetsu no Yaiba Mugen Train Arc",
-        "alternateTitle": "Kimetsu no Yaiba: Mugen Ressha-hen (TV)",
-        "releaseYear": 2021,
-        "type": "TV",
-        "seasonsCount": 1
-      },
-      {
-        "id": "anivault_rt_demon_slayer_kimetsu_no_yaiba_entertainment_district_arc",
-        "title": "Demon Slayer: Kimetsu no Yaiba Entertainment District Arc",
-        "alternateTitle": "Kimetsu no Yaiba: Yuukaku-hen",
-        "releaseYear": 2022,
-        "type": "TV",
-        "seasonsCount": 1
-      },
-      {
-        "id": "anivault_rt_demon_slayer_kimetsu_no_yaiba_swordsmith_village_arc",
-        "title": "Demon Slayer: Kimetsu no Yaiba Swordsmith Village Arc",
-        "alternateTitle": "Kimetsu no Yaiba: Katanakaji no Sato-hen",
-        "releaseYear": 2023,
-        "type": "TV",
-        "seasonsCount": 1
-      },
-      {
-        "id": "anivault_rt_demon_slayer_kimetsu_no_yaiba_hashira_training_arc",
-        "title": "Demon Slayer: Kimetsu no Yaiba Hashira Training Arc",
-        "alternateTitle": "Kimetsu no Yaiba: Hashira Geiko-hen",
-        "releaseYear": 2024,
-        "type": "TV",
-        "seasonsCount": 1
-      },
-      {
         "id": "anivault_rt_hindi_demon_slayer_kimetsu_no_yaiba_infinity_castle_2025_movie_hindi_dubbed_download_hd",
         "title": "Demon Slayer Kimetsu no Yaiba Infinity Castle (2025) Movie",
         "alternateTitle": "Kimetsu no Yaiba",
@@ -162,8 +130,8 @@
           "isUnreleased": false,
           "note": "Eleven episodes that pick up directly from the Mugen Train arc as Tanjiro is sent on a new mission. Watch this after whichever version of Mugen Train you chose.",
           "warning": null,
-          "matchedCatalogueId": "anivault_rt_demon_slayer_kimetsu_no_yaiba_entertainment_district_arc",
-          "matchedCatalogueTitle": "Demon Slayer: Kimetsu no Yaiba Entertainment District Arc"
+          "matchedCatalogueId": "anivault_rt_demon_slayer",
+          "matchedCatalogueTitle": "Demon Slayer: Kimetsu no Yaiba"
         },
         {
           "step": 4,
@@ -183,8 +151,8 @@
           "isUnreleased": false,
           "note": "Eleven episodes following the Entertainment District Arc, moving the story to a new location and introducing more of the Hashira. Keep going in order.",
           "warning": null,
-          "matchedCatalogueId": "anivault_rt_demon_slayer_kimetsu_no_yaiba_swordsmith_village_arc",
-          "matchedCatalogueTitle": "Demon Slayer: Kimetsu no Yaiba Swordsmith Village Arc"
+          "matchedCatalogueId": "anivault_rt_demon_slayer",
+          "matchedCatalogueTitle": "Demon Slayer: Kimetsu no Yaiba"
         },
         {
           "step": 5,
@@ -204,8 +172,8 @@
           "isUnreleased": false,
           "note": "A shorter eight-episode arc that sets up the final confrontation. Watch it before the Infinity Castle film.",
           "warning": null,
-          "matchedCatalogueId": "anivault_rt_demon_slayer_kimetsu_no_yaiba_hashira_training_arc",
-          "matchedCatalogueTitle": "Demon Slayer: Kimetsu no Yaiba Hashira Training Arc"
+          "matchedCatalogueId": "anivault_rt_demon_slayer",
+          "matchedCatalogueTitle": "Demon Slayer: Kimetsu no Yaiba"
         },
         {
           "step": 6,
@@ -246,8 +214,8 @@
           "isUnreleased": false,
           "note": "The TV version of the Mugen Train story, in seven episodes. Episodes 2 to 7 re-edit the film with additional footage; episode 1 is new material that follows Kyojuro Rengoku before he boards the train. Skip this if you watched the film, unless you want that extra episode.",
           "warning": "⚠ Episodes 2 to 7 cover the same events as the Mugen Train film.",
-          "matchedCatalogueId": "anivault_rt_demon_slayer_kimetsu_no_yaiba_mugen_train_arc",
-          "matchedCatalogueTitle": "Demon Slayer: Kimetsu no Yaiba Mugen Train Arc"
+          "matchedCatalogueId": "anivault_rt_demon_slayer",
+          "matchedCatalogueTitle": "Demon Slayer: Kimetsu no Yaiba"
         }
       ],
       "releaseOrderEntries": [
@@ -311,8 +279,8 @@
           "isUnreleased": false,
           "note": null,
           "warning": null,
-          "matchedCatalogueId": "anivault_rt_demon_slayer_kimetsu_no_yaiba_mugen_train_arc",
-          "matchedCatalogueTitle": "Demon Slayer: Kimetsu no Yaiba Mugen Train Arc"
+          "matchedCatalogueId": "anivault_rt_demon_slayer",
+          "matchedCatalogueTitle": "Demon Slayer: Kimetsu no Yaiba"
         },
         {
           "step": 4,
@@ -332,8 +300,8 @@
           "isUnreleased": false,
           "note": null,
           "warning": null,
-          "matchedCatalogueId": "anivault_rt_demon_slayer_kimetsu_no_yaiba_entertainment_district_arc",
-          "matchedCatalogueTitle": "Demon Slayer: Kimetsu no Yaiba Entertainment District Arc"
+          "matchedCatalogueId": "anivault_rt_demon_slayer",
+          "matchedCatalogueTitle": "Demon Slayer: Kimetsu no Yaiba"
         },
         {
           "step": 5,
@@ -353,8 +321,8 @@
           "isUnreleased": false,
           "note": null,
           "warning": null,
-          "matchedCatalogueId": "anivault_rt_demon_slayer_kimetsu_no_yaiba_swordsmith_village_arc",
-          "matchedCatalogueTitle": "Demon Slayer: Kimetsu no Yaiba Swordsmith Village Arc"
+          "matchedCatalogueId": "anivault_rt_demon_slayer",
+          "matchedCatalogueTitle": "Demon Slayer: Kimetsu no Yaiba"
         },
         {
           "step": 6,
@@ -374,8 +342,8 @@
           "isUnreleased": false,
           "note": null,
           "warning": null,
-          "matchedCatalogueId": "anivault_rt_demon_slayer_kimetsu_no_yaiba_hashira_training_arc",
-          "matchedCatalogueTitle": "Demon Slayer: Kimetsu no Yaiba Hashira Training Arc"
+          "matchedCatalogueId": "anivault_rt_demon_slayer",
+          "matchedCatalogueTitle": "Demon Slayer: Kimetsu no Yaiba"
         },
         {
           "step": 7,
@@ -474,8 +442,8 @@
           "isUnreleased": false,
           "note": "Detected TV episode re-edit / alternate version.",
           "warning": null,
-          "matchedCatalogueId": "anivault_rt_demon_slayer_kimetsu_no_yaiba_mugen_train_arc",
-          "matchedCatalogueTitle": "Demon Slayer: Kimetsu no Yaiba Mugen Train Arc"
+          "matchedCatalogueId": "anivault_rt_demon_slayer",
+          "matchedCatalogueTitle": "Demon Slayer: Kimetsu no Yaiba"
         },
         {
           "step": 4,
@@ -496,8 +464,8 @@
           "isUnreleased": false,
           "note": null,
           "warning": null,
-          "matchedCatalogueId": "anivault_rt_demon_slayer_kimetsu_no_yaiba_entertainment_district_arc",
-          "matchedCatalogueTitle": "Demon Slayer: Kimetsu no Yaiba Entertainment District Arc"
+          "matchedCatalogueId": "anivault_rt_demon_slayer",
+          "matchedCatalogueTitle": "Demon Slayer: Kimetsu no Yaiba"
         },
         {
           "step": 5,
@@ -518,8 +486,8 @@
           "isUnreleased": false,
           "note": null,
           "warning": null,
-          "matchedCatalogueId": "anivault_rt_demon_slayer_kimetsu_no_yaiba_swordsmith_village_arc",
-          "matchedCatalogueTitle": "Demon Slayer: Kimetsu no Yaiba Swordsmith Village Arc"
+          "matchedCatalogueId": "anivault_rt_demon_slayer",
+          "matchedCatalogueTitle": "Demon Slayer: Kimetsu no Yaiba"
         },
         {
           "step": 6,
@@ -540,8 +508,8 @@
           "isUnreleased": false,
           "note": null,
           "warning": null,
-          "matchedCatalogueId": "anivault_rt_demon_slayer_kimetsu_no_yaiba_hashira_training_arc",
-          "matchedCatalogueTitle": "Demon Slayer: Kimetsu no Yaiba Hashira Training Arc"
+          "matchedCatalogueId": "anivault_rt_demon_slayer",
+          "matchedCatalogueTitle": "Demon Slayer: Kimetsu no Yaiba"
         },
         {
           "step": 7,
@@ -672,8 +640,8 @@
         "isUnreleased": false,
         "note": "Eleven episodes that pick up directly from the Mugen Train arc as Tanjiro is sent on a new mission. Watch this after whichever version of Mugen Train you chose.",
         "warning": null,
-        "matchedCatalogueId": "anivault_rt_demon_slayer_kimetsu_no_yaiba_entertainment_district_arc",
-        "matchedCatalogueTitle": "Demon Slayer: Kimetsu no Yaiba Entertainment District Arc"
+        "matchedCatalogueId": "anivault_rt_demon_slayer",
+        "matchedCatalogueTitle": "Demon Slayer: Kimetsu no Yaiba"
       },
       {
         "step": 4,
@@ -693,8 +661,8 @@
         "isUnreleased": false,
         "note": "Eleven episodes following the Entertainment District Arc, moving the story to a new location and introducing more of the Hashira. Keep going in order.",
         "warning": null,
-        "matchedCatalogueId": "anivault_rt_demon_slayer_kimetsu_no_yaiba_swordsmith_village_arc",
-        "matchedCatalogueTitle": "Demon Slayer: Kimetsu no Yaiba Swordsmith Village Arc"
+        "matchedCatalogueId": "anivault_rt_demon_slayer",
+        "matchedCatalogueTitle": "Demon Slayer: Kimetsu no Yaiba"
       },
       {
         "step": 5,
@@ -714,8 +682,8 @@
         "isUnreleased": false,
         "note": "A shorter eight-episode arc that sets up the final confrontation. Watch it before the Infinity Castle film.",
         "warning": null,
-        "matchedCatalogueId": "anivault_rt_demon_slayer_kimetsu_no_yaiba_hashira_training_arc",
-        "matchedCatalogueTitle": "Demon Slayer: Kimetsu no Yaiba Hashira Training Arc"
+        "matchedCatalogueId": "anivault_rt_demon_slayer",
+        "matchedCatalogueTitle": "Demon Slayer: Kimetsu no Yaiba"
       },
       {
         "step": 6,
@@ -756,8 +724,8 @@
         "isUnreleased": false,
         "note": "The TV version of the Mugen Train story, in seven episodes. Episodes 2 to 7 re-edit the film with additional footage; episode 1 is new material that follows Kyojuro Rengoku before he boards the train. Skip this if you watched the film, unless you want that extra episode.",
         "warning": "⚠ Episodes 2 to 7 cover the same events as the Mugen Train film.",
-        "matchedCatalogueId": "anivault_rt_demon_slayer_kimetsu_no_yaiba_mugen_train_arc",
-        "matchedCatalogueTitle": "Demon Slayer: Kimetsu no Yaiba Mugen Train Arc"
+        "matchedCatalogueId": "anivault_rt_demon_slayer",
+        "matchedCatalogueTitle": "Demon Slayer: Kimetsu no Yaiba"
       }
     ],
     "lastCheckedAt": "2026-09-26T11:07:48.598Z",
@@ -788,15 +756,7 @@
         "alternateTitle": "Jujutsu Kaisen",
         "releaseYear": 2020,
         "type": "TV",
-        "seasonsCount": 2
-      },
-      {
-        "id": "anivault_rt_jujutsu_kaisen_season_2",
-        "title": "JUJUTSU KAISEN Season 2",
-        "alternateTitle": "Jujutsu Kaisen 2nd Season",
-        "releaseYear": 2023,
-        "type": "TV",
-        "seasonsCount": 1
+        "seasonsCount": 3
       },
       {
         "id": "anivault_rt_jujutsu_kaisen_0",
@@ -804,14 +764,6 @@
         "alternateTitle": "Jujutsu Kaisen 0",
         "releaseYear": 2021,
         "type": "Movie",
-        "seasonsCount": 1
-      },
-      {
-        "id": "anivault_rt_jujutsu_kaisen_season_3_the_culling_game_part_1",
-        "title": "JUJUTSU KAISEN Season 3: The Culling Game Part 1",
-        "alternateTitle": "Jujutsu Kaisen: Shimetsu Kaiyuu - Zenpen",
-        "releaseYear": 2026,
-        "type": "TV",
         "seasonsCount": 1
       }
     ],
@@ -904,8 +856,8 @@
           "isUnreleased": false,
           "note": "23 episodes, split into two halves. The first five are a flashback to Gojo and Geto's student years, which explains most of what Jujutsu Kaisen 0 only hinted at. The rest covers the Shibuya Incident, the turning point of the whole series.",
           "warning": null,
-          "matchedCatalogueId": "anivault_rt_jujutsu_kaisen_season_2",
-          "matchedCatalogueTitle": "JUJUTSU KAISEN Season 2"
+          "matchedCatalogueId": "anivault_rt_jujutsu_kaisen",
+          "matchedCatalogueTitle": "Jujutsu Kaisen"
         },
         {
           "step": 4,
@@ -925,8 +877,8 @@
           "isUnreleased": false,
           "note": "12 episodes picking up immediately after Season 2. The opening episodes deal with the fallout of the Shibuya Incident before the Culling Game itself begins, so the setup will not make sense without Season 2 fresh in mind.",
           "warning": "⚠ The anime currently ends here. A second part covering the rest of the Culling Game arc has been announced, but no broadcast date has been confirmed.",
-          "matchedCatalogueId": "anivault_rt_jujutsu_kaisen_season_3_the_culling_game_part_1",
-          "matchedCatalogueTitle": "JUJUTSU KAISEN Season 3: The Culling Game Part 1"
+          "matchedCatalogueId": "anivault_rt_jujutsu_kaisen",
+          "matchedCatalogueTitle": "Jujutsu Kaisen"
         }
       ],
       "releaseOrderEntries": [
@@ -990,8 +942,8 @@
           "isUnreleased": false,
           "note": null,
           "warning": null,
-          "matchedCatalogueId": "anivault_rt_jujutsu_kaisen_season_2",
-          "matchedCatalogueTitle": "JUJUTSU KAISEN Season 2"
+          "matchedCatalogueId": "anivault_rt_jujutsu_kaisen",
+          "matchedCatalogueTitle": "Jujutsu Kaisen"
         },
         {
           "step": 4,
@@ -1011,8 +963,8 @@
           "isUnreleased": false,
           "note": null,
           "warning": null,
-          "matchedCatalogueId": "anivault_rt_jujutsu_kaisen_season_3_the_culling_game_part_1",
-          "matchedCatalogueTitle": "JUJUTSU KAISEN Season 3: The Culling Game Part 1"
+          "matchedCatalogueId": "anivault_rt_jujutsu_kaisen",
+          "matchedCatalogueTitle": "Jujutsu Kaisen"
         }
       ]
     },
@@ -1090,8 +1042,8 @@
           "isUnreleased": false,
           "note": null,
           "warning": null,
-          "matchedCatalogueId": "anivault_rt_jujutsu_kaisen_season_2",
-          "matchedCatalogueTitle": "JUJUTSU KAISEN Season 2"
+          "matchedCatalogueId": "anivault_rt_jujutsu_kaisen",
+          "matchedCatalogueTitle": "Jujutsu Kaisen"
         },
         {
           "step": 4,
@@ -1156,8 +1108,8 @@
           "isUnreleased": false,
           "note": null,
           "warning": null,
-          "matchedCatalogueId": "anivault_rt_jujutsu_kaisen_season_3_the_culling_game_part_1",
-          "matchedCatalogueTitle": "JUJUTSU KAISEN Season 3: The Culling Game Part 1"
+          "matchedCatalogueId": "anivault_rt_jujutsu_kaisen",
+          "matchedCatalogueTitle": "Jujutsu Kaisen"
         },
         {
           "step": 7,
@@ -1244,8 +1196,8 @@
         "isUnreleased": false,
         "note": "23 episodes, split into two halves. The first five are a flashback to Gojo and Geto's student years, which explains most of what Jujutsu Kaisen 0 only hinted at. The rest covers the Shibuya Incident, the turning point of the whole series.",
         "warning": null,
-        "matchedCatalogueId": "anivault_rt_jujutsu_kaisen_season_2",
-        "matchedCatalogueTitle": "JUJUTSU KAISEN Season 2"
+        "matchedCatalogueId": "anivault_rt_jujutsu_kaisen",
+        "matchedCatalogueTitle": "Jujutsu Kaisen"
       },
       {
         "step": 4,
@@ -1265,8 +1217,8 @@
         "isUnreleased": false,
         "note": "12 episodes picking up immediately after Season 2. The opening episodes deal with the fallout of the Shibuya Incident before the Culling Game itself begins, so the setup will not make sense without Season 2 fresh in mind.",
         "warning": "⚠ The anime currently ends here. A second part covering the rest of the Culling Game arc has been announced, but no broadcast date has been confirmed.",
-        "matchedCatalogueId": "anivault_rt_jujutsu_kaisen_season_3_the_culling_game_part_1",
-        "matchedCatalogueTitle": "JUJUTSU KAISEN Season 3: The Culling Game Part 1"
+        "matchedCatalogueId": "anivault_rt_jujutsu_kaisen",
+        "matchedCatalogueTitle": "Jujutsu Kaisen"
       }
     ],
     "lastCheckedAt": "2026-09-26T11:07:49.611Z",
@@ -1354,7 +1306,7 @@
         "id": "anivault_rt_hindi_boruto_naruto_next_generations_hindi_subbed_episodes_download_hd",
         "title": "Boruto Naruto Next Generations",
         "alternateTitle": "Naruto",
-        "releaseYear": 2021,
+        "releaseYear": null,
         "type": "TV",
         "seasonsCount": 8
       }
@@ -2490,62 +2442,6 @@
         "releaseYear": 2013,
         "type": "TV",
         "seasonsCount": 4
-      },
-      {
-        "id": "anivault_rt_attack_on_titan_final_season_part_2",
-        "title": "Attack on Titan Final Season Part 2",
-        "alternateTitle": "Shingeki no Kyojin: The Final Season Part 2",
-        "releaseYear": 2022,
-        "type": "TV",
-        "seasonsCount": 1
-      },
-      {
-        "id": "anivault_rt_attack_on_titan_final_season_the_final_chapters_special_1",
-        "title": "Attack on Titan Final Season THE FINAL CHAPTERS Special 1",
-        "alternateTitle": "Shingeki no Kyojin: The Final Season - Kanketsu-hen Zenpen",
-        "releaseYear": 2023,
-        "type": "TV",
-        "seasonsCount": 1
-      },
-      {
-        "id": "anivault_rt_attack_on_titan_final_season_the_final_chapters_special_2",
-        "title": "Attack on Titan Final Season THE FINAL CHAPTERS Special 2",
-        "alternateTitle": "Shingeki no Kyojin: The Final Season - Kanketsu-hen Kouhen",
-        "releaseYear": 2023,
-        "type": "TV",
-        "seasonsCount": 1
-      },
-      {
-        "id": "anivault_rt_attack_on_titan_season_2",
-        "title": "Attack on Titan Season 2",
-        "alternateTitle": "Shingeki no Kyojin Season 2",
-        "releaseYear": 2017,
-        "type": "TV",
-        "seasonsCount": 1
-      },
-      {
-        "id": "anivault_rt_attack_on_titan_season_3",
-        "title": "Attack on Titan Season 3",
-        "alternateTitle": "Shingeki no Kyojin Season 3",
-        "releaseYear": 2018,
-        "type": "TV",
-        "seasonsCount": 1
-      },
-      {
-        "id": "anivault_rt_attack_on_titan_final_season",
-        "title": "Attack on Titan Final Season",
-        "alternateTitle": "Shingeki no Kyojin: The Final Season",
-        "releaseYear": 2021,
-        "type": "TV",
-        "seasonsCount": 1
-      },
-      {
-        "id": "anivault_rt_attack_on_titan_season_3_part_2",
-        "title": "Attack on Titan Season 3 Part 2",
-        "alternateTitle": "Shingeki no Kyojin Season 3 Part 2",
-        "releaseYear": 2019,
-        "type": "TV",
-        "seasonsCount": 1
       }
     ],
     "status": "needs_review",
@@ -2616,8 +2512,8 @@
           "isUnreleased": false,
           "note": "12 episodes, picking up immediately after Season 1. Short, but this is where the first major answers about the Titans arrive.",
           "warning": null,
-          "matchedCatalogueId": "anivault_rt_attack_on_titan_season_2",
-          "matchedCatalogueTitle": "Attack on Titan Season 2"
+          "matchedCatalogueId": "anivault_rt_attack_on_titan",
+          "matchedCatalogueTitle": "Attack on Titan"
         },
         {
           "step": 3,
@@ -2637,8 +2533,8 @@
           "isUnreleased": false,
           "note": "12 episodes. The focus moves inside the walls and onto who has been running things. Ends mid-story and leads straight into Part 2.",
           "warning": null,
-          "matchedCatalogueId": "anivault_rt_attack_on_titan_season_3",
-          "matchedCatalogueTitle": "Attack on Titan Season 3"
+          "matchedCatalogueId": "anivault_rt_attack_on_titan",
+          "matchedCatalogueTitle": "Attack on Titan"
         },
         {
           "step": 4,
@@ -2658,8 +2554,8 @@
           "isUnreleased": false,
           "note": "10 episodes. The direct continuation of Season 3 — the two cours are one season split by a broadcast gap, so watch them back to back.",
           "warning": null,
-          "matchedCatalogueId": "anivault_rt_attack_on_titan_season_3_part_2",
-          "matchedCatalogueTitle": "Attack on Titan Season 3 Part 2"
+          "matchedCatalogueId": "anivault_rt_attack_on_titan",
+          "matchedCatalogueTitle": "Attack on Titan"
         },
         {
           "step": 5,
@@ -2679,8 +2575,8 @@
           "isUnreleased": false,
           "note": "16 episodes, and the first one drops you somewhere new with a cast you have never met. Give it four or five episodes before judging it.",
           "warning": "⚠ The opening episodes deliberately withhold the connection to the previous season. The shift in setting and perspective is the point, not a mistake.",
-          "matchedCatalogueId": "anivault_rt_attack_on_titan_final_season",
-          "matchedCatalogueTitle": "Attack on Titan Final Season"
+          "matchedCatalogueId": "anivault_rt_attack_on_titan",
+          "matchedCatalogueTitle": "Attack on Titan"
         },
         {
           "step": 6,
@@ -2700,8 +2596,8 @@
           "isUnreleased": false,
           "note": "12 episodes continuing straight on from the previous part. The two halves were made as one season and split across a year.",
           "warning": null,
-          "matchedCatalogueId": "anivault_rt_attack_on_titan_final_season_part_2",
-          "matchedCatalogueTitle": "Attack on Titan Final Season Part 2"
+          "matchedCatalogueId": "anivault_rt_attack_on_titan",
+          "matchedCatalogueTitle": "Attack on Titan"
         },
         {
           "step": 7,
@@ -2721,8 +2617,8 @@
           "isUnreleased": false,
           "note": "A single feature-length episode of about an hour, not a recap or a preview. In Japan the two specials were also released in weekly episode form, continuing the Final Season's numbering past episode 87.",
           "warning": null,
-          "matchedCatalogueId": "anivault_rt_attack_on_titan_final_season_the_final_chapters_special_1",
-          "matchedCatalogueTitle": "Attack on Titan Final Season THE FINAL CHAPTERS Special 1"
+          "matchedCatalogueId": "anivault_rt_attack_on_titan",
+          "matchedCatalogueTitle": "Attack on Titan"
         },
         {
           "step": 8,
@@ -2742,8 +2638,8 @@
           "isUnreleased": false,
           "note": "The ending, running about 85 minutes. Watch it straight after Special 1 — the two together are the conclusion of the whole series.",
           "warning": null,
-          "matchedCatalogueId": "anivault_rt_attack_on_titan_final_season_the_final_chapters_special_2",
-          "matchedCatalogueTitle": "Attack on Titan Final Season THE FINAL CHAPTERS Special 2"
+          "matchedCatalogueId": "anivault_rt_attack_on_titan",
+          "matchedCatalogueTitle": "Attack on Titan"
         },
         {
           "step": 9,
@@ -2891,8 +2787,8 @@
           "isUnreleased": false,
           "note": null,
           "warning": null,
-          "matchedCatalogueId": "anivault_rt_attack_on_titan_season_2",
-          "matchedCatalogueTitle": "Attack on Titan Season 2"
+          "matchedCatalogueId": "anivault_rt_attack_on_titan",
+          "matchedCatalogueTitle": "Attack on Titan"
         },
         {
           "step": 5,
@@ -2933,8 +2829,8 @@
           "isUnreleased": false,
           "note": null,
           "warning": null,
-          "matchedCatalogueId": "anivault_rt_attack_on_titan_season_3",
-          "matchedCatalogueTitle": "Attack on Titan Season 3"
+          "matchedCatalogueId": "anivault_rt_attack_on_titan",
+          "matchedCatalogueTitle": "Attack on Titan"
         },
         {
           "step": 7,
@@ -2954,8 +2850,8 @@
           "isUnreleased": false,
           "note": null,
           "warning": null,
-          "matchedCatalogueId": "anivault_rt_attack_on_titan_season_3_part_2",
-          "matchedCatalogueTitle": "Attack on Titan Season 3 Part 2"
+          "matchedCatalogueId": "anivault_rt_attack_on_titan",
+          "matchedCatalogueTitle": "Attack on Titan"
         },
         {
           "step": 8,
@@ -2975,8 +2871,8 @@
           "isUnreleased": false,
           "note": null,
           "warning": null,
-          "matchedCatalogueId": "anivault_rt_attack_on_titan_final_season",
-          "matchedCatalogueTitle": "Attack on Titan Final Season"
+          "matchedCatalogueId": "anivault_rt_attack_on_titan",
+          "matchedCatalogueTitle": "Attack on Titan"
         },
         {
           "step": 9,
@@ -2996,8 +2892,8 @@
           "isUnreleased": false,
           "note": null,
           "warning": null,
-          "matchedCatalogueId": "anivault_rt_attack_on_titan_final_season_part_2",
-          "matchedCatalogueTitle": "Attack on Titan Final Season Part 2"
+          "matchedCatalogueId": "anivault_rt_attack_on_titan",
+          "matchedCatalogueTitle": "Attack on Titan"
         },
         {
           "step": 10,
@@ -3017,8 +2913,8 @@
           "isUnreleased": false,
           "note": null,
           "warning": null,
-          "matchedCatalogueId": "anivault_rt_attack_on_titan_final_season_the_final_chapters_special_1",
-          "matchedCatalogueTitle": "Attack on Titan Final Season THE FINAL CHAPTERS Special 1"
+          "matchedCatalogueId": "anivault_rt_attack_on_titan",
+          "matchedCatalogueTitle": "Attack on Titan"
         },
         {
           "step": 11,
@@ -3038,8 +2934,8 @@
           "isUnreleased": false,
           "note": null,
           "warning": null,
-          "matchedCatalogueId": "anivault_rt_attack_on_titan_final_season_the_final_chapters_special_2",
-          "matchedCatalogueTitle": "Attack on Titan Final Season THE FINAL CHAPTERS Special 2"
+          "matchedCatalogueId": "anivault_rt_attack_on_titan",
+          "matchedCatalogueTitle": "Attack on Titan"
         }
       ]
     },
@@ -3183,8 +3079,8 @@
           "isUnreleased": false,
           "note": null,
           "warning": null,
-          "matchedCatalogueId": "anivault_rt_attack_on_titan_season_2",
-          "matchedCatalogueTitle": "Attack on Titan Season 2"
+          "matchedCatalogueId": "anivault_rt_attack_on_titan",
+          "matchedCatalogueTitle": "Attack on Titan"
         },
         {
           "step": 7,
@@ -3249,8 +3145,8 @@
           "isUnreleased": false,
           "note": null,
           "warning": null,
-          "matchedCatalogueId": "anivault_rt_attack_on_titan_season_3",
-          "matchedCatalogueTitle": "Attack on Titan Season 3"
+          "matchedCatalogueId": "anivault_rt_attack_on_titan",
+          "matchedCatalogueTitle": "Attack on Titan"
         },
         {
           "step": 10,
@@ -3271,8 +3167,8 @@
           "isUnreleased": false,
           "note": null,
           "warning": null,
-          "matchedCatalogueId": "anivault_rt_attack_on_titan_season_3_part_2",
-          "matchedCatalogueTitle": "Attack on Titan Season 3 Part 2"
+          "matchedCatalogueId": "anivault_rt_attack_on_titan",
+          "matchedCatalogueTitle": "Attack on Titan"
         },
         {
           "step": 11,
@@ -3293,8 +3189,8 @@
           "isUnreleased": false,
           "note": null,
           "warning": null,
-          "matchedCatalogueId": "anivault_rt_attack_on_titan_final_season",
-          "matchedCatalogueTitle": "Attack on Titan Final Season"
+          "matchedCatalogueId": "anivault_rt_attack_on_titan",
+          "matchedCatalogueTitle": "Attack on Titan"
         },
         {
           "step": 12,
@@ -3315,8 +3211,8 @@
           "isUnreleased": false,
           "note": null,
           "warning": null,
-          "matchedCatalogueId": "anivault_rt_attack_on_titan_final_season_part_2",
-          "matchedCatalogueTitle": "Attack on Titan Final Season Part 2"
+          "matchedCatalogueId": "anivault_rt_attack_on_titan",
+          "matchedCatalogueTitle": "Attack on Titan"
         },
         {
           "step": 13,
@@ -3337,8 +3233,8 @@
           "isUnreleased": false,
           "note": null,
           "warning": null,
-          "matchedCatalogueId": "anivault_rt_attack_on_titan_final_season_the_final_chapters_special_1",
-          "matchedCatalogueTitle": "Attack on Titan Final Season THE FINAL CHAPTERS Special 1"
+          "matchedCatalogueId": "anivault_rt_attack_on_titan",
+          "matchedCatalogueTitle": "Attack on Titan"
         },
         {
           "step": 14,
@@ -3359,8 +3255,8 @@
           "isUnreleased": false,
           "note": null,
           "warning": null,
-          "matchedCatalogueId": "anivault_rt_attack_on_titan_final_season_the_final_chapters_special_2",
-          "matchedCatalogueTitle": "Attack on Titan Final Season THE FINAL CHAPTERS Special 2"
+          "matchedCatalogueId": "anivault_rt_attack_on_titan",
+          "matchedCatalogueTitle": "Attack on Titan"
         }
       ]
     },
@@ -3404,8 +3300,8 @@
         "isUnreleased": false,
         "note": "12 episodes, picking up immediately after Season 1. Short, but this is where the first major answers about the Titans arrive.",
         "warning": null,
-        "matchedCatalogueId": "anivault_rt_attack_on_titan_season_2",
-        "matchedCatalogueTitle": "Attack on Titan Season 2"
+        "matchedCatalogueId": "anivault_rt_attack_on_titan",
+        "matchedCatalogueTitle": "Attack on Titan"
       },
       {
         "step": 3,
@@ -3425,8 +3321,8 @@
         "isUnreleased": false,
         "note": "12 episodes. The focus moves inside the walls and onto who has been running things. Ends mid-story and leads straight into Part 2.",
         "warning": null,
-        "matchedCatalogueId": "anivault_rt_attack_on_titan_season_3",
-        "matchedCatalogueTitle": "Attack on Titan Season 3"
+        "matchedCatalogueId": "anivault_rt_attack_on_titan",
+        "matchedCatalogueTitle": "Attack on Titan"
       },
       {
         "step": 4,
@@ -3446,8 +3342,8 @@
         "isUnreleased": false,
         "note": "10 episodes. The direct continuation of Season 3 — the two cours are one season split by a broadcast gap, so watch them back to back.",
         "warning": null,
-        "matchedCatalogueId": "anivault_rt_attack_on_titan_season_3_part_2",
-        "matchedCatalogueTitle": "Attack on Titan Season 3 Part 2"
+        "matchedCatalogueId": "anivault_rt_attack_on_titan",
+        "matchedCatalogueTitle": "Attack on Titan"
       },
       {
         "step": 5,
@@ -3467,8 +3363,8 @@
         "isUnreleased": false,
         "note": "16 episodes, and the first one drops you somewhere new with a cast you have never met. Give it four or five episodes before judging it.",
         "warning": "⚠ The opening episodes deliberately withhold the connection to the previous season. The shift in setting and perspective is the point, not a mistake.",
-        "matchedCatalogueId": "anivault_rt_attack_on_titan_final_season",
-        "matchedCatalogueTitle": "Attack on Titan Final Season"
+        "matchedCatalogueId": "anivault_rt_attack_on_titan",
+        "matchedCatalogueTitle": "Attack on Titan"
       },
       {
         "step": 6,
@@ -3488,8 +3384,8 @@
         "isUnreleased": false,
         "note": "12 episodes continuing straight on from the previous part. The two halves were made as one season and split across a year.",
         "warning": null,
-        "matchedCatalogueId": "anivault_rt_attack_on_titan_final_season_part_2",
-        "matchedCatalogueTitle": "Attack on Titan Final Season Part 2"
+        "matchedCatalogueId": "anivault_rt_attack_on_titan",
+        "matchedCatalogueTitle": "Attack on Titan"
       },
       {
         "step": 7,
@@ -3509,8 +3405,8 @@
         "isUnreleased": false,
         "note": "A single feature-length episode of about an hour, not a recap or a preview. In Japan the two specials were also released in weekly episode form, continuing the Final Season's numbering past episode 87.",
         "warning": null,
-        "matchedCatalogueId": "anivault_rt_attack_on_titan_final_season_the_final_chapters_special_1",
-        "matchedCatalogueTitle": "Attack on Titan Final Season THE FINAL CHAPTERS Special 1"
+        "matchedCatalogueId": "anivault_rt_attack_on_titan",
+        "matchedCatalogueTitle": "Attack on Titan"
       },
       {
         "step": 8,
@@ -3530,8 +3426,8 @@
         "isUnreleased": false,
         "note": "The ending, running about 85 minutes. Watch it straight after Special 1 — the two together are the conclusion of the whole series.",
         "warning": null,
-        "matchedCatalogueId": "anivault_rt_attack_on_titan_final_season_the_final_chapters_special_2",
-        "matchedCatalogueTitle": "Attack on Titan Final Season THE FINAL CHAPTERS Special 2"
+        "matchedCatalogueId": "anivault_rt_attack_on_titan",
+        "matchedCatalogueTitle": "Attack on Titan"
       },
       {
         "step": 9,

@@ -38,7 +38,7 @@ async function runFoundationAuditTests() {
   // PHASE 1.1: EPISODE & SEASON INTEGRITY ACROSS ENTIRE CATALOGUE
   // ---------------------------------------------------------------------------
   console.log('[Phase 1.1] Auditing Episode & Season Integrity across entire catalogue...');
-  assert.ok(catalogue.length >= 840, `Catalogue size should be >= 840 (got ${catalogue.length})`);
+  assert.ok(catalogue.length >= 600, `Catalogue size should be >= 600 (got ${catalogue.length})`);
 
   for (const anime of catalogue) {
     assert.ok(Array.isArray(anime.seasons) && anime.seasons.length > 0, `Anime ${anime.id} must have seasons[]`);
@@ -89,14 +89,14 @@ async function runFoundationAuditTests() {
     assert.strictEqual(anime.importedEpisodesCount, seasonImpSum, `Anime ${anime.id} importedEpisodesCount (${anime.importedEpisodesCount}) !== season imported sum (${seasonImpSum})`);
   }
 
-  // Verify partial episode list separation (e.g., Haikyu!! has 25 authoritative episodes, 1 imported episode, marked partial)
+  // Verify partial episode list separation (e.g., Haikyu!! has 85 authoritative episodes across 4 seasons, Season 1 has 25 authoritative episodes, marked partial)
   const haikyu = catalogue.find((a: any) => a.id === 'anivault_rt_haikyu');
   assert.ok(haikyu, 'Haikyu!! must exist in catalogue');
-  assert.strictEqual(haikyu.authoritativeTotalEpisodes, 25, 'Haikyu!! authoritative episode count must be preserved as 25');
-  assert.strictEqual(haikyu.importedEpisodesCount, 1, 'Haikyu!! imported episode count must be 1 (never invent Episodes 2-25)');
+  assert.strictEqual(haikyu.authoritativeTotalEpisodes, 85, 'Haikyu!! authoritative episode count must be preserved as 85 across 4 seasons');
+  assert.strictEqual(haikyu.seasons[0].authoritativeEpisodeCount, 25, 'Haikyu!! Season 1 authoritative count must be 25');
   assert.strictEqual(haikyu.isEpisodeListComplete, false, 'Haikyu!! episode list must not be falsely marked complete');
   assert.strictEqual(haikyu.episodeListStatus, 'partial', 'Haikyu!! episodeListStatus must be partial');
-  console.log('✓ PASS: All 848 anime & seasons strictly separate authoritativeEpisodeCount, importedEpisodeCount, and completeness.');
+  console.log('✓ PASS: All canonical anime & seasons strictly separate authoritativeEpisodeCount, importedEpisodeCount, and completeness.');
 
   // ---------------------------------------------------------------------------
   // PHASE 1.2: DUPLICATE ANIME RESOLUTION (YOUR NAME, SUZUME, ETC.)
@@ -531,8 +531,8 @@ async function runFoundationAuditTests() {
   );
   const afterArtAnime = globalDataStore.getCatalogueAnime(sampleId);
   assert.strictEqual(afterArtAnime.id, beforeAnime.id, 'Artwork update must not alter canonical anime ID');
-  assert.strictEqual(afterArtAnime.authoritativeTotalEpisodes, 25, 'Artwork update must not alter authoritativeTotalEpisodes');
-  assert.strictEqual(afterArtAnime.importedEpisodesCount, 1, 'Artwork update must not alter importedEpisodesCount');
+  assert.strictEqual(afterArtAnime.authoritativeTotalEpisodes, beforeAnime.authoritativeTotalEpisodes, 'Artwork update must not alter authoritativeTotalEpisodes');
+  assert.strictEqual(afterArtAnime.importedEpisodesCount, beforeAnime.importedEpisodesCount, 'Artwork update must not alter importedEpisodesCount');
   assert.strictEqual(afterArtAnime.isEpisodeListComplete, false, 'Artwork update must not alter isEpisodeListComplete');
   assert.deepStrictEqual(infoManager.getRecord(sampleId), beforeInfoRec, 'Artwork update must not corrupt Information Manager record');
 
@@ -540,8 +540,8 @@ async function runFoundationAuditTests() {
   infoManager.applyMetadataUpdate(sampleId, { synopsis: beforeAnime.synopsis }, 'Owner', 'Safety test', 'Safety Check', 'correct');
   const afterInfoAnime = globalDataStore.getCatalogueAnime(sampleId);
   assert.strictEqual(afterInfoAnime.artwork.verifiedArtworkUrl, beforeAnime.artwork.verifiedArtworkUrl, 'Info update must not corrupt verifiedArtworkUrl');
-  assert.strictEqual(afterInfoAnime.authoritativeTotalEpisodes, 25, 'Info update must preserve authoritativeTotalEpisodes');
-  assert.strictEqual(afterInfoAnime.importedEpisodesCount, 1, 'Info update must preserve importedEpisodesCount');
+  assert.strictEqual(afterInfoAnime.authoritativeTotalEpisodes, beforeAnime.authoritativeTotalEpisodes, 'Info update must preserve authoritativeTotalEpisodes');
+  assert.strictEqual(afterInfoAnime.importedEpisodesCount, beforeAnime.importedEpisodesCount, 'Info update must preserve importedEpisodesCount');
   assert.strictEqual(afterInfoAnime.isEpisodeListComplete, false, 'Info update must preserve partial episode status');
   assert.deepStrictEqual(globalDataStore.getVerificationRecord(sampleId), beforeArtRec, 'Info update must not corrupt Artwork Manager record');
   console.log('✓ PASS: Worker pool strictly enforces 50 active workers / 70 max capacity, exact task accounting, and cross-system safety.');
@@ -674,15 +674,15 @@ async function runFoundationAuditTests() {
   assert.strictEqual(yearOnlyTv.authoritativeTotalEpisodes, null, 'Episode count must remain null when not provided');
 
   // Verify persisted catalogue representative records for unknown episode count, unknown year, and unknown status
-  const gavvCat = catalogue.find(
-    (a: any) => a.id === 'anivault_rt_hindi_kamen_rider_gavv_season_1_hindi_dubbed_episodes_download_hd'
+  const mhaCat = catalogue.find(
+    (a: any) => a.id === 'anivault_rt_my_hero_academia'
   );
-  assert.ok(gavvCat, 'Kamen Rider Gavv must exist in catalogue');
-  assert.strictEqual(gavvCat.authoritativeTotalEpisodes, null, 'Kamen Rider Gavv authoritativeTotalEpisodes must be null (not 12)');
-  assert.strictEqual(gavvCat.importedEpisodesCount, 1, 'Kamen Rider Gavv importedEpisodesCount must be 1');
-  assert.strictEqual(gavvCat.episodeListStatus, 'partial', 'Kamen Rider Gavv episodeListStatus must be partial');
-  assert.strictEqual(gavvCat.releaseYear, null, 'Kamen Rider Gavv releaseYear must be null (not 2021)');
-  assert.strictEqual(gavvCat.status, 'Unknown', 'Kamen Rider Gavv status must be Unknown (not Completed)');
+  assert.ok(mhaCat, 'My Hero Academia must exist in catalogue');
+  assert.strictEqual(mhaCat.authoritativeTotalEpisodes, null, 'My Hero Academia authoritativeTotalEpisodes must be null (not guessed)');
+  assert.strictEqual(mhaCat.importedEpisodesCount, 128, 'My Hero Academia importedEpisodesCount must be 128');
+  assert.strictEqual(mhaCat.episodeListStatus, 'partial', 'My Hero Academia episodeListStatus must be partial');
+  assert.strictEqual(mhaCat.releaseYear, 2016, 'My Hero Academia releaseYear must be 2016');
+  assert.strictEqual(mhaCat.status, 'Ongoing', 'My Hero Academia status must be Ongoing');
 
   const koyaMovieCat = catalogue.find(
     (a: any) => a.id === 'anivault_rt_doraemon_the_movie_adventure_of_koya_koya_planet'
@@ -869,19 +869,19 @@ async function runFoundationAuditTests() {
   assert.strictEqual(calculateSeasonImportedEpisodes(aotCat.seasons[0]), 1, 'Attack on Titan Season 1 imported episode records must be 1');
   assert.strictEqual(getSeasonEpisodeStatus(aotCat.seasons[0]), 'partial', 'Attack on Titan Season 1 must be marked partial');
 
-  const miraculousCat = catalogue.find((a: any) => a.id === 'anivault_rt_miraculous_tales_of_ladybug_cat_noir');
-  assert.ok(miraculousCat && miraculousCat.seasons.length === 6, 'Miraculous must have 6 seasons inside its single anime entry');
-  assert.strictEqual(calculateSeasonEpisodes(miraculousCat.seasons[0]), null, 'Miraculous Season 1 unknown authoritative count must remain null');
-  assert.strictEqual(calculateSeasonEpisodes(miraculousCat.seasons[4]), 27, 'Miraculous Season 5 authoritative count must be 27');
+  const jojoCat = catalogue.find((a: any) => a.id === 'anivault_rt_jojo_s_bizarre_adventure_tv');
+  assert.ok(jojoCat && jojoCat.seasons.length === 5, 'JoJo must have 5 seasons inside its single canonical anime entry');
+  assert.strictEqual(calculateSeasonEpisodes(jojoCat.seasons[0]), 26, 'JoJo Season 1 authoritative count must be 26');
+  assert.strictEqual(calculateSeasonEpisodes(jojoCat.seasons[1]), 48, 'JoJo Season 2 (Stardust Crusaders) authoritative count must be 48');
 
   // 3. Complete vs Partial vs Unknown episode counts in Anime Details helpers
   assert.strictEqual(calculateTotalEpisodes(frierenCat), 28, 'Frieren total authoritative episodes must be 28');
   assert.strictEqual(calculateImportedEpisodes(frierenCat), 28, 'Frieren total imported episode records must be 28');
   assert.strictEqual(getSeasonEpisodeStatus(frierenCat.seasons[0]), 'complete', 'Frieren Season 1 status must be complete');
 
-  assert.strictEqual(calculateTotalEpisodes(gavvCat), null, 'Unknown episode count anime must return null from calculateTotalEpisodes (never invented)');
-  assert.strictEqual(calculateImportedEpisodes(gavvCat), 1, 'Kamen Rider Gavv imported episode count must be 1');
-  assert.strictEqual(getSeasonEpisodeStatus(gavvCat.seasons[0]), 'partial', 'Unknown authoritative count with 1 imported episode must be partial');
+  assert.strictEqual(calculateTotalEpisodes(mhaCat), null, 'Unknown episode count anime must return null from calculateTotalEpisodes (never invented)');
+  assert.strictEqual(calculateImportedEpisodes(mhaCat), 128, 'My Hero Academia imported episode count must be 128');
+  assert.strictEqual(getSeasonEpisodeStatus(mhaCat.seasons[0]), 'partial', 'Unknown authoritative count with imported episodes must be partial');
 
   // 4. Languages & Related Anime resolution from verified catalogue data (never invented)
   const doraemonStarWars = catalogue.find((a: any) => a.id === 'anivault_rt_doraemon_nobitas_little_star_wars_2021_remake');
@@ -892,10 +892,10 @@ async function runFoundationAuditTests() {
   const doraemonRelated = resolveRelatedAnimeItems(doraemonStarWars, catalogue);
   assert.ok(doraemonRelated.length >= 2, 'Must resolve verified related anime and franchise relationships');
 
-  const ippoRising = catalogue.find((a: any) => a.id === 'anivault_rt_hajime_no_ippo_the_fighting_rising');
-  const ippoRelated = resolveRelatedAnimeItems(ippoRising, catalogue);
+  const narutoAnime = catalogue.find((a: any) => a.id === 'anivault_rt_naruto');
+  const narutoRelated = resolveRelatedAnimeItems(narutoAnime, catalogue);
   assert.ok(
-    ippoRelated.some(r => r.matchedAnime && r.matchedAnime.id === 'anivault_rt_hajime_no_ippo_the_fighting_new_challenger'),
+    narutoRelated.some(r => r.matchedAnime && r.matchedAnime.id === 'anivault_rt_naruto_shippuden'),
     'Related anime present in catalogue must link directly to its catalogue Anime object'
   );
 

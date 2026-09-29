@@ -1,7 +1,7 @@
 {
-  "inspectedAt": "2026-09-29T01:17:53.551Z",
-  "totalCatalogue": 848,
-  "validArtworkCount": 848,
+  "inspectedAt": "2026-09-29T13:21:25.510Z",
+  "totalCatalogue": 622,
+  "validArtworkCount": 622,
   "missingArtworkCount": 0,
   "incorrectArtworkCount": 0,
   "requiresReplacementCount": 0,
@@ -19,15 +19,8 @@
     },
     {
       "id": "anivault_rt_doraemon_tv_series",
-      "title": "Doraemon (TV Series)",
+      "title": "Doraemon",
       "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/501.jpg",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_miraculous_tales_of_ladybug_cat_noir",
-      "title": "Miraculous Tales of Ladybug & Cat Noir",
-      "artworkUrl": "https://raretoonindia.in/wp-content/uploads/2023/06/Miraculous-Tales-of-Ladybug-Cat-Noir-Season-5-2.webp",
       "status": "verified",
       "hasArtwork": true
     },
@@ -137,13 +130,6 @@
       "hasArtwork": true
     },
     {
-      "id": "anivault_rt_stranger_things_tales_from_85",
-      "title": "Stranger Things: Tales from ’85 Season 1",
-      "artworkUrl": "https://raretoonindia.in/wp-content/uploads/2026/04/Stranger-Things-Tales-from-85-Season-1.webp",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
       "id": "anivault_rt_doraemon_the_movie_nobita_aur_birdopia_ka_sultan_hd",
       "title": "Doraemon The Movie Nobita Aur Birdopia ka Sultan",
       "artworkUrl": "https://raretoonindia.in/wp-content/uploads/2023/07/Doraemon-The-Movie-Nobita-Aur-Birdopia-ka-Sultan-Hindi-Download.webp",
@@ -208,7 +194,7 @@
     },
     {
       "id": "anivault_rt_pokemon",
-      "title": "Pokemon Season 20 Sun & Moon",
+      "title": "Pokémon",
       "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b527-t6dBVJ5OVcXK.png",
       "status": "verified",
       "hasArtwork": true
@@ -697,13 +683,6 @@
       "hasArtwork": true
     },
     {
-      "id": "anivault_rt_sword_art_online_ii",
-      "title": "Sword Art Online II",
-      "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/nx20594-FhRgZ1H9Istt.jpg",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
       "id": "anivault_rt_angel_beats",
       "title": "Angel Beats!",
       "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx6547-SYexAn5aFyss.png",
@@ -725,23 +704,9 @@
       "hasArtwork": true
     },
     {
-      "id": "anivault_rt_re_zero_starting_life_in_another_world_season_2",
-      "title": "Re:ZERO -Starting Life in Another World- Season 2",
-      "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx108632-lQWnmw7XaNOK.jpg",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
       "id": "anivault_rt_fairy_tail",
       "title": "Fairy Tail",
       "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b6702-KI4qgSMyI8Pm.png",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_konosuba_god_s_blessing_on_this_wonderful_world_2",
-      "title": "KONOSUBA -God's blessing on this wonderful world! 2",
-      "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21699-Fkbnkl9ZC6fW.png",
       "status": "verified",
       "hasArtwork": true
     },
@@ -753,37 +718,9 @@
       "hasArtwork": true
     },
     {
-      "id": "anivault_rt_mushoku_tensei_jobless_reincarnation_cour_2",
-      "title": "Mushoku Tensei: Jobless Reincarnation Cour 2",
-      "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx127720-ADJgIrUVMdU9.jpg",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_that_time_i_got_reincarnated_as_a_slime_season_2",
-      "title": "That Time I Got Reincarnated as a Slime Season 2",
-      "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx108511-PufFordLNyIb.jpg",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
       "id": "anivault_rt_the_eminence_in_shadow",
       "title": "The Eminence in Shadow",
       "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx130298-YMdcKHytpWNH.jpg",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_re_zero_starting_life_in_another_world_season_2_part_2",
-      "title": "Re:ZERO -Starting Life in Another World- Season 2 Part 2",
-      "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx119661-GDbUZxrZMz01.png",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_sword_art_online_alicization",
-      "title": "Sword Art Online: Alicization",
-      "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/nx100182-KctPmCJ2smHQ.jpg",
       "status": "verified",
       "hasArtwork": true
     },
@@ -802,44 +739,9 @@
       "hasArtwork": true
     },
     {
-      "id": "anivault_rt_that_time_i_got_reincarnated_as_a_slime_season_2_part_2",
-      "title": "That Time I Got Reincarnated as a Slime Season 2 Part 2",
-      "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx116742-jn0dW23ftehq.jpg",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_overlord_ii",
-      "title": "Overlord II",
-      "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx98437-5q0GWqHhNAgJ.jpg",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
       "id": "anivault_rt_fullmetal_alchemist",
       "title": "Fullmetal Alchemist",
       "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx121-zjmixZ428Mwv.png",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_mushoku_tensei_jobless_reincarnation_season_2",
-      "title": "Mushoku Tensei: Jobless Reincarnation Season 2",
-      "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx146065-IjirxRK26O03.png",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_overlord_iii",
-      "title": "Overlord III",
-      "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx101474-tGRyvSAWMjU9.jpg",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_the_rising_of_the_shield_hero_season_2",
-      "title": "The Rising of the Shield Hero Season 2",
-      "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx111321-dIr3dEKOIPer.png",
       "status": "verified",
       "hasArtwork": true
     },
@@ -872,20 +774,6 @@
       "hasArtwork": true
     },
     {
-      "id": "anivault_rt_sword_art_online_alicization_war_of_underworld",
-      "title": "Sword Art Online: Alicization - War of Underworld",
-      "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx108759-jcXbDf9BJTcb.jpg",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_mushoku_tensei_jobless_reincarnation_season_2_part_2",
-      "title": "Mushoku Tensei: Jobless Reincarnation Season 2 Part 2",
-      "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx166873-xO0BRPkmwFll.png",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
       "id": "anivault_rt_how_not_to_summon_a_demon_lord",
       "title": "How NOT to Summon a Demon Lord",
       "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx101004-rJLBIWGypbYK.png",
@@ -914,37 +802,9 @@
       "hasArtwork": true
     },
     {
-      "id": "anivault_rt_sword_art_online_alicization_war_of_underworld_part_2",
-      "title": "Sword Art Online: Alicization - War of Underworld Part 2",
-      "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx114308-8UBiS7U9buzu.jpg",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_re_zero_starting_life_in_another_world_season_3",
-      "title": "Re:ZERO -Starting Life in Another World- Season 3",
-      "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx163134-yieRFbvUOH9a.jpg",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_the_eminence_in_shadow_season_2",
-      "title": "The Eminence in Shadow Season 2",
-      "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx161964-JpkEbHI8ivaP.jpg",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
       "id": "anivault_rt_sword_art_online_the_movie_ordinal_scale",
       "title": "Sword Art Online the Movie: Ordinal Scale",
       "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/nx21403-k8DZhZ3x1BCO.png",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_that_time_i_got_reincarnated_as_a_slime_season_3",
-      "title": "That Time I Got Reincarnated as a Slime Season 3",
-      "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx156822-Jzo2ITWgm4kM.jpg",
       "status": "verified",
       "hasArtwork": true
     },
@@ -966,20 +826,6 @@
       "id": "anivault_rt_bofuri_i_don_t_want_to_get_hurt_so_i_ll_max_out_my_defense",
       "title": "BOFURI: I Don't Want to Get Hurt, so I'll Max Out My Defense.",
       "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx106479-JmPk1F5ubMtm.png",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_konosuba_god_s_blessing_on_this_wonderful_world_3",
-      "title": "KONOSUBA -God's blessing on this wonderful world! 3",
-      "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx136804-7FVftG67FPBc.jpg",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_overlord_iv",
-      "title": "Overlord IV",
-      "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx133844-E32FjKZ0XxEs.jpg",
       "status": "verified",
       "hasArtwork": true
     },
@@ -1026,13 +872,6 @@
       "hasArtwork": true
     },
     {
-      "id": "anivault_rt_tokyo_ghoul_a",
-      "title": "Tokyo Ghoul √A",
-      "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20850-glDf9EMKeCwe.jpg",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
       "id": "anivault_rt_made_in_abyss",
       "title": "Made in Abyss",
       "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx97986-TQ7dCgbS3y5s.jpg",
@@ -1057,20 +896,6 @@
       "id": "anivault_rt_monster",
       "title": "Monster",
       "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx19-gtMC64182sm4.jpg",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_the_promised_neverland_season_2",
-      "title": "The Promised Neverland Season 2",
-      "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx108725-ZKivuyr4Jtc9.jpg",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_tokyo_ghoul_re",
-      "title": "Tokyo Ghoul:re",
-      "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/nx100240-vJNaKd5HwPJ2.jpg",
       "status": "verified",
       "hasArtwork": true
     },
@@ -1106,13 +931,6 @@
       "id": "anivault_rt_chainsaw_man_the_movie_reze_arc",
       "title": "Chainsaw Man – The Movie: Reze Arc",
       "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx171627-ZN9D7P46yHnw.png",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_tokyo_ghoul_re_2",
-      "title": "Tokyo Ghoul:re 2",
-      "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx102351-yD3Ty9YZFMsf.jpg",
       "status": "verified",
       "hasArtwork": true
     },
@@ -1183,13 +1001,6 @@
       "id": "anivault_rt_mieruko_chan",
       "title": "Mieruko-chan",
       "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx131083-sKGHkpVDksaZ.png",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_made_in_abyss_the_golden_city_of_the_scorching_sun",
-      "title": "Made in Abyss: The Golden City of the Scorching Sun",
-      "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx114745-fBgTC12T7IAy.jpg",
       "status": "verified",
       "hasArtwork": true
     },
@@ -1293,22 +1104,8 @@
     },
     {
       "id": "anivault_rt_danganronpa_3_the_end_of_hope_s_peak_high_school_future_arc",
-      "title": "Danganronpa 3: The End of Hope’s Peak High School - Future Arc",
+      "title": "Danganronpa 3: The End of Hope’s Peak High School",
       "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21509-3Ih7TTU0Romm.jpg",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_when_they_cry_kai",
-      "title": "When They Cry Kai",
-      "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx1889-NqhWV3QwBXZl.jpg",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_danganronpa_3_the_end_of_hope_s_peak_high_school_despair_arc",
-      "title": "Danganronpa 3: The End of Hope’s Peak High School - Despair Arc",
-      "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21825-OjVRUQwM8bTz.png",
       "status": "verified",
       "hasArtwork": true
     },
@@ -1327,37 +1124,9 @@
       "hasArtwork": true
     },
     {
-      "id": "anivault_rt_haikyu_2nd_season",
-      "title": "HAIKYU!! 2nd Season",
-      "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20992-aHgNbcalVEqk.png",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_haikyu_3rd_season",
-      "title": "HAIKYU!! 3rd Season",
-      "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21698-RL71mr1YU5Io.png",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_haikyu_to_the_top",
-      "title": "HAIKYU!! TO THE TOP",
-      "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx106625-UR22wB2NuNVi.png",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
       "id": "anivault_rt_kuroko_s_basketball",
       "title": "Kuroko's Basketball",
       "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx11771-uvr44RAwRxPw.jpg",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_haikyu_to_the_top_part_2",
-      "title": "HAIKYU!! TO THE TOP Part 2",
-      "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx113538-tHVE8j5mOPLu.jpg",
       "status": "verified",
       "hasArtwork": true
     },
@@ -1384,22 +1153,8 @@
     },
     {
       "id": "anivault_rt_free_iwatobi_swim_club",
-      "title": "Free! -Iwatobi Swim Club",
+      "title": "Free! - Iwatobi Swim Club",
       "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx18507-RajfCYPpBfT3.png",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_kuroko_s_basketball_2",
-      "title": "Kuroko's Basketball 2",
-      "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx16894-iXt8GDs1L6dr.jpg",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_kuroko_s_basketball_3",
-      "title": "Kuroko's Basketball 3",
-      "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20725-DLu8VlkGFQKc.png",
       "status": "verified",
       "hasArtwork": true
     },
@@ -1418,13 +1173,6 @@
       "hasArtwork": true
     },
     {
-      "id": "anivault_rt_blue_lock_season_2",
-      "title": "BLUE LOCK Season 2",
-      "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx163146-BVZPgyzkqi82.png",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
       "id": "anivault_rt_baki_2",
       "title": "BAKI",
       "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx97888-tdZ1r7qN1DRs.jpg",
@@ -1435,13 +1183,6 @@
       "id": "anivault_rt_megalobox",
       "title": "Megalobox",
       "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b100298-A5VQUcw7ZC64.jpg",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_haikyu_land_vs_air",
-      "title": "HAIKYU!! LAND VS. AIR",
-      "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx111790-MrEJLRJxjPja.jpg",
       "status": "verified",
       "hasArtwork": true
     },
@@ -1468,7 +1209,7 @@
     },
     {
       "id": "anivault_rt_initial_d_1st_stage",
-      "title": "Initial D 1st Stage",
+      "title": "Initial D",
       "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b185-GvXiR8AKTmdn.jpg",
       "status": "verified",
       "hasArtwork": true
@@ -1530,13 +1271,6 @@
       "hasArtwork": true
     },
     {
-      "id": "anivault_rt_free_eternal_summer",
-      "title": "Free! -Eternal Summer",
-      "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20614-Dr962gTXZzMs.png",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
       "id": "anivault_rt_welcome_to_the_ballroom",
       "title": "Welcome to the Ballroom",
       "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx98005-kwoBQIEeXa8J.png",
@@ -1558,23 +1292,9 @@
       "hasArtwork": true
     },
     {
-      "id": "anivault_rt_steel_ball_run_jojo_s_bizarre_adventure_1st_stage",
-      "title": "STEEL BALL RUN JoJo's Bizarre Adventure 1st STAGE",
-      "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx190327-riJNCFL7w9y4.jpg",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
       "id": "anivault_rt_slam_dunk",
       "title": "Slam Dunk",
       "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx170-cmD8A0vZsp6g.jpg",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_grand_blue_dreaming_season_2",
-      "title": "Grand Blue Dreaming Season 2",
-      "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx182309-IfrR8sgHIczv.jpg",
       "status": "verified",
       "hasArtwork": true
     },
@@ -1593,13 +1313,6 @@
       "hasArtwork": true
     },
     {
-      "id": "anivault_rt_hajime_no_ippo_the_fighting_new_challenger",
-      "title": "Hajime no Ippo: The Fighting! New Challenger",
-      "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx5258-Qn6GBiSY57iT.jpg",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
       "id": "anivault_rt_tsurune",
       "title": "Tsurune",
       "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx100402-eDxanr9DiBuV.jpg",
@@ -1607,23 +1320,9 @@
       "hasArtwork": true
     },
     {
-      "id": "anivault_rt_initial_d_2nd_stage",
-      "title": "Initial D 2nd Stage",
-      "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b186-eygBSoYwLCYt.jpg",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
       "id": "anivault_rt_ahiru_no_sora",
       "title": "Ahiru no Sora",
       "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx101239-iGhniUbzVgpn.jpg",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hajime_no_ippo_the_fighting_rising",
-      "title": "Hajime No Ippo: The Fighting! - Rising",
-      "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx19647-cIy7ShTL6e9h.jpg",
       "status": "verified",
       "hasArtwork": true
     },
@@ -1638,20 +1337,6 @@
       "id": "anivault_rt_clean_freak_aoyama_kun",
       "title": "Clean Freak! Aoyama kun",
       "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/nx98205-C94S2Cqj4lL2.jpg",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_megalobox_2_nomad",
-      "title": "MEGALOBOX 2: NOMAD",
-      "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx113359-FnjG2VppJF9f.png",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_chihayafuru_2",
-      "title": "Chihayafuru 2",
-      "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx14397-k2mzAGlUthAb.jpg",
       "status": "verified",
       "hasArtwork": true
     },
@@ -1719,20 +1404,6 @@
       "hasArtwork": true
     },
     {
-      "id": "anivault_rt_mob_psycho_100_ii",
-      "title": "Mob Psycho 100 II",
-      "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx101338-rokVscjRYzdP.jpg",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_attack_on_titan_final_season_part_2",
-      "title": "Attack on Titan Final Season Part 2",
-      "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx131681-5ooUqvqNtee1.jpg",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
       "id": "anivault_rt_cyberpunk_edgerunners",
       "title": "Cyberpunk: Edgerunners",
       "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx120377-ayZPoxiWt4Li.jpg",
@@ -1748,7 +1419,7 @@
     },
     {
       "id": "anivault_rt_bakemonogatari",
-      "title": "Bakemonogatari",
+      "title": "Bakemonogatari (Monogatari Series)",
       "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx5081-9GocceQ5Z865.jpg",
       "status": "verified",
       "hasArtwork": true
@@ -1782,13 +1453,6 @@
       "hasArtwork": true
     },
     {
-      "id": "anivault_rt_kaguya_sama_love_is_war_ultra_romantic",
-      "title": "Kaguya-sama: Love is War -Ultra Romantic",
-      "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx125367-1yuq9NFcQuLI.png",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
       "id": "anivault_rt_terror_in_resonance",
       "title": "Terror in Resonance",
       "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20661-aCR7QgzDfOSI.png",
@@ -1799,20 +1463,6 @@
       "id": "anivault_rt_call_of_the_night",
       "title": "Call of the Night",
       "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx141391-M3ZgUKTPENUk.jpg",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_mob_psycho_100_iii",
-      "title": "Mob Psycho 100 III",
-      "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx140439-bPKmhe1wNxc9.jpg",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_classroom_of_the_elite_season_2",
-      "title": "Classroom of the Elite Season 2",
-      "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx145545-DGl3LVvFlnHi.png",
       "status": "verified",
       "hasArtwork": true
     },
@@ -1841,13 +1491,6 @@
       "id": "anivault_rt_serial_experiments_lain",
       "title": "Serial Experiments Lain",
       "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx339-xF2wp1NQuQ4r.png",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_attack_on_titan_final_season_the_final_chapters_special_1",
-      "title": "Attack on Titan Final Season THE FINAL CHAPTERS Special 1",
-      "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx146984-GXrLeT6vQqyP.jpg",
       "status": "verified",
       "hasArtwork": true
     },
@@ -1894,44 +1537,9 @@
       "hasArtwork": true
     },
     {
-      "id": "anivault_rt_classroom_of_the_elite_season_3",
-      "title": "Classroom of the Elite Season 3",
-      "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx146066-zzKl6P6OeEjy.jpg",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_fruits_basket_season_2",
-      "title": "Fruits Basket Season 2",
-      "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx111762-C8TNf5uRlVNQ.jpg",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_nisemonogatari",
-      "title": "Nisemonogatari",
-      "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx11597-x2vd4KSHcI1S.jpg",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
       "id": "anivault_rt_scum_s_wish",
       "title": "Scum's Wish",
       "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21701-j81oh6WCNlsQ.jpg",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_oshi_no_ko_season_2",
-      "title": "OSHI NO KO Season 2",
-      "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx166531-dAL5MsqDHUkj.jpg",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_fruits_basket_the_final_season",
-      "title": "Fruits Basket The Final Season",
-      "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx124194-TJlqMMR7BGn9.jpg",
       "status": "verified",
       "hasArtwork": true
     },
@@ -1950,20 +1558,6 @@
       "hasArtwork": true
     },
     {
-      "id": "anivault_rt_monogatari_series_second_season",
-      "title": "Monogatari Series Second Season",
-      "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx17074-xMhVAZsEDH66.png",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_attack_on_titan_final_season_the_final_chapters_special_2",
-      "title": "Attack on Titan Final Season THE FINAL CHAPTERS Special 2",
-      "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx162314-qIWdAAFtvY8J.jpg",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
       "id": "anivault_rt_tomodachi_game",
       "title": "Tomodachi Game",
       "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx141014-bTWr7TtS0wt9.jpg",
@@ -1974,34 +1568,6 @@
       "id": "anivault_rt_kizumonogatari_part_1_tekketsu",
       "title": "Kizumonogatari Part 1: Tekketsu",
       "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx9260-cl7sczYOpTeW.png",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_attack_on_titan_season_2",
-      "title": "Attack on Titan Season 2",
-      "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20958-HuFJyr54Mmir.jpg",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_attack_on_titan_season_3",
-      "title": "Attack on Titan Season 3",
-      "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx99147-AiPDD8cwlCfi.jpg",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_attack_on_titan_final_season",
-      "title": "Attack on Titan Final Season",
-      "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx110277-sKUNXAsWMNFw.jpg",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_attack_on_titan_season_3_part_2",
-      "title": "Attack on Titan Season 3 Part 2",
-      "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx104578-k61nx3LPjvgd.jpg",
       "status": "verified",
       "hasArtwork": true
     },
@@ -2023,13 +1589,6 @@
       "id": "anivault_rt_hell_s_paradise",
       "title": "Hell’s Paradise",
       "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx128893-Gc2t8b8M0mVu.jpg",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_demon_slayer_kimetsu_no_yaiba_mugen_train_arc",
-      "title": "Demon Slayer: Kimetsu no Yaiba Mugen Train Arc",
-      "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx129874-g6ZKXB94Hui1.jpg",
       "status": "verified",
       "hasArtwork": true
     },
@@ -2062,20 +1621,6 @@
       "hasArtwork": true
     },
     {
-      "id": "anivault_rt_jojo_s_bizarre_adventure_diamond_is_unbreakable",
-      "title": "JoJo's Bizarre Adventure: Diamond is Unbreakable",
-      "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21450-D7XFwEQjZ5GA.jpg",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_jojo_s_bizarre_adventure_golden_wind",
-      "title": "JoJo's Bizarre Adventure: Golden Wind",
-      "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx102883-S9KzdMJhDswJ.png",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
       "id": "anivault_rt_durarara",
       "title": "Durarara!!",
       "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx6746-3LTwM95Uqeoa.png",
@@ -2086,13 +1631,6 @@
       "id": "anivault_rt_black_butler",
       "title": "Black Butler",
       "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/nx4898-mW4gabZvwmLC.jpg",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_bungo_stray_dogs_2",
-      "title": "Bungo Stray Dogs 2",
-      "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21679-9MKdz1A7YLV7.jpg",
       "status": "verified",
       "hasArtwork": true
     },
@@ -2125,23 +1663,9 @@
       "hasArtwork": true
     },
     {
-      "id": "anivault_rt_the_apothecary_diaries_season_2",
-      "title": "The Apothecary Diaries Season 2",
-      "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx176301-TIGmldLffQGX.jpg",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
       "id": "anivault_rt_the_melancholy_of_haruhi_suzumiya",
       "title": "The Melancholy of Haruhi Suzumiya",
       "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx849-wQM3GqLvl62P.png",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_bungo_stray_dogs_3",
-      "title": "Bungo Stray Dogs 3",
-      "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx103223-bfdnnKWxE4YE.jpg",
       "status": "verified",
       "hasArtwork": true
     },
@@ -2191,13 +1715,6 @@
       "id": "anivault_rt_k",
       "title": "K",
       "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx14467-TQjwOvq4jkYS.png",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hell_s_paradise_season_2",
-      "title": "Hell’s Paradise Season 2",
-      "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx166613-uHB8q3D4qbon.jpg",
       "status": "verified",
       "hasArtwork": true
     },
@@ -2377,13 +1894,6 @@
       "hasArtwork": true
     },
     {
-      "id": "anivault_rt_my_teen_romantic_comedy_snafu_too",
-      "title": "My Teen Romantic Comedy SNAFU TOO!",
-      "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20698-YZIYor2zW3Ta.png",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
       "id": "anivault_rt_nisekoi",
       "title": "Nisekoi",
       "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx18897-G2Fx2ZACsXBU.jpg",
@@ -2489,13 +1999,6 @@
       "hasArtwork": true
     },
     {
-      "id": "anivault_rt_is_it_wrong_to_try_to_pick_up_girls_in_a_dungeon_ii",
-      "title": "Is It Wrong to Try to Pick Up Girls in a Dungeon? II",
-      "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx101167-Yasvj97UR9ue.png",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
       "id": "anivault_rt_masamune_kun_s_revenge",
       "title": "Masamune-kun's Revenge",
       "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/nx21857-haPDVD7DKDpg.jpg",
@@ -2506,27 +2009,6 @@
       "id": "anivault_rt_orange",
       "title": "Orange",
       "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21647-zMUXNhcVyRyv.png",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_dan_da_dan_season_2",
-      "title": "DAN DA DAN Season 2",
-      "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx185660-uB8RUMBGovGr.jpg",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_my_teen_romantic_comedy_snafu_climax",
-      "title": "My Teen Romantic Comedy SNAFU Climax!",
-      "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx108489-yGmYCE6dhFta.png",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_clannad_after_story",
-      "title": "Clannad: After Story",
-      "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx4181-zUKE7BZC62OF.png",
       "status": "verified",
       "hasArtwork": true
     },
@@ -2601,20 +2083,6 @@
       "hasArtwork": true
     },
     {
-      "id": "anivault_rt_jujutsu_kaisen_season_2",
-      "title": "JUJUTSU KAISEN Season 2",
-      "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx145064-hSNRJM03pvv1.jpg",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_demon_slayer_kimetsu_no_yaiba_entertainment_district_arc",
-      "title": "Demon Slayer: Kimetsu no Yaiba Entertainment District Arc",
-      "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx142329-kET1PIXJv2eW.jpg",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
       "id": "anivault_rt_fire_force",
       "title": "Fire Force",
       "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx105310-2PKUvoaA6fTn.jpg",
@@ -2623,15 +2091,8 @@
     },
     {
       "id": "anivault_rt_jojo_s_bizarre_adventure_tv",
-      "title": "JoJo's Bizarre Adventure (TV)",
+      "title": "JoJo's Bizarre Adventure",
       "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx14719-VT5dRzTBSZ0w.jpg",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_one_punch_man_season_2",
-      "title": "One-Punch Man Season 2",
-      "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx97668-nC8gQrXVxt7k.png",
       "status": "verified",
       "hasArtwork": true
     },
@@ -2664,20 +2125,6 @@
       "hasArtwork": true
     },
     {
-      "id": "anivault_rt_demon_slayer_kimetsu_no_yaiba_swordsmith_village_arc",
-      "title": "Demon Slayer: Kimetsu no Yaiba Swordsmith Village Arc",
-      "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx145139-rRimpHGWLhym.png",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_assassination_classroom_second_season",
-      "title": "Assassination Classroom Second Season",
-      "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21170-kbcfTTZGSaFt.jpg",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
       "id": "anivault_rt_the_disastrous_life_of_saiki_k",
       "title": "The Disastrous Life of Saiki K.",
       "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21804-As6tDLAvEvNY.jpg",
@@ -2688,48 +2135,6 @@
       "id": "anivault_rt_fate_zero",
       "title": "Fate/Zero",
       "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx10087-M4Hd9qrHGrXk.png",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_jojo_s_bizarre_adventure_stardust_crusaders",
-      "title": "JoJo's Bizarre Adventure: Stardust Crusaders",
-      "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20474-xuqem5GBlBtb.jpg",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_spy_x_family_cour_2",
-      "title": "SPY x FAMILY Cour 2",
-      "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx142838-26JrqcFU1ljB.jpg",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_noragami_aragoto",
-      "title": "Noragami Aragoto",
-      "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21128-eQgH3TG4nngo.jpg",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_fire_force_season_2",
-      "title": "Fire Force Season 2",
-      "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx114236-wfQOWF0Ii3h2.png",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_jojo_s_bizarre_adventure_stardust_crusaders_battle_in_egypt",
-      "title": "JoJo's Bizarre Adventure: Stardust Crusaders - Battle in Egypt",
-      "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20799-S1eyqBDlx51E.jpg",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_the_seven_deadly_sins_revival_of_the_commandments",
-      "title": "The Seven Deadly Sins: Revival of the Commandments",
-      "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx99539-caPX28RSsgRP.jpg",
       "status": "verified",
       "hasArtwork": true
     },
@@ -2748,23 +2153,9 @@
       "hasArtwork": true
     },
     {
-      "id": "anivault_rt_demon_slayer_kimetsu_no_yaiba_hashira_training_arc",
-      "title": "Demon Slayer: Kimetsu no Yaiba Hashira Training Arc",
-      "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx166240-PBV7zukIHW7V.png",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
       "id": "anivault_rt_fate_stay_night_unlimited_blade_works",
       "title": "Fate/stay night: Unlimited Blade Works",
       "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx19603-ycT0pyEgDVQu.jpg",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_jujutsu_kaisen_season_3_the_culling_game_part_1",
-      "title": "JUJUTSU KAISEN Season 3: The Culling Game Part 1",
-      "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx172463-LnXqHzt74SJL.jpg",
       "status": "verified",
       "hasArtwork": true
     },
@@ -2793,13 +2184,6 @@
       "id": "anivault_rt_nichijou_my_ordinary_life",
       "title": "Nichijou - My Ordinary Life",
       "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx10165-tw8Cz7K9tfVJ.png",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_spy_x_family_season_2",
-      "title": "SPY x FAMILY Season 2",
-      "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b158927-lfO85WVguYgc.png",
       "status": "verified",
       "hasArtwork": true
     },
@@ -2860,13 +2244,6 @@
       "hasArtwork": true
     },
     {
-      "id": "anivault_rt_my_dress_up_darling_season_2",
-      "title": "My Dress-Up Darling Season 2",
-      "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx154768-DHHvNd4MjV1p.jpg",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
       "id": "anivault_rt_kokoro_connect",
       "title": "Kokoro Connect",
       "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx11887-ypZTwcRqopiL.jpg",
@@ -2877,13 +2254,6 @@
       "id": "anivault_rt_haven_t_you_heard_i_m_sakamoto",
       "title": "Haven't You Heard? I'm Sakamoto",
       "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21595-vQ658r2Roe1g.jpg",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_the_disastrous_life_of_saiki_k_season_2",
-      "title": "The Disastrous Life of Saiki K. Season 2",
-      "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/nx98034-1eQ4F7SKxVas.jpg",
       "status": "verified",
       "hasArtwork": true
     },
@@ -2916,20 +2286,6 @@
       "hasArtwork": true
     },
     {
-      "id": "anivault_rt_my_hero_academia_season_3",
-      "title": "My Hero Academia Season 3",
-      "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx100166-jUCZYbzn2XLw.jpg",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_my_hero_academia_season_4",
-      "title": "My Hero Academia Season 4",
-      "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx104276-SnEowMvesWIE.png",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
       "id": "anivault_rt_code_geass_lelouch_of_the_rebellion",
       "title": "Code Geass: Lelouch of the Rebellion",
       "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx2904-Fet9Q33suC7G.jpg",
@@ -2944,23 +2300,9 @@
       "hasArtwork": true
     },
     {
-      "id": "anivault_rt_code_geass_lelouch_of_the_rebellion_r2",
-      "title": "Code Geass: Lelouch of the Rebellion R2",
-      "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx2904-Fet9Q33suC7G.jpg",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
       "id": "anivault_rt_hunter_x_hunter_2011",
       "title": "Hunter x Hunter (2011)",
       "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx11061-y5gsT1hoHuHw.png",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_solo_leveling_season_2_arise_from_the_shadow",
-      "title": "Solo Leveling Season 2 -Arise from the Shadow",
-      "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx176496-9BDMjAZGEbq4.png",
       "status": "verified",
       "hasArtwork": true
     },
@@ -3010,20 +2352,6 @@
       "id": "anivault_rt_gachiakuta",
       "title": "Gachiakuta",
       "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx178025-cWJKEsZynkil.jpg",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_my_hero_academia_season_5",
-      "title": "My Hero Academia Season 5",
-      "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx117193-E75BlZmDh1aB.jpg",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_dr_stone_stone_wars",
-      "title": "Dr. STONE: STONE WARS",
-      "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx113936-D4eYd4XwslVI.jpg",
       "status": "verified",
       "hasArtwork": true
     },
@@ -3080,20 +2408,6 @@
       "id": "anivault_rt_cells_at_work",
       "title": "Cells at Work!",
       "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx100977-nH1J2dR7GGAk.jpg",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_dr_stone_new_world",
-      "title": "Dr. STONE New World",
-      "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx131518-RU7RoUmGb2sP.jpg",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_86_eighty_six_part_2",
-      "title": "86 EIGHTY-SIX Part 2",
-      "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx131586-JhC0wcBi09EZ.jpg",
       "status": "verified",
       "hasArtwork": true
     },
@@ -3175,23 +2489,9 @@
       "hasArtwork": true
     },
     {
-      "id": "anivault_rt_kaiju_no_8_season_2",
-      "title": "Kaiju No. 8 Season 2",
-      "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx178754-Dgrub8xgC03M.jpg",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
       "id": "anivault_rt_a_certain_scientific_railgun",
       "title": "A Certain Scientific Railgun",
       "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx6213-QtrlDQnexApL.jpg",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_one_punch_man_season_3",
-      "title": "One-Punch Man Season 3",
-      "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx153800-8SpzdHOaZCoU.jpg",
       "status": "verified",
       "hasArtwork": true
     },
@@ -3203,30 +2503,9 @@
       "hasArtwork": true
     },
     {
-      "id": "anivault_rt_my_hero_academia_season_2",
-      "title": "My Hero Academia Season 2",
-      "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21856-gutauxhWAwn6.png",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
       "id": "anivault_rt_samurai_champloo",
       "title": "Samurai Champloo",
       "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx205-7tHVFu6dPBm9.png",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_vinland_saga_season_2",
-      "title": "Vinland Saga Season 2",
-      "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx136430-gsBsJjA7hGh9.jpg",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_my_hero_academia_season_6",
-      "title": "My Hero Academia Season 6",
-      "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx139630-3v4gxWtNZxLV.jpg",
       "status": "verified",
       "hasArtwork": true
     },
@@ -3959,55 +3238,6 @@
       "hasArtwork": true
     },
     {
-      "id": "mal_263",
-      "title": "Hajime no Ippo",
-      "artworkUrl": "https://media.kitsu.app/anime/poster_images/238/original.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_pokemon_season_1_indigo_league_hindi_episodes_watch_download_hd",
-      "title": "Pokemon",
-      "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b527-t6dBVJ5OVcXK.png",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_pokemon_adventures_in_the_orange_islands_season_2_hindi_tamil_telugu_episodes_download_hd",
-      "title": "Pokemon Adventures on the Orange Islands",
-      "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b527-t6dBVJ5OVcXK.png",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_pokemon_xy_mega_evolution_special_episodes_hindi_tamil_telugu_watch_download_hd",
-      "title": "Pokemon XY Mega Evolution Special Episodes",
-      "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b527-t6dBVJ5OVcXK.png",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_pokemon_pikachus_winter_vacation_special_hindi_episodes_download_hd",
-      "title": "Pokemon Pikachu’s Winter Vacation Special Hindi Episodes",
-      "artworkUrl": "https://media.kitsu.app/anime/poster_images/3833/original.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_pokemon_the_series_xyz_season_19_episodes_hindi_dubbed_download_hd",
-      "title": "Pokémon the Series: XYZ (",
-      "artworkUrl": "https://media.kitsu.app/anime/poster_images/11367/original.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_pokemon_horizons_the_series_season_26_episodes_hindi_dubbed_download_hd",
-      "title": "Pokémon Horizons: The Series (",
-      "artworkUrl": "https://static.tvmaze.com/uploads/images/original_untouched/630/1576092.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
       "id": "anivault_rt_hindi_pokemon_movie_1_mewtwo_ka_badla_hindi_download_360p_480p_720p_1080p_fhd",
       "title": "Pokemon Movie 1 Mewtwo Ka Badla",
       "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx528-HIz7955MvEnN.jpg",
@@ -4268,29 +3498,8 @@
     },
     {
       "id": "anivault_rt_hindi_beyblade_metal_fusion_season_1_hindi_episodes_watch_download_hd",
-      "title": "Beyblade Metal Fusion",
+      "title": "Beyblade: Metal Series",
       "artworkUrl": "https://media.kitsu.app/anime/poster_images/4365/original.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_beyblade_metal_masters_season_2_hindi_episodes_download_in_hd",
-      "title": "Beyblade Metal Masters",
-      "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b8410-fXa60HqVggen.png",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_beyblade_metal_fury_season_3_hindi_episodes_download_cn_dub",
-      "title": "Beyblade Metal Fury",
-      "artworkUrl": "https://media.kitsu.app/anime/poster_images/6152/original.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_beyblade_shogun_steel_season_4_hindi_episodes_download_hd",
-      "title": "Beyblade Shogun Steel",
-      "artworkUrl": "https://media.kitsu.app/anime/poster_images/6917/original.jpg",
       "status": "auto_fixed",
       "hasArtwork": true
     },
@@ -4302,58 +3511,9 @@
       "hasArtwork": true
     },
     {
-      "id": "anivault_rt_hindi_beyblade_burst_evolution_season_2_hindi_episodes_download_in_hd",
-      "title": "Beyblade Burst Evolution",
-      "artworkUrl": "https://static.tvmaze.com/uploads/images/original_untouched/253/634524.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_beyblade_burst_turbo_season_3_hindi_episodes_download_in_hd",
-      "title": "Beyblade Burst Turbo",
-      "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx101115-D0LrlWZtbOeX.png",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_beyblade_burst_rise_season_4_hindi_episodes_watch_download_hd",
-      "title": "Beyblade Burst Rise",
-      "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx108853-ebznx715AJ9x.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_beyblade_burst_surge_season_5_hindi_episodes_download_hd",
-      "title": "Beyblade Burst Surge",
-      "artworkUrl": "https://static.tvmaze.com/uploads/images/original_untouched/253/634524.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_beyblade_burst_quaddrive_season_6_hindi_episodes_download_hd",
-      "title": "Beyblade Burst QuadDrive",
-      "artworkUrl": "https://media.kitsu.app/anime/poster_images/44957/original.png",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
       "id": "anivault_rt_hindi_beywheelz_season_1_hindi_episodes_download_720p_hd",
-      "title": "BeyWheelz",
+      "title": "BeyWheelz & BeyWarriors",
       "artworkUrl": "https://media.kitsu.app/anime/poster_images/7985/original.png",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_beywarriors_beyraiderz_season_2_hindi_episodes_watch_download_hd",
-      "title": "BeyWarriors BeyRaiderz Hindi Episodes",
-      "artworkUrl": "https://static.tvmaze.com/uploads/images/original_untouched/181/453148.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_beywarriors_cyborg_season_3_hindi_episodes_download_hd",
-      "title": "BeyWarriors Cyborg",
-      "artworkUrl": "https://media.kitsu.app/anime/poster_images/12679/original.jpeg",
       "status": "auto_fixed",
       "hasArtwork": true
     },
@@ -4368,13 +3528,6 @@
       "id": "anivault_rt_hindi_beyblade_movie_gen_2_metal_fight_hindi_download_hd",
       "title": "Beyblade Movie Gen 2 - Metal Fight",
       "artworkUrl": "https://media.kitsu.app/anime/poster_images/4365/original.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_doraemon_season_1_hindi_episodes_download_in_hd",
-      "title": "Doraemon",
-      "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/501.jpg",
       "status": "auto_fixed",
       "hasArtwork": true
     },
@@ -4400,15 +3553,8 @@
       "hasArtwork": true
     },
     {
-      "id": "anivault_rt_hindi_mickey_mouse_clubhouse_season_1_hindi_episodes_download_hd",
-      "title": "Mickey Mouse Clubhouse",
-      "artworkUrl": "https://static.tvmaze.com/uploads/images/original_untouched/6/15020.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
       "id": "anivault_rt_hindi_perman_all_hindi_dubbed_episodes_download_watch_online",
-      "title": "Perman All Season Hindi Episodes",
+      "title": "Perman",
       "artworkUrl": "https://media.kitsu.app/anime/poster_images/6545/original.jpg",
       "status": "auto_fixed",
       "hasArtwork": true
@@ -4429,50 +3575,22 @@
     },
     {
       "id": "anivault_rt_hindi_kiteretsu_all_season_hindi_dubbed_episodes_download_hd",
-      "title": "Kiteretsu All Season Episodes Hindi – Tamil – Telugu",
+      "title": "Kiteretsu",
       "artworkUrl": "https://media.kitsu.app/anime/poster_images/4586/original.jpg",
       "status": "auto_fixed",
       "hasArtwork": true
     },
     {
       "id": "anivault_rt_hindi_the_gutsy_frog_dokonjou_gaeru_hindi_episodes_download_fhd",
-      "title": "The Gutsy Frog (Dokonjou Gaeru) Hindi Episodes",
+      "title": "The Gutsy Frog (Dokonjou Gaeru)",
       "artworkUrl": "https://media.kitsu.app/anime/poster_images/4204/original.jpg",
       "status": "auto_fixed",
       "hasArtwork": true
     },
     {
       "id": "anivault_rt_hindi_luckyman_1994_complete_all_episodes_hindi_dubbed_download_hd",
-      "title": "Luckyman (1994) Complete All Episodes",
+      "title": "Luckyman (1994)",
       "artworkUrl": "https://media.kitsu.app/anime/poster_images/3184/original.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_ghostforce_season_1_hindi_episodes_download_hd",
-      "title": "Ghostforce",
-      "artworkUrl": "https://static.tvmaze.com/uploads/images/original_untouched/368/920535.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_the_ghost_and_molly_mcgee_season_1_hindi_episodes_download",
-      "title": "The Ghost and Molly McGee",
-      "artworkUrl": "https://static.tvmaze.com/uploads/images/original_untouched/461/1154796.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_kim_possible_season_1_hindi_tamil_telugu_episodes_download_hd",
-      "title": "Kim Possible",
-      "artworkUrl": "https://static.tvmaze.com/uploads/images/original_untouched/158/396340.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_big_hero_6_the_series_season_1_hindi_episodes_download_0hd",
-      "title": "Big Hero 6 The Series",
-      "artworkUrl": "https://media.kitsu.app/anime/poster_images/41927/original.jpg",
       "status": "auto_fixed",
       "hasArtwork": true
     },
@@ -4505,13 +3623,6 @@
       "hasArtwork": true
     },
     {
-      "id": "anivault_rt_hindi_phineas_and_ferb_season_1_hindi_episodes_download_hd",
-      "title": "Phineas and Ferb",
-      "artworkUrl": "https://static.tvmaze.com/uploads/images/original_untouched/595/1489325.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
       "id": "anivault_rt_hindi_phineas_and_ferb_movie_across_the_2nd_dimension_hindi_tamil_telugu_download_fhd",
       "title": "Phineas And Ferb Movie Across the 2nd Dimension",
       "artworkUrl": "https://static.tvmaze.com/uploads/images/original_untouched/595/1489325.jpg",
@@ -4533,30 +3644,9 @@
       "hasArtwork": true
     },
     {
-      "id": "anivault_rt_hindi_tron_uprising_season_1_hindi_episodes_download_360p_480p_720p_hd_1080p_fhd",
-      "title": "Tron Uprising",
-      "artworkUrl": "https://media.kitsu.app/anime/poster_images/8573/original.png",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_the_little_mermaid_season_1_hindi_episodes_download_hd",
-      "title": "The Little Mermaid",
-      "artworkUrl": "https://static.tvmaze.com/uploads/images/original_untouched/33/84753.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
       "id": "anivault_rt_hindi_digimon_xros_wars_season_1_hindi_episodes_download_720p_hd_1080p_fhd",
       "title": "Digimon Xros Wars",
       "artworkUrl": "https://media.kitsu.app/anime/poster_images/5404/original.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_ryukendo_all_hindi_episodes_download",
-      "title": "Ryukendo All Hindi",
-      "artworkUrl": "https://media.kitsu.app/anime/poster_images/574/original.jpg",
       "status": "auto_fixed",
       "hasArtwork": true
     },
@@ -4582,72 +3672,9 @@
       "hasArtwork": true
     },
     {
-      "id": "anivault_rt_hindi_tangled_the_series_season_1_hindi_episodes_download_hd",
-      "title": "Tangled The Series",
-      "artworkUrl": "https://static.tvmaze.com/uploads/images/original_untouched/26/66924.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_star_vs_the_forces_of_evil_season_1_hindi_episodes_download_hd",
-      "title": "Star vs the Forces of Evil",
-      "artworkUrl": "https://media.kitsu.app/anime/poster_images/11133/original.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_milo_murphys_law_season_1_hindi_dubbed_episodes_download_hd",
-      "title": "Milo Murphy’s Law",
-      "artworkUrl": "https://static.tvmaze.com/uploads/images/original_untouched/73/184748.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_gravity_falls_season_1_hindi_episodes_download_hd",
-      "title": "Gravity Falls",
-      "artworkUrl": "https://media.kitsu.app/anime/47505/poster_image/3e02413a9f347d8a6ad6bc12c3bed162.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_timon_and_pumbaa_season_1_episodes_hindi_tamil_telugu_download_hd",
-      "title": "Timon and Pumbaa",
-      "artworkUrl": "https://static.tvmaze.com/uploads/images/original_untouched/396/992169.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_the_new_adventures_of_winnie_the_pooh_season_1_hindi_episodes_download_01",
-      "title": "The New Adventures of Winnie the Pooh",
-      "artworkUrl": "https://static.tvmaze.com/uploads/images/original_untouched/21/54248.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
       "id": "anivault_rt_hindi_planes_2013_movie_hindi_dubbed_download_hd",
       "title": "Planes (2013) Movie",
       "artworkUrl": "https://static.tvmaze.com/uploads/images/original_untouched/522/1307120.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_lilo_stitch_season_1_hindi_dubbed_episodes_download_hd",
-      "title": "Lilo & Stitch",
-      "artworkUrl": "https://media.kitsu.app/anime/poster_images/14133/original.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_ducktales_season_1_hindi_tamil_telugu_episodes_download",
-      "title": "DuckTales",
-      "artworkUrl": "https://static.tvmaze.com/uploads/images/original_untouched/62/156739.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_talespin_season_1_hindi_episodes_download_hd",
-      "title": "TaleSpin",
-      "artworkUrl": "https://static.tvmaze.com/uploads/images/original_untouched/30/75788.jpg",
       "status": "auto_fixed",
       "hasArtwork": true
     },
@@ -4666,13 +3693,6 @@
       "hasArtwork": true
     },
     {
-      "id": "anivault_rt_hindi_avengers_assemble_season_2_hindi_tamil_telugu_episodes_download_hd",
-      "title": "Avengers Assemble",
-      "artworkUrl": "https://media.kitsu.app/anime/45516/poster_image/09b59c3317e5607a0ee6557db6acf194.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
       "id": "anivault_rt_hindi_bakugan_battle_brawlers_season_1_hindi_episodes_download_in_hd",
       "title": "Bakugan Battle Brawlers",
       "artworkUrl": "https://media.kitsu.app/anime/poster_images/1952/original.jpg",
@@ -4680,36 +3700,8 @@
       "hasArtwork": true
     },
     {
-      "id": "anivault_rt_hindi_guardians_of_the_galaxy_season_1_hindi_tamil_telugu_episodes_download_hd",
-      "title": "Guardians of the Galaxy",
-      "artworkUrl": "https://static.tvmaze.com/uploads/images/original_untouched/154/385465.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_hulk_and_the_agent_of_smash_season_1_hindi_tamil_telugu_episodes_download_hd",
-      "title": "Hulk And The Agent Of SMASH",
-      "artworkUrl": "https://static.tvmaze.com/uploads/images/original_untouched/55/138244.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_iron_man_armored_adventures_season_1_hindi_episodes_download_in_hd",
-      "title": "Iron Man Armored Adventures",
-      "artworkUrl": "https://static.tvmaze.com/uploads/images/original_untouched/26/65040.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_iron_man_1994_all_hindi_episodes_download",
-      "title": "Iron Man (1994) All Hindi",
-      "artworkUrl": "https://media.kitsu.app/anime/poster_images/4762/original.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
       "id": "anivault_rt_hindi_iron_man_2010_hindi_episodes_download_hd",
-      "title": "Iron Man 2010 Hindi Episodes",
+      "title": "Marvel Anime: Iron Man (2010)",
       "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/6875.jpg",
       "status": "auto_fixed",
       "hasArtwork": true
@@ -4737,15 +3729,8 @@
     },
     {
       "id": "anivault_rt_hindi_marvel_disk_wars_the_avengers_hindi_episodes_download_hd",
-      "title": "Marvel Disk Wars The Avengers Hindi Episodes",
+      "title": "Marvel Disk Wars: The Avengers",
       "artworkUrl": "https://media.kitsu.app/anime/poster_images/8284/original.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_ultimate_spider_man_season_1_hindi_episodes_download_hd",
-      "title": "Ultimate Spider-Man",
-      "artworkUrl": "https://media.kitsu.app/anime/42218/poster_image/ed219202b87ac1827a6d7139e4651b28.jpg",
       "status": "auto_fixed",
       "hasArtwork": true
     },
@@ -4757,66 +3742,10 @@
       "hasArtwork": true
     },
     {
-      "id": "anivault_rt_hindi_marvels_spider_man_2017_season_2_hindi_dubbed_episodes_download_hd",
-      "title": "Marvel’s Spider-Man (2017)",
-      "artworkUrl": "https://static.tvmaze.com/uploads/images/original_untouched/245/614463.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_spider_man_the_animated_series_1994_all_season_hindi_episodes_download_hd",
-      "title": "Spider-Man The Animated Series (1994) All Season Hindi Episodes",
-      "artworkUrl": "https://media.kitsu.app/anime/42678/poster_image/60d413cdffd87c37bd15660bdedd5364.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_the_spectacular_spider_man_season_1_hindi_episodes_720p_hd",
-      "title": "The Spectacular Spider-Man",
-      "artworkUrl": "https://media.kitsu.app/anime/42218/poster_image/ed219202b87ac1827a6d7139e4651b28.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_star_wars_resistance_season_1_episodes_hindi_download_hd",
-      "title": "Star Wars Resistance",
-      "artworkUrl": "https://static.tvmaze.com/uploads/images/original_untouched/212/531887.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_star_wars_rebels_season_1_hindi_episodes_download_hd",
-      "title": "Star Wars Rebels",
-      "artworkUrl": "https://static.tvmaze.com/uploads/images/original_untouched/353/884619.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_the_avengers_earths_mightiest_heroes_season_1_hindi_episode_download_in_01",
-      "title": "The Avengers: Earth’s Mightiest Heroes",
-      "artworkUrl": "https://media.kitsu.app/anime/poster_images/8284/original.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
       "id": "anivault_rt_hindi_thor_tales_of_asgard_movie_hindi_watch_download_hd",
       "title": "Thor Tales of Asgard Movie Hindi Watch",
       "artworkUrl": "https://www.rareanimes.mov/wp-content/uploads/2022/06/Thor-Tales-of-Asgard-Movie-Hindi-Watch-Download-HD.jpg",
       "status": "unable_to_verify",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_avatar_the_last_airbender_season_1_hindi_tamil_telugu_malayalam_episodes_download",
-      "title": "Avatar The Last Airbender",
-      "artworkUrl": "https://media.kitsu.app/anime/poster_images/7926/original.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_avatar_the_legend_of_korra_season_1_hindi_episodes_download_hd",
-      "title": "Avatar The Legend of Korra",
-      "artworkUrl": "https://media.kitsu.app/anime/7927/poster_image/bb127b4947b541a180e487ec89bb241b.jpg",
-      "status": "auto_fixed",
       "hasArtwork": true
     },
     {
@@ -4856,7 +3785,7 @@
     },
     {
       "id": "anivault_rt_hindi_ghosts_at_school_hindi_episodes_download_ghost_at_school",
-      "title": "Ghosts at School Hindi",
+      "title": "Ghosts at School (Ghost Stories)",
       "artworkUrl": "https://www.rareanimes.mov/wp-content/uploads/2019/06/ghost-stories.jpg",
       "status": "unable_to_verify",
       "hasArtwork": true
@@ -4869,15 +3798,8 @@
       "hasArtwork": true
     },
     {
-      "id": "anivault_rt_hindi_jing_ju_cats_season_1_hindi_tamil_telugu_episodes_download_hd",
-      "title": "Jing Ju Cats",
-      "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx121199-p3YA6OPNRut6.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
       "id": "anivault_rt_hindi_mighty_cat_masked_niyander_hindi_tamil_episodes_download_hd",
-      "title": "Mighty Cat Masked Niyander Hindi – Tamil Episodes",
+      "title": "Mighty Cat Masked Niyander",
       "artworkUrl": "https://www.rareanimes.mov/wp-content/uploads/2021/01/Mighty-Cat-Masked-Niyander-Episodes-Hindi-Tamil-Eng-Multi-Audio-576p-WEB-DL.jpg",
       "status": "unable_to_verify",
       "hasArtwork": true
@@ -4907,216 +3829,6 @@
       "id": "anivault_rt_hindi_ninja_hattori_home_town_movie_hindi_download_hd_remastered",
       "title": "Ninja Hattori Home Town Movie",
       "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/4936.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_power_rangers_zeo_season_4_1996_hindi_download_hd",
-      "title": "Power Rangers Zeo",
-      "artworkUrl": "https://static.tvmaze.com/uploads/images/original_untouched/6/15520.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_power_rangers_turbo_season_5_1997_hindi_download_hd",
-      "title": "Power Rangers Turbo",
-      "artworkUrl": "https://static.tvmaze.com/uploads/images/original_untouched/6/15520.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_power_rangers_in_space_season_6_1998_hindi_download_hd",
-      "title": "Power Rangers In Space",
-      "artworkUrl": "https://static.tvmaze.com/uploads/images/original_untouched/6/15520.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_power_rangers_lost_galaxy_season_7_1999_hindi_download_hd",
-      "title": "Power Rangers Lost Galaxy",
-      "artworkUrl": "https://static.tvmaze.com/uploads/images/original_untouched/6/15520.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_power_rangers_lightspeed_rescue_season_8_2000_hindi_download_hd",
-      "title": "Power Rangers Lightspeed Rescue",
-      "artworkUrl": "https://static.tvmaze.com/uploads/images/original_untouched/6/15520.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_power_rangers_time_force_season_9_2001_hindi_download_hd",
-      "title": "Power Rangers Time Force",
-      "artworkUrl": "https://static.tvmaze.com/uploads/images/original_untouched/6/15520.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_power_rangers_wild_force_season_10_2002_hindi_download_hd",
-      "title": "Power Rangers Wild Force",
-      "artworkUrl": "https://static.tvmaze.com/uploads/images/original_untouched/6/15520.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_power_rangers_ninja_storm_season_11_2003_hindi_download_hd",
-      "title": "Power Rangers Ninja Storm",
-      "artworkUrl": "https://static.tvmaze.com/uploads/images/original_untouched/6/15520.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_power_rangers_dino_thunder_season_12_2004_hindi_download_hd",
-      "title": "Power Rangers Dino Thunder",
-      "artworkUrl": "https://media.kitsu.app/anime/poster_images/43055/original.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_power_rangers_mystic_force_season_14_2006_hindi_download_hd",
-      "title": "Power Rangers Mystic Force",
-      "artworkUrl": "https://static.tvmaze.com/uploads/images/original_untouched/6/15520.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_power_rangers_operation_overdrive_season_15_2007_hindi_download_hd",
-      "title": "Power Rangers Operation Overdrive",
-      "artworkUrl": "https://media.kitsu.app/anime/poster_images/7108/original.png",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_power_rangers_jungle_fury_season_16_2008_hindi_download_hd",
-      "title": "Power Rangers Jungle Fury",
-      "artworkUrl": "https://static.tvmaze.com/uploads/images/original_untouched/6/15520.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_power_rangers_rpm_season_17_2009_hindi_download_hd",
-      "title": "Power Rangers RPM",
-      "artworkUrl": "https://static.tvmaze.com/uploads/images/original_untouched/6/15520.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_power_rangers_samurai_season_18_2011_hindi_download_hd",
-      "title": "Power Rangers Samurai",
-      "artworkUrl": "https://static.tvmaze.com/uploads/images/original_untouched/6/15520.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_power_rangers_super_samurai_season_19_2012_hindi_download_hd",
-      "title": "Power Rangers Super Samurai",
-      "artworkUrl": "https://media.kitsu.app/anime/poster_images/43055/original.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_power_rangers_megaforce_season_20_2013_hindi_download_hd",
-      "title": "Power Rangers Megaforce",
-      "artworkUrl": "https://static.tvmaze.com/uploads/images/original_untouched/6/15520.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_power_rangers_super_megaforce_season_21_2014_hindi_download_hd",
-      "title": "Power Rangers Super Megaforce",
-      "artworkUrl": "https://media.kitsu.app/anime/poster_images/43055/original.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_power_rangers_dino_charge_season_22_2015_hindi_download_hd",
-      "title": "Power Rangers Dino Charge",
-      "artworkUrl": "https://media.kitsu.app/anime/poster_images/43055/original.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_power_rangers_dino_super_charge_season_23_2016_hindi_download_hd",
-      "title": "Power Rangers Dino Super Charge",
-      "artworkUrl": "https://media.kitsu.app/anime/poster_images/43055/original.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_power_rangers_ninja_steel_season_24_2017_hindi_download_hd",
-      "title": "Power Rangers Ninja Steel",
-      "artworkUrl": "https://static.tvmaze.com/uploads/images/original_untouched/6/15520.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_power_rangers_beast_morphers_1_season_26_2019_hindi_download_hd",
-      "title": "Power Rangers Beast Morphers",
-      "artworkUrl": "https://static.tvmaze.com/uploads/images/original_untouched/6/15520.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_power_rangers_dino_fury_1_season_28_2021_hindi_download_hd",
-      "title": "Power Rangers Dino Fury (1)",
-      "artworkUrl": "https://media.kitsu.app/anime/poster_images/43055/original.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_power_rangers_dino_fury_2_season_29_2022_hindi_download_hd",
-      "title": "Power Rangers Dino Fury (2)",
-      "artworkUrl": "https://media.kitsu.app/anime/poster_images/43055/original.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_power_rangers_cosmic_fury_season_30_2023_hindi_download_hd",
-      "title": "Power Rangers Cosmic Fury",
-      "artworkUrl": "https://static.tvmaze.com/uploads/images/original_untouched/6/15520.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_power_rangers_samurai_clash_of_the_red_rangers_2011_hindi_dubbed_download_hd",
-      "title": "Power Rangers Samurai Clash of the Red Rangers (2011)",
-      "artworkUrl": "https://static.tvmaze.com/uploads/images/original_untouched/6/15520.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_mighty_morphin_power_rangers_once_always_2023_hindi_dubbed_download_hd",
-      "title": "Mighty Morphin Power Rangers Once Always 2023",
-      "artworkUrl": "https://static.tvmaze.com/uploads/images/original_untouched/6/15520.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_power_rangers_2017_hindi_dubbed_download_hd",
-      "title": "Power Rangers (2017)",
-      "artworkUrl": "https://static.tvmaze.com/uploads/images/original_untouched/6/15520.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_teenage_mutant_ninja_turtles_season_1_hindi_dubbed_download_01",
-      "title": "Teenage Mutant Ninja Turtles",
-      "artworkUrl": "https://media.kitsu.app/anime/45681/poster_image/9c9ac675996293c325b1a4cfe4411c46.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_thomas_friends_all_hindi_episodes_download_fhd",
-      "title": "Thomas Friends All Hindi",
-      "artworkUrl": "https://static.tvmaze.com/uploads/images/original_untouched/24/61753.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_winx_club_season_1_hindi_tamil_telugu_episodes_download_hd",
-      "title": "Winx Club",
-      "artworkUrl": "https://media.kitsu.app/anime/poster_images/13546/original.jpg",
       "status": "auto_fixed",
       "hasArtwork": true
     },
@@ -5156,30 +3868,9 @@
       "hasArtwork": true
     },
     {
-      "id": "anivault_rt_hindi_zinba_all_hindi_episodes_download_hd",
-      "title": "Zinba All",
-      "artworkUrl": "https://media.kitsu.app/anime/poster_images/11735/original.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
       "id": "anivault_rt_hindi_zatch_bell_season_1_hindi_episodes_download_hd",
       "title": "Zatch Bell",
       "artworkUrl": "https://media.kitsu.app/anime/poster_images/225/original.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_adventure_time_season_1_hindi_episodes_download_hd",
-      "title": "Adventure Time",
-      "artworkUrl": "https://media.kitsu.app/anime/poster_images/13760/original.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_ben_10_destroy_all_aliens_hindi_dubbed_download_hd",
-      "title": "Ben 10 Destroy All Aliens",
-      "artworkUrl": "https://static.tvmaze.com/uploads/images/original_untouched/6/16288.jpg",
       "status": "auto_fixed",
       "hasArtwork": true
     },
@@ -5188,146 +3879,6 @@
       "title": "Ben 10 Secret of the Omnitrix Movie Hindi – Tamil – Telugu Watch",
       "artworkUrl": "https://www.rareanimes.mov/wp-content/uploads/2019/07/Ben-10-Secret-of-the-Omnitrix-Movie-Hindi-–-Tamil-–-Telugu-Download-FHD.png",
       "status": "unable_to_verify",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_ben_10_classic_season_1_hindi_episodes_download_hd",
-      "title": "Ben 10 Classic",
-      "artworkUrl": "https://static.tvmaze.com/uploads/images/original_untouched/6/16288.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_ben_10_alien_force_season_2_hindi_episodes_download_hd",
-      "title": "Ben 10 Alien Force",
-      "artworkUrl": "https://static.tvmaze.com/uploads/images/original_untouched/7/18463.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_ben_10_ultimate_alien_season_1_hindi_episodes_download_hd",
-      "title": "Ben 10 Ultimate Alien",
-      "artworkUrl": "https://static.tvmaze.com/uploads/images/original_untouched/7/18277.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_ben_10_reboot_2016_season_3_hindi_episodes_download_hd",
-      "title": "Ben 10 Reboot (2016)",
-      "artworkUrl": "https://static.tvmaze.com/uploads/images/original_untouched/6/16288.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_ben_10_omniverse_all_episodes_hindi_tamil_telugu_download_hd",
-      "title": "Ben 10 Omniverse",
-      "artworkUrl": "https://static.tvmaze.com/uploads/images/original_untouched/7/18280.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_baby_looney_tunes_season_1_hindi_episodes_download_hd",
-      "title": "Baby Looney Tunes",
-      "artworkUrl": "https://static.tvmaze.com/uploads/images/original_untouched/578/1447062.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_bob_the_builder_all_episodes_hindi_dubbed_download_hd",
-      "title": "Bob the Builder All Episodes",
-      "artworkUrl": "https://media.kitsu.app/anime/poster_images/2626/original.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_courage_the_cowardly_dog_season_2_hindi_episodes_download_hd",
-      "title": "Courage The Cowardly Dog",
-      "artworkUrl": "https://static.tvmaze.com/uploads/images/original_untouched/609/1523655.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_dc_super_hero_girls_season_1_hindi_episodes_watch_download_hd",
-      "title": "Dc Super Hero Girls",
-      "artworkUrl": "https://static.tvmaze.com/uploads/images/original_untouched/378/947185.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_dexters_laboratory_season_1_hindi_episodes_download",
-      "title": "Dexters Laboratory",
-      "artworkUrl": "https://static.tvmaze.com/uploads/images/original_untouched/11/27891.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_generator_rex_season_1_hindi_episodes_download_hd",
-      "title": "Generator Rex",
-      "artworkUrl": "https://media.kitsu.app/anime/poster_images/912/original.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_horrid_henry_season_3_episodes_hindi_download_hd",
-      "title": "Horrid Henry",
-      "artworkUrl": "https://static.tvmaze.com/uploads/images/original_untouched/44/110411.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_johnny_test_2021_season_1_hindi_episodes_download_hd",
-      "title": "Johnny Test 2021",
-      "artworkUrl": "https://static.tvmaze.com/uploads/images/original_untouched/42/106275.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_jackie_chan_adventures_season_1_hindi_episodes_hd",
-      "title": "Jackie Chan Adventures",
-      "artworkUrl": "https://media.kitsu.app/anime/poster_images/7959/original.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_oggy_and_the_cockroaches_season_3_hindi_episodes_download_hd",
-      "title": "Oggy and the Cockroaches",
-      "artworkUrl": "https://www.rareanimes.mov/wp-content/uploads/2020/12/Oggy-and-the-Cockroaches-Season-3-Hindi-Episodes-Download-HD-1.jpg",
-      "status": "unable_to_verify",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_redakai_conquer_the_kairu_season_1_hindi_episodes_download_hd",
-      "title": "Redakai Conquer the Kairu",
-      "artworkUrl": "https://static.tvmaze.com/uploads/images/original_untouched/41/102931.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_samurai_jack_all_season_hindi_dubbed_episodes_download_hd",
-      "title": "Samurai Jack All Season",
-      "artworkUrl": "https://media.kitsu.app/anime/poster_images/7939/original.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_supa_strikas_season_2_hindi_episodes_download_hd",
-      "title": "Supa Strikas",
-      "artworkUrl": "https://static.tvmaze.com/uploads/images/original_untouched/563/1408509.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_teen_titans_go_season_1_hindi_episodes_download_hd",
-      "title": "Teen Titans Go",
-      "artworkUrl": "https://media.kitsu.app/anime/poster_images/43693/original.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_the_powerpuff_girls_season_1_6_hindi_tamil_telugu_episodes_download_hd",
-      "title": "The Powerpuff Girls",
-      "artworkUrl": "https://media.kitsu.app/anime/poster_images/12773/original.jpg",
-      "status": "auto_fixed",
       "hasArtwork": true
     },
     {
@@ -5422,13 +3973,6 @@
       "hasArtwork": true
     },
     {
-      "id": "anivault_rt_hindi_official_android_app",
-      "title": "The Wait is Over: Official",
-      "artworkUrl": "https://www.rareanimes.mov/wp-content/uploads/2026/09/The-Wait-is-Over-Official-RareAnimes-Android-App-Is-Finally-Here.jpg",
-      "status": "unable_to_verify",
-      "hasArtwork": true
-    },
-    {
       "id": "anivault_rt_hindi_hana_kimi_season_2_hindi_dubbed_episodes_download_hd",
       "title": "Hana-Kimi",
       "artworkUrl": "https://media.kitsu.app/anime/48870/poster_image/4bc2c1926e6141cc79826bd752da8677.jpg",
@@ -5478,23 +4022,9 @@
       "hasArtwork": true
     },
     {
-      "id": "anivault_rt_hindi_jojos_bizarre_adventure_season_3_diamond_is_unbreakable_hindi_dubbed_episodes_download_hd",
-      "title": "JoJo's Bizarre Adventure",
-      "artworkUrl": "https://media.kitsu.app/anime/7158/poster_image/86c1aa856e619b058a9dd008f83440ce.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
       "id": "anivault_rt_hindi_captain_tsubasa_junior_youth_arc_season_2_hindi_dubbed_episodes_download_hd",
       "title": "Captain Tsubasa Junior Youth Arc",
       "artworkUrl": "https://media.kitsu.app/anime/47229/poster_image/cab3e0f874416536412537ccea780f68.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_looney_tunes_cartoons_season_1_hindi_dubbed_episodes_download_hd",
-      "title": "Looney Tunes Cartoons",
-      "artworkUrl": "https://media.kitsu.app/anime/50716/poster_image/e7d72986beabc6c132449b55b7ef49e2.jpg",
       "status": "auto_fixed",
       "hasArtwork": true
     },
@@ -5517,13 +4047,6 @@
       "title": "Sparks of Tomorrow",
       "artworkUrl": "https://media.kitsu.app/anime/41923/poster_image/b25efd42861f970abd68b6e7bb6d37d4.jpg",
       "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_jungle_tales_with_mowgli_season_1_hindi_dubbed_episodes_download_hd",
-      "title": "Jungle Tales with Mowgli",
-      "artworkUrl": "https://www.rareanimes.mov/wp-content/uploads/2026/09/Jungle-Tales-with-Mowgli-Season-1-Hindi-Dubbed-Episodes-Download-HD-470x264.jpeg",
-      "status": "unable_to_verify",
       "hasArtwork": true
     },
     {
@@ -5569,30 +4092,9 @@
       "hasArtwork": true
     },
     {
-      "id": "anivault_rt_hindi_boboiboy_galaxy_sori_season_2_hindi_episodes_download_hd",
-      "title": "BoBoiBoy Galaxy Sori",
-      "artworkUrl": "https://www.rareanimes.mov/wp-content/uploads/2026/08/BoBoiBoy-Galaxy-Sori-Season-1-Hindi-Episodes-Download-HD-1-470x264.png",
-      "status": "unable_to_verify",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_kaiju_no_8_narumis_week_at_work_shorts_episodes_download_hd",
-      "title": "Kaiju No. 8 - Narumi's Week at Work Shorts Episodes",
-      "artworkUrl": "https://media.kitsu.app/anime/50452/poster_image/f357621c52e8564c34bf959d3450c497.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
       "id": "anivault_rt_hindi_black_torch_season_1_hindi_dubbed_episodes_download_hd",
       "title": "BLACK TORCH",
       "artworkUrl": "https://media.kitsu.app/anime/49656/poster_image/ad4e46f13c338de866428f26e4e35618.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_bandbudh_aur_budbak_complete_all_episodes_hindi_dubbed_download_hd",
-      "title": "Bandbudh Aur Budbak Complete All Episodes",
-      "artworkUrl": "https://static.tvmaze.com/uploads/images/original_untouched/514/1285124.jpg",
       "status": "auto_fixed",
       "hasArtwork": true
     },
@@ -5618,13 +4120,6 @@
       "hasArtwork": true
     },
     {
-      "id": "anivault_rt_hindi_pokemon_horizons_the_search_for_laqua_season_27_episodes_hindi_dubbed_download_hd",
-      "title": "Pokémon Horizons The Search for Laqua (",
-      "artworkUrl": "https://media.kitsu.app/anime/486/poster_image/2d1f1d138ff38d81057bb864b936e9bf.png",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
       "id": "anivault_rt_hindi_legend_of_exorcism_season_1_hindi_dubbed_episodes_download_hd",
       "title": "Legend of Exorcism",
       "artworkUrl": "https://static.tvmaze.com/uploads/images/original_untouched/264/660383.jpg",
@@ -5636,13 +4131,6 @@
       "title": "The Frontier Lord Begins with Zero Subjects",
       "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx196218-UsdTTCrwpDIN.jpg",
       "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_bandbudh_aur_budbak_2_0_season_1_hindi_dubbed_episodes_download_hd",
-      "title": "Bandbudh aur Budbak 2.0",
-      "artworkUrl": "https://www.rareanimes.mov/wp-content/uploads/2026/09/Bandbudh-aur-Budbak-2.0-Season-1-Hindi-Dubbed-Episodes-Download-HD-470x264.png",
-      "status": "unable_to_verify",
       "hasArtwork": true
     },
     {
@@ -5663,13 +4151,6 @@
       "id": "anivault_rt_hindi_the_exiled_heavy_knight_knows_how_to_game_the_system_season_1_hindi_dubbed_episodes_download_hd",
       "title": "The Exiled Heavy Knight Knows How to Game the System",
       "artworkUrl": "https://static.tvmaze.com/uploads/images/original_untouched/630/1577273.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_stranger_things_tales_from_85_season_2_hindi_dubbed_episodes_download_hd",
-      "title": "Stranger Things Tales from '85",
-      "artworkUrl": "https://static.tvmaze.com/uploads/images/original_untouched/622/1556313.jpg",
       "status": "auto_fixed",
       "hasArtwork": true
     },
@@ -5751,27 +4232,6 @@
       "hasArtwork": true
     },
     {
-      "id": "anivault_rt_hindi_tom_and_jerry_all_season_episodes_hindi_download_hd",
-      "title": "Tom and Jerry All Season Episodes",
-      "artworkUrl": "https://static.tvmaze.com/uploads/images/original_untouched/483/1209807.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_tom_jerry_kids_show_hindi_episodes_download_hd",
-      "title": "Tom & Jerry Kids Show Hindi Episodes",
-      "artworkUrl": "https://media.kitsu.app/anime/46893/poster_image/166e77654bc5a8ca41ba4598057b3f50.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_tom_and_jerry_tales_season_2_hindi_episodes_download_hd",
-      "title": "Tom and Jerry Tales",
-      "artworkUrl": "https://static.tvmaze.com/uploads/images/original_untouched/27/67824.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
       "id": "anivault_rt_hindi_that_time_i_got_reincarnated_as_a_slime_the_movie_tears_of_the_azure_sea_2026_movie_hindi_dubbed_download_hd",
       "title": "That Time I Got Reincarnated as a Slime the Movie: Tears of the Azure Sea (2026) Movie Hindi Subbed",
       "artworkUrl": "https://media.kitsu.app/anime/49236/poster_image/9d7d4eda4e1a8bd4a0c67f9359947be2.jpg",
@@ -5780,7 +4240,7 @@
     },
     {
       "id": "anivault_rt_hindi_obocchama_kun_complete_all_episodes_hindi_dubbed_download_hd",
-      "title": "Obocchama kun All Episodes In",
+      "title": "Obocchama-kun",
       "artworkUrl": "https://media.kitsu.app/anime/poster_images/9501/original.jpg",
       "status": "auto_fixed",
       "hasArtwork": true
@@ -5807,20 +4267,6 @@
       "hasArtwork": true
     },
     {
-      "id": "anivault_rt_hindi_the_tom_and_jerry_show_season_4_hindi_episodes_download_hd",
-      "title": "The Tom and Jerry Show",
-      "artworkUrl": "https://static.tvmaze.com/uploads/images/original_untouched/20/51195.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_tom_and_jerry_special_shorts_english_episodes_download_hd",
-      "title": "Tom and Jerry Special Shorts English Episodes",
-      "artworkUrl": "https://static.tvmaze.com/uploads/images/original_untouched/297/743761.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
       "id": "anivault_rt_hindi_rio_2_2014_movie_hindi_dubbed_download_hd",
       "title": "Rio 2 (2014) Movie",
       "artworkUrl": "https://www.rareanimes.mov/wp-content/uploads/2026/07/Rio-2-2014-Movie-Hindi-Dubbed-Download-HD-300x200.webp",
@@ -5831,13 +4277,6 @@
       "id": "anivault_rt_hindi_luca_2021_movie_hindi_dubbed_download_hd",
       "title": "Luca (2021) Movie",
       "artworkUrl": "https://media.kitsu.app/anime/50518/poster_image/c413eeecb52263051b81748e248470ff.png",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_scooby_doo_where_are_you_now_2021_hindi_download_hd",
-      "title": "Scooby-Doo, Where Are You Now! (2021)",
-      "artworkUrl": "https://static.tvmaze.com/uploads/images/original_untouched/231/578285.jpg",
       "status": "auto_fixed",
       "hasArtwork": true
     },
@@ -5863,24 +4302,10 @@
       "hasArtwork": true
     },
     {
-      "id": "anivault_rt_hindi_kamen_rider_gavv_season_1_hindi_dubbed_episodes_download_hd",
-      "title": "Kamen Rider Gavv",
-      "artworkUrl": "https://media.kitsu.app/anime/poster_images/3354/original.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
       "id": "anivault_rt_hindi_snoopy_presents_theres_no_place_like_home_snoopy_2026_movie_hindi_dubbed_download_hd",
       "title": "Snoopy Presents: There's No Place Like Home, Snoopy (2026) Movie",
       "artworkUrl": "https://www.rareanimes.mov/wp-content/uploads/2026/09/Snoopy-Presents-Theres-No-Place-Like-Home-Snoopy-2026-Movie-Hindi-Dubbed-Download-HD-470x264.webp",
       "status": "unable_to_verify",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_haikyu_ova_episodes_hindi_dubbed_download_hd",
-      "title": "Haikyu!! OVA Episodes",
-      "artworkUrl": "https://media.kitsu.app/anime/poster_images/8133/original.jpg",
-      "status": "auto_fixed",
       "hasArtwork": true
     },
     {
@@ -5929,13 +4354,6 @@
       "id": "anivault_rt_hindi_from_overshadowed_to_overpowered_second_reincarnation_of_a_talentless_sage_season_1_hindi_dubbed_episodes_download_hd",
       "title": "From Overshadowed to Overpowered: Second Reincarnation of a Talentless Sage",
       "artworkUrl": "https://static.tvmaze.com/uploads/images/original_untouched/627/1569344.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_sabrina_the_animated_series_season_1_hindi_dubbed_download_hd",
-      "title": "Sabrina: The Animated Series",
-      "artworkUrl": "https://static.tvmaze.com/uploads/images/original_untouched/63/157931.jpg",
       "status": "auto_fixed",
       "hasArtwork": true
     },
