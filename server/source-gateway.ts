@@ -563,7 +563,9 @@ export class SourceGateway {
     if (metric) metric.currentConcurrencyLimit = limit.currentConcurrent;
   }
 
-  // --- Rate Limiting: Dual-Token Bucket (Per-Second & Per-Minute) ---
+  // --- Rate Limiting: Dual-Token Bucket (Per-Second & Per-Minute) with Atomic Slot Pacing ---
+  private nextTokenSlotAt: Map<string, number> = new Map();
+
   private async acquireRateLimitToken(
     sourceId: string,
     onStatusChange?: (status: 'waiting' | 'working' | 'retrying', step: string, waitReason?: WorkerWaitReason) => void
@@ -583,19 +585,32 @@ export class SourceGateway {
     if (limit.rateLimitPerSecond <= 0) return true;
 
     const bucket = this.refillBucketNow(key)!;
+    const now = Date.now();
+    const minIntervalMs = Math.max(80, Math.ceil(1000 / Math.max(1, limit.rateLimitPerSecond)));
+    const nextSlot = this.nextTokenSlotAt.get(key) || 0;
 
-    if (bucket.tokens >= 1 && bucket.minuteTokens >= 1) {
+    if (bucket.tokens >= 1 && bucket.minuteTokens >= 1 && now >= nextSlot) {
       bucket.tokens -= 1;
       bucket.minuteTokens -= 1;
+      this.nextTokenSlotAt.set(key, now + Math.floor(minIntervalMs * 0.5));
       return true;
     }
 
-    // Must wait for token refill — only set status to 'waiting' with 'Rate limited' when actually waiting!
+    // Reserve next atomic slot before waiting so concurrent workers never wake up in the same millisecond
     const waitSec = Math.max(
       (1 - bucket.tokens) / Math.max(1, limit.rateLimitPerSecond),
       (1 - bucket.minuteTokens) / Math.max(1, limit.rateLimitPerMinute / 60)
     );
-    const waitMs = Math.min(Math.max(25, Math.ceil(waitSec * 1000)), 850);
+    const tokenWaitMs = Math.max(25, Math.ceil(waitSec * 1000));
+    const reservedAt = Math.max(now + tokenWaitMs, nextSlot + minIntervalMs);
+    const waitMs = reservedAt - now;
+
+    // If rate-limit backlog exceeds 1.8s, fail fast so worker switches to fallback/cached verification instead of piling up
+    if (waitMs > 1800) {
+      return false;
+    }
+
+    this.nextTokenSlotAt.set(key, reservedAt);
 
     const metric = this.metrics.get(key);
     if (metric) metric.rateLimitEvents++;
@@ -613,6 +628,9 @@ export class SourceGateway {
     }
 
     const refilled = this.refillBucketNow(key)!;
+    if (refilled.tokens < 0.25 || refilled.minuteTokens < 0.25) {
+      return false;
+    }
     refilled.tokens = Math.max(0, refilled.tokens - 1);
     refilled.minuteTokens = Math.max(0, refilled.minuteTokens - 1);
     return true;

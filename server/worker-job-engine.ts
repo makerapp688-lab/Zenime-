@@ -640,12 +640,28 @@ export class ReusableWorkerJobEngine {
         this.finishedAt = saved.finishedAt || null;
         this.lastLog = saved.lastLog || 'Job state reloaded.';
 
+        const validAnimeIds = new Set(
+          globalDataStore
+            .getAllCatalogueAnime()
+            .map((a: any) => a?.id)
+            .filter(Boolean)
+        );
+        const isTaskAnimeValid = (tId: string) => {
+          if (validAnimeIds.size === 0) return true;
+          const parsed = parseTaskId(tId);
+          return validAnimeIds.has(parsed.animeId || tId);
+        };
+
         if (Array.isArray(saved.completedTaskIds)) {
-          this.completedTaskSet = new Set(saved.completedTaskIds.filter((id: string) => !id.includes('bench-anime-')));
+          this.completedTaskSet = new Set(
+            saved.completedTaskIds.filter((id: string) => !id.includes('bench-anime-') && isTaskAnimeValid(id))
+          );
         }
         if (Array.isArray(saved.failedTaskIds)) {
           this.failedTaskSet = new Set(
-            saved.failedTaskIds.filter((id: string) => !id.includes('bench-anime-') && !this.completedTaskSet.has(id))
+            saved.failedTaskIds.filter(
+              (id: string) => !id.includes('bench-anime-') && !this.completedTaskSet.has(id) && isTaskAnimeValid(id)
+            )
           );
         }
         if (Array.isArray(saved.historicalFailedEntries)) {
@@ -714,10 +730,16 @@ export class ReusableWorkerJobEngine {
           });
         }
 
-        if (Array.isArray(saved.remainingTasks) && saved.remainingTasks.length > 0 && (saved.status === 'running' || saved.status === 'paused')) {
-          // Re-enqueue unfinished tasks safely
+        if (Array.isArray(saved.remainingTasks) && saved.remainingTasks.length > 0 && saved.status === 'paused') {
+          // Only re-enqueue remaining tasks when explicitly paused by Owner (never auto-run stale tasks on cold boot)
           for (const rt of saved.remainingTasks) {
-            if (!rt || !rt.taskId || this.completedTaskSet.has(rt.taskId) || this.failedTaskSet.has(rt.taskId)) {
+            if (
+              !rt ||
+              !rt.taskId ||
+              this.completedTaskSet.has(rt.taskId) ||
+              this.failedTaskSet.has(rt.taskId) ||
+              !isTaskAnimeValid(rt.taskId)
+            ) {
               continue;
             }
             const prio: TaskPriority = ['HIGH', 'MEDIUM', 'NORMAL', 'LOW'].includes(rt.priority) ? rt.priority : 'MEDIUM';
@@ -769,8 +791,8 @@ export class ReusableWorkerJobEngine {
               : `Job complete! Processed ${procLoaded}/${totalLoaded} tasks (${compLoaded} completed, 0 failed).`;
           }
         } else {
-          this.status = saved.status === 'paused' ? 'paused' : 'running';
-          this.shouldPause = this.status === 'paused';
+          this.status = 'paused';
+          this.shouldPause = true;
           this.shouldStop = false;
         }
 
@@ -781,6 +803,9 @@ export class ReusableWorkerJobEngine {
         this.liveAnimeRegistry.clear();
 
         this.initWorkers();
+        if (saved.status === 'running' || (Array.isArray(saved.remainingTasks) && saved.remainingTasks.length > 0 && remainingCount === 0)) {
+          this.saveJobState(true);
+        }
       }
     } catch (err: any) {
       console.error('[WorkerCoordinator] Error loading state:', err.message);
@@ -2344,7 +2369,6 @@ export class ReusableWorkerJobEngine {
             }
           } catch (err: any) {
             clearInterval(heartbeatTimer);
-            console.error(`[Worker #${workerId}] Error processing task ${task.title}:`, err.message);
             if (this.activeRunId === myRunId) {
               this.completeTask(workerId, task.taskId, { error: err.message }, true);
             }
@@ -2354,7 +2378,7 @@ export class ReusableWorkerJobEngine {
           await new Promise(r => setTimeout(r, 2));
         } catch (workerErr: any) {
           // REQUIREMENT 10: WORKER FAILURE ISOLATION
-          console.error(`[WorkerCoordinator] Worker #${workerId} loop error:`, workerErr.message);
+          console.warn(`[WorkerCoordinator] Worker #${workerId} loop warning:`, workerErr.message);
           await new Promise(r => setTimeout(r, 200));
         }
       }

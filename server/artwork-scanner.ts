@@ -149,17 +149,6 @@ class ArtworkScannerEngine {
     globalWorkerJobEngine.registerSystemProcessor('ARTWORK_VERIFICATION', async (task, workerId) => {
       return await this.processTaskByWorker(task, workerId, 'Owner');
     });
-    // Automatically resume unfinished tasks if server restarted during an active running job
-    const snap = globalWorkerJobEngine.getSnapshot();
-    if (snap.status === 'running' && (snap.queuedCount + snap.claimedCount) > 0) {
-      setTimeout(() => {
-        globalWorkerJobEngine.runJobPool(async (task, workerId) => {
-          return await this.processTaskByWorker(task, workerId, 'System Recovery');
-        }).catch(err => {
-          console.error('[ArtworkScanner] Error in auto-resumed worker pool:', err.message);
-        });
-      }, 200);
-    }
   }
 
   private reloadCatalogueMap() {

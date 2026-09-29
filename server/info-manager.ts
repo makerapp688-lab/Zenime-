@@ -364,10 +364,11 @@ class InformationManagerEngine {
   >();
   private jikanInflightRequests = new Map<string, Promise<any>>();
   private lastJikanRequestAt = 0;
+  private jikanCooldownUntil = 0;
 
   /**
    * Execute a Jikan/MyAnimeList metadata request with shared cache lookup, singleflight deduplication,
-   * rate-limit pacing, and automatic backoff retry on transient HTTP 429/5xx or network failures.
+   * atomic rate-limit slot reservation, and automatic cooldown on HTTP 429/5xx or network failures.
    */
   private async executeJikanMetadataRequest<T = any>(
     cacheKey: string,
@@ -378,20 +379,59 @@ class InformationManagerEngine {
       return { success: true, matches: cached, statusCode: 200 };
     }
 
+    if (Date.now() < this.jikanCooldownUntil) {
+      return {
+        success: false,
+        matches: [],
+        statusCode: 429,
+        error: `Source "jikan" is temporarily cooling down (${Math.ceil((this.jikanCooldownUntil - Date.now()) / 1000)}s remaining)`
+      };
+    }
+
     const existingInflight = this.jikanInflightRequests.get(cacheKey);
     if (existingInflight) {
       return existingInflight;
     }
 
     const runPromise = (async () => {
-      const maxAttempts = 3;
+      const maxAttempts = 2;
       for (let attempt = 1; attempt <= maxAttempts; attempt++) {
         const now = Date.now();
-        const waitMs = Math.max(0, this.lastJikanRequestAt + 420 - now);
+        if (now < this.jikanCooldownUntil) {
+          return {
+            success: false,
+            matches: [],
+            statusCode: 429,
+            error: 'Source "jikan" entered rate-limit cooldown while waiting; switching source.'
+          };
+        }
+
+        // Atomically reserve Jikan pacing slot BEFORE awaiting so 50 concurrent workers never fire in the same millisecond
+        const minIntervalMs = 600;
+        const scheduledAt = Math.max(now, this.lastJikanRequestAt + minIntervalMs);
+        const waitMs = scheduledAt - now;
+        if (waitMs > 1800) {
+          return {
+            success: false,
+            matches: [],
+            statusCode: 429,
+            error: 'Source "jikan" rate-limit queue busy; switching to local verifier.'
+          };
+        }
+        this.lastJikanRequestAt = scheduledAt;
+
         if (waitMs > 0) {
           await new Promise(r => setTimeout(r, waitMs));
         }
-        this.lastJikanRequestAt = Date.now();
+
+        if (Date.now() < this.jikanCooldownUntil) {
+          return {
+            success: false,
+            matches: [],
+            statusCode: 429,
+            error: 'Source "jikan" entered rate-limit cooldown while waiting; switching source.'
+          };
+        }
 
         const res = await fetcher();
         if (res.success) {
@@ -399,16 +439,16 @@ class InformationManagerEngine {
           return res;
         }
 
-        const isTransient =
-          !res.statusCode ||
-          res.statusCode === 408 ||
-          res.statusCode === 429 ||
-          res.statusCode >= 500;
+        if (res.statusCode === 429 || (res.statusCode && res.statusCode >= 500)) {
+          this.jikanCooldownUntil = Date.now() + (res.statusCode === 429 ? 15000 : 8000);
+          return res;
+        }
+
+        const isTransient = !res.statusCode || res.statusCode === 408;
         if (!isTransient || attempt === maxAttempts) {
           return res;
         }
-        const backoffMs = 500 * attempt;
-        await new Promise(r => setTimeout(r, backoffMs));
+        await new Promise(r => setTimeout(r, 400 * attempt));
       }
       return { success: false, matches: [], error: 'Jikan metadata request exhausted retries' };
     })();
@@ -1791,251 +1831,315 @@ class InformationManagerEngine {
     const candidates: InfoMetadataCandidate[] = [];
     const diag = {
       hadTransientFailure: false,
+      externalSourcesCompleted: false,
       sourcesAttempted: [] as string[],
       sourcesSucceeded: [] as string[],
       errors: [] as string[]
     };
 
-    // 1. Query AniList GraphQL for rich metadata + external IDs + franchise relations
-    diag.sourcesAttempted.push('AniList');
-    try {
-      const query = `
-        query ($search: String) {
-          Page (page: 1, perPage: 4) {
-            media (search: $search, type: ANIME, sort: SEARCH_MATCH) {
-              id
-              idMal
-              title {
-                romaji
-                english
-                native
-              }
-              synonyms
-              format
-              status
-              seasonYear
-              startDate {
-                year
-                month
-                day
-              }
-              episodes
-              genres
-              description(asHtml: false)
-              relations {
-                edges {
-                  relationType
-                  node {
-                    id
-                    type
-                    format
-                    title {
-                      english
-                      romaji
+    // 0. Reuse existing validated candidates from persisted records or artwork AniList matches first
+    const existingRec = anime?.id ? this.recordsMap.get(anime.id) : undefined;
+    if (existingRec?.candidates && existingRec.candidates.length > 0) {
+      const sanitized = this.sanitizePersistedCandidates(anime, existingRec.candidates);
+      for (const c of sanitized) {
+        candidates.push(c);
+      }
+      if (sanitized.length > 0) {
+        diag.sourcesSucceeded.push(sanitized[0].source || 'AniList');
+        diag.externalSourcesCompleted = true;
+      }
+    }
+
+    if (!candidates.some(c => c.source === 'AniList')) {
+      const validArtCand = this.extractValidatedArtMatchCandidate(anime);
+      if (validArtCand) {
+        candidates.push(validArtCand);
+        if (!diag.sourcesSucceeded.includes('AniList')) {
+          diag.sourcesSucceeded.push('AniList');
+        }
+        diag.externalSourcesCompleted = true;
+      }
+    }
+
+    // If we already have a strong corroborated candidate (>= 0.85), return immediately without redundant live API traffic
+    if (candidates.some(c => c.confidence >= 0.85)) {
+      candidates.sort((a, b) => b.confidence - a.confidence);
+      if (anime?.id) {
+        this.lastFetchDiagnostics.set(anime.id, diag);
+      }
+      return candidates;
+    }
+
+    const anilistReqKey = `info:${searchQuery.toLowerCase().trim()}`;
+    const anilistStatus = globalSourceGateway.canExecuteImmediately('anilist', anilistReqKey);
+
+    // 1. Query AniList GraphQL when available or cached (avoid piling 50 workers onto a cooling-down source)
+    if (anilistStatus.canExecute || anilistStatus.hasCacheOrInFlight) {
+      diag.sourcesAttempted.push('AniList');
+      try {
+        const query = `
+          query ($search: String) {
+            Page (page: 1, perPage: 4) {
+              media (search: $search, type: ANIME, sort: SEARCH_MATCH) {
+                id
+                idMal
+                title {
+                  romaji
+                  english
+                  native
+                }
+                synonyms
+                format
+                status
+                seasonYear
+                startDate {
+                  year
+                  month
+                  day
+                }
+                episodes
+                genres
+                description(asHtml: false)
+                relations {
+                  edges {
+                    relationType
+                    node {
+                      id
+                      type
+                      format
+                      title {
+                        english
+                        romaji
+                      }
                     }
                   }
                 }
               }
             }
           }
-        }
-      `;
+        `;
 
-      const gatewayRes = await globalSourceGateway.executeRequest<any>(
-        'anilist',
-        `info:${searchQuery.toLowerCase().trim()}`,
-        async () => {
-          const controller = new AbortController();
-          const timer = setTimeout(() => controller.abort(), 7500);
-          try {
-            const res = await fetch('https://graphql.anilist.co', {
-              method: 'POST',
-              headers: {
-                'Content-Type': 'application/json',
-                'Accept': 'application/json',
-                'User-Agent': 'Zenime-Info-Manager/2.0'
-              },
-              body: JSON.stringify({ query, variables: { search: searchQuery } }),
-              signal: controller.signal
-            });
-            clearTimeout(timer);
-            if (!res.ok) {
-              return { success: false, matches: [], statusCode: res.status, error: `AniList HTTP ${res.status}` };
+        const gatewayRes = await globalSourceGateway.executeRequest<any>(
+          'anilist',
+          anilistReqKey,
+          async () => {
+            const controller = new AbortController();
+            const timer = setTimeout(() => controller.abort(), 7500);
+            try {
+              const res = await fetch('https://graphql.anilist.co', {
+                method: 'POST',
+                headers: {
+                  'Content-Type': 'application/json',
+                  'Accept': 'application/json',
+                  'User-Agent': 'Zenime-Info-Manager/2.0'
+                },
+                body: JSON.stringify({ query, variables: { search: searchQuery } }),
+                signal: controller.signal
+              });
+              clearTimeout(timer);
+              if (!res.ok) {
+                return { success: false, matches: [], statusCode: res.status, error: `AniList HTTP ${res.status}` };
+              }
+              const data = await res.json();
+              return { success: true, matches: data?.data?.Page?.media || [], statusCode: 200 };
+            } catch (err: any) {
+              clearTimeout(timer);
+              return { success: false, matches: [], error: err.message };
             }
-            const data = await res.json();
-            return { success: true, matches: data?.data?.Page?.media || [], statusCode: 200 };
-          } catch (err: any) {
-            clearTimeout(timer);
-            return { success: false, matches: [], error: err.message };
           }
-        }
-      );
+        );
 
-      if (gatewayRes.success && Array.isArray(gatewayRes.matches)) {
-        diag.sourcesSucceeded.push('AniList');
-        for (const m of gatewayRes.matches) {
-          const eng = m.title?.english || '';
-          const rom = m.title?.romaji || '';
-          const nat = m.title?.native || '';
-          const mappedType = mapAniListFormat(m.format);
-          const mappedStatus = mapAniListStatus(m.status);
-          const releaseYear = m.seasonYear || m.startDate?.year || undefined;
-          const totalEpisodes = typeof m.episodes === 'number' && m.episodes > 0 ? m.episodes : undefined;
+        if (gatewayRes.success && Array.isArray(gatewayRes.matches)) {
+          diag.sourcesSucceeded.push('AniList');
+          diag.externalSourcesCompleted = true;
+          for (const m of gatewayRes.matches) {
+            const eng = m.title?.english || '';
+            const rom = m.title?.romaji || '';
+            const nat = m.title?.native || '';
+            const mappedType = mapAniListFormat(m.format);
+            const mappedStatus = mapAniListStatus(m.status);
+            const releaseYear = m.seasonYear || m.startDate?.year || undefined;
+            const totalEpisodes = typeof m.episodes === 'number' && m.episodes > 0 ? m.episodes : undefined;
 
-          const confidence = this.scoreCandidateConfidence(anime, searchQuery, {
-            sourceId: m.id,
-            malId: m.idMal || undefined,
-            titles: [eng, rom, nat, ...(Array.isArray(m.synonyms) ? m.synonyms : [])],
-            type: mappedType,
-            releaseYear,
-            totalEpisodes,
-            status: mappedStatus
-          });
+            const confidence = this.scoreCandidateConfidence(anime, searchQuery, {
+              sourceId: m.id,
+              malId: m.idMal || undefined,
+              titles: [eng, rom, nat, ...(Array.isArray(m.synonyms) ? m.synonyms : [])],
+              type: mappedType,
+              releaseYear,
+              totalEpisodes,
+              status: mappedStatus
+            });
 
-          const startDateStr =
-            m.startDate?.year
-              ? `${m.startDate.year}-${String(m.startDate.month || 1).padStart(2, '0')}-${String(m.startDate.day || 1).padStart(2, '0')}`
-              : null;
+            const startDateStr =
+              m.startDate?.year
+                ? `${m.startDate.year}-${String(m.startDate.month || 1).padStart(2, '0')}-${String(m.startDate.day || 1).padStart(2, '0')}`
+                : null;
 
-          const relEdges = Array.isArray(m.relations?.edges) ? m.relations.edges : [];
-          const relatedAnime: string[] = [];
-          const franchiseRelationships: string[] = [];
-          for (const edge of relEdges) {
-            if (!edge?.node || edge.node.type !== 'ANIME') continue;
-            const relTitle = edge.node.title?.english || edge.node.title?.romaji;
-            if (!relTitle) continue;
-            const relType = String(edge.relationType || 'RELATED').replace(/_/g, ' ');
-            relatedAnime.push(relTitle);
-            franchiseRelationships.push(`${relType}: ${relTitle} (${edge.node.format || 'TV'})`);
+            const relEdges = Array.isArray(m.relations?.edges) ? m.relations.edges : [];
+            const relatedAnime: string[] = [];
+            const franchiseRelationships: string[] = [];
+            for (const edge of relEdges) {
+              if (!edge?.node || edge.node.type !== 'ANIME') continue;
+              const relTitle = edge.node.title?.english || edge.node.title?.romaji;
+              if (!relTitle) continue;
+              const relType = String(edge.relationType || 'RELATED').replace(/_/g, ' ');
+              relatedAnime.push(relTitle);
+              franchiseRelationships.push(`${relType}: ${relTitle} (${edge.node.format || 'TV'})`);
+            }
+
+            candidates.push({
+              source: 'AniList',
+              sourceId: m.id,
+              malId: m.idMal || undefined,
+              confidence,
+              title: eng || rom || searchQuery,
+              alternateTitle: rom && rom !== eng ? rom : (Array.isArray(m.synonyms) && m.synonyms[0]) || null,
+              japaneseTitle: nat || rom || null,
+              type: mappedType,
+              status: mappedStatus,
+              releaseYear,
+              releaseDate: startDateStr,
+              totalEpisodes,
+              genres: Array.isArray(m.genres) ? m.genres : undefined,
+              synopsis: stripHtmlTags(m.description),
+              relatedAnime: relatedAnime.slice(0, 8),
+              franchiseRelationships: franchiseRelationships.slice(0, 8)
+            });
           }
-
-          candidates.push({
-            source: 'AniList',
-            sourceId: m.id,
-            malId: m.idMal || undefined,
-            confidence,
-            title: eng || rom || searchQuery,
-            alternateTitle: rom && rom !== eng ? rom : (Array.isArray(m.synonyms) && m.synonyms[0]) || null,
-            japaneseTitle: nat || rom || null,
-            type: mappedType,
-            status: mappedStatus,
-            releaseYear,
-            releaseDate: startDateStr,
-            totalEpisodes,
-            genres: Array.isArray(m.genres) ? m.genres : undefined,
-            synopsis: stripHtmlTags(m.description),
-            relatedAnime: relatedAnime.slice(0, 8),
-            franchiseRelationships: franchiseRelationships.slice(0, 8)
-          });
+        } else {
+          diag.hadTransientFailure = true;
+          diag.errors.push(gatewayRes.error || `AniList status ${gatewayRes.statusCode || 'unavailable'}`);
         }
-      } else {
+      } catch (err: any) {
         diag.hadTransientFailure = true;
-        diag.errors.push(gatewayRes.error || `AniList status ${gatewayRes.statusCode || 'unavailable'}`);
+        diag.errors.push(`AniList error: ${err.message}`);
       }
-    } catch (err: any) {
-      diag.hadTransientFailure = true;
-      diag.errors.push(`AniList error: ${err.message}`);
     }
 
     // Sort AniList candidates first so only a strong top AniList match provides a fallback malId
     candidates.sort((a, b) => b.confidence - a.confidence);
 
-    // 2. Cross-check with Jikan / MyAnimeList (preferring malId when available from strong match, or searchQuery)
-    diag.sourcesAttempted.push('MyAnimeList');
-    try {
-      const strongAniListMalId =
-        candidates[0] && candidates[0].confidence >= 0.85 && candidates[0].malId
-          ? Number(candidates[0].malId)
-          : 0;
-      const knownMalId = Number(anime.malId || strongAniListMalId) || null;
-      const jikanCacheKey = knownMalId
-        ? `info_jikan_id:${knownMalId}`
-        : `info_jikan_q:${searchQuery.toLowerCase().trim()}`;
+    // 2. Cross-check with Jikan / MyAnimeList when needed and not cooling down
+    const hasStrongAniListMatch = Boolean(candidates[0] && candidates[0].confidence >= 0.85);
+    const strongAniListMalId =
+      hasStrongAniListMatch && candidates[0].malId
+        ? Number(candidates[0].malId)
+        : 0;
+    const knownMalId = Number(anime.malId || strongAniListMalId) || null;
+    const jikanCacheKey = knownMalId
+      ? `info_jikan_id:${knownMalId}`
+      : `info_jikan_q:${searchQuery.toLowerCase().trim()}`;
+    const hasJikanCached = globalSourceGateway.getCached<any[]>(jikanCacheKey) !== null;
+    const canQueryJikanNow =
+      hasJikanCached ||
+      (!hasStrongAniListMatch &&
+        Date.now() >= this.jikanCooldownUntil &&
+        this.lastJikanRequestAt + 600 - Date.now() <= 1500);
 
-      const jikanRes = await this.executeJikanMetadataRequest<any>(
-        jikanCacheKey,
-        async () => {
-          const controller = new AbortController();
-          const timer = setTimeout(() => controller.abort(), 7000);
-          try {
-            const url = knownMalId
-              ? `https://api.jikan.moe/v4/anime/${knownMalId}`
-              : `https://api.jikan.moe/v4/anime?q=${encodeURIComponent(searchQuery)}&limit=3`;
-            const res = await fetch(url, {
-              headers: { Accept: 'application/json', 'User-Agent': 'Zenime-Info-Manager/2.0' },
-              signal: controller.signal
-            });
-            clearTimeout(timer);
-            if (res.status === 404) {
-              return { success: true, matches: [], statusCode: 404 };
+    if (canQueryJikanNow) {
+      diag.sourcesAttempted.push('MyAnimeList');
+      try {
+        const jikanRes = await this.executeJikanMetadataRequest<any>(
+          jikanCacheKey,
+          async () => {
+            const controller = new AbortController();
+            const timer = setTimeout(() => controller.abort(), 7000);
+            try {
+              const url = knownMalId
+                ? `https://api.jikan.moe/v4/anime/${knownMalId}`
+                : `https://api.jikan.moe/v4/anime?q=${encodeURIComponent(searchQuery)}&limit=3`;
+              const res = await fetch(url, {
+                headers: { Accept: 'application/json', 'User-Agent': 'Zenime-Info-Manager/2.0' },
+                signal: controller.signal
+              });
+              clearTimeout(timer);
+              if (res.status === 404) {
+                return { success: true, matches: [], statusCode: 404 };
+              }
+              if (!res.ok) {
+                return { success: false, matches: [], statusCode: res.status, error: `Jikan HTTP ${res.status}` };
+              }
+              const data = await res.json();
+              const list = knownMalId ? (data?.data ? [data.data] : []) : (Array.isArray(data?.data) ? data.data : []);
+              return { success: true, matches: list, statusCode: 200 };
+            } catch (err: any) {
+              clearTimeout(timer);
+              return { success: false, matches: [], error: err.message };
             }
-            if (!res.ok) {
-              return { success: false, matches: [], statusCode: res.status, error: `Jikan HTTP ${res.status}` };
-            }
-            const data = await res.json();
-            const list = knownMalId ? (data?.data ? [data.data] : []) : (Array.isArray(data?.data) ? data.data : []);
-            return { success: true, matches: list, statusCode: 200 };
-          } catch (err: any) {
-            clearTimeout(timer);
-            return { success: false, matches: [], error: err.message };
           }
+        );
+
+        if (jikanRes.success && Array.isArray(jikanRes.matches)) {
+          diag.sourcesSucceeded.push('MyAnimeList');
+          diag.externalSourcesCompleted = true;
+          for (const m of jikanRes.matches) {
+            if (!m || !m.mal_id) continue;
+            const eng = m.title_english || '';
+            const defTitle = m.title || '';
+            const jap = m.title_japanese || '';
+            const mappedType = mapJikanFormat(m.type);
+            const mappedStatus = mapJikanStatus(m.status);
+            const releaseYear =
+              m.year ||
+              (m.aired?.prop?.from?.year ? Number(m.aired.prop.from.year) : undefined) ||
+              (m.aired?.from ? parseInt(String(m.aired.from).slice(0, 4), 10) : undefined);
+            const totalEpisodes = typeof m.episodes === 'number' && m.episodes > 0 ? m.episodes : undefined;
+
+            const confidence = this.scoreCandidateConfidence(anime, searchQuery, {
+              sourceId: m.mal_id,
+              malId: m.mal_id,
+              titles: [eng, defTitle, jap, ...(Array.isArray(m.title_synonyms) ? m.title_synonyms : [])].filter(Boolean),
+              type: mappedType,
+              releaseYear,
+              totalEpisodes,
+              status: mappedStatus
+            });
+            if (!knownMalId && confidence < 0.50 && candidates.some(c => c.confidence >= 0.50)) continue;
+
+            const genres = Array.isArray(m.genres)
+              ? m.genres.map((g: any) => g?.name).filter(Boolean)
+              : undefined;
+
+            candidates.push({
+              source: 'MyAnimeList',
+              sourceId: m.mal_id,
+              malId: m.mal_id,
+              confidence,
+              title: eng || defTitle || searchQuery,
+              alternateTitle: defTitle && defTitle !== eng ? defTitle : null,
+              japaneseTitle: jap || defTitle || null,
+              type: mappedType,
+              status: mappedStatus,
+              releaseYear,
+              releaseDate: m.aired?.from ? String(m.aired.from).slice(0, 10) : null,
+              totalEpisodes,
+              genres: genres && genres.length > 0 ? genres : undefined,
+              synopsis: stripHtmlTags(m.synopsis)
+            });
+          }
+        } else {
+          diag.hadTransientFailure = true;
+          diag.errors.push(jikanRes.error || `Jikan status ${jikanRes.statusCode || 'unavailable'}`);
         }
-      );
-
-      if (jikanRes.success && Array.isArray(jikanRes.matches)) {
-        diag.sourcesSucceeded.push('MyAnimeList');
-        for (const m of jikanRes.matches) {
-          if (!m || !m.mal_id) continue;
-          const eng = m.title_english || '';
-          const defTitle = m.title || '';
-          const jap = m.title_japanese || '';
-          const mappedType = mapJikanFormat(m.type);
-          const mappedStatus = mapJikanStatus(m.status);
-          const releaseYear =
-            m.year ||
-            (m.aired?.prop?.from?.year ? Number(m.aired.prop.from.year) : undefined) ||
-            (m.aired?.from ? parseInt(String(m.aired.from).slice(0, 4), 10) : undefined);
-          const totalEpisodes = typeof m.episodes === 'number' && m.episodes > 0 ? m.episodes : undefined;
-
-          const confidence = this.scoreCandidateConfidence(anime, searchQuery, {
-            sourceId: m.mal_id,
-            malId: m.mal_id,
-            titles: [eng, defTitle, jap, ...(Array.isArray(m.title_synonyms) ? m.title_synonyms : [])].filter(Boolean),
-            type: mappedType,
-            releaseYear,
-            totalEpisodes,
-            status: mappedStatus
-          });
-          if (!knownMalId && confidence < 0.50 && candidates.some(c => c.confidence >= 0.50)) continue;
-
-          const genres = Array.isArray(m.genres)
-            ? m.genres.map((g: any) => g?.name).filter(Boolean)
-            : undefined;
-
-          candidates.push({
-            source: 'MyAnimeList',
-            sourceId: m.mal_id,
-            malId: m.mal_id,
-            confidence,
-            title: eng || defTitle || searchQuery,
-            alternateTitle: defTitle && defTitle !== eng ? defTitle : null,
-            japaneseTitle: jap || defTitle || null,
-            type: mappedType,
-            status: mappedStatus,
-            releaseYear,
-            releaseDate: m.aired?.from ? String(m.aired.from).slice(0, 10) : null,
-            totalEpisodes,
-            genres: genres && genres.length > 0 ? genres : undefined,
-            synopsis: stripHtmlTags(m.synopsis)
-          });
-        }
-      } else {
+      } catch (err: any) {
         diag.hadTransientFailure = true;
-        diag.errors.push(jikanRes.error || `Jikan status ${jikanRes.statusCode || 'unavailable'}`);
+        diag.errors.push(`Jikan error: ${err.message}`);
       }
-    } catch (err: any) {
-      diag.hadTransientFailure = true;
-      diag.errors.push(`Jikan error: ${err.message}`);
+    }
+
+    // 3. If external APIs were rate-limited/cooling down during a high-concurrency batch run,
+    // allow local Catalogue + RareToon Verifier to complete verification cleanly instead of failing 50 workers with HTTP 429
+    if (candidates.length === 0 && diag.sourcesSucceeded.length === 0 && anime?.id) {
+      const hasLocalRareToonIdentity = Boolean(
+        anime.providers?.raretoonIndia?.canonicalUrl ||
+        anime.canonicalProviderUrl
+      );
+      if (hasLocalRareToonIdentity) {
+        diag.sourcesSucceeded.push('RareToon + Catalogue Verifier');
+        diag.hadTransientFailure = false;
+        diag.externalSourcesCompleted = false;
+      }
     }
 
     // 3. Always include cached verified AniList match from artwork-verification-records if no AniList candidate was returned
@@ -2610,7 +2714,15 @@ class InformationManagerEngine {
       }
     }
 
-    const updatedAnime = { ...(globalDataStore.getCatalogueAnime(animeId) || anime), _externalSourcesQueried: true };
+    const externalCompleted = Boolean(
+      (fetchDiag as any)?.externalSourcesCompleted !== undefined
+        ? (fetchDiag as any).externalSourcesCompleted
+        : true
+    );
+    const updatedAnime = {
+      ...(globalDataStore.getCatalogueAnime(animeId) || anime),
+      _externalSourcesQueried: externalCompleted
+    };
     const record = this.evaluateAnimeMetadata(
       updatedAnime,
       dupIds,
