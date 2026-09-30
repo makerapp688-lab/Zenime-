@@ -35,7 +35,7 @@ import {
   getAccountAvatar
 } from '../utils/userStorage.ts';
 import { UserAccount } from '../types.ts';
-import { AnivexLogo } from './AnivexLogo.tsx';
+import { ZenimeLogo } from './ZenimeLogo.tsx';
 import { OtpInput } from './OtpInput.tsx';
 
 interface AuthModalProps {
@@ -456,7 +456,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({
         {/* Header */}
         <div className="flex items-center justify-between px-5 py-4 bg-slate-950/90 dark:bg-slate-950/90 light:bg-slate-100 border-b border-slate-800 dark:border-slate-800 light:border-slate-200">
           <div className="flex items-center gap-2.5">
-            <AnivexLogo size="xs" />
+            <ZenimeLogo size="xs" />
             <h2 className="text-base font-bold text-white dark:text-white light:text-slate-900">
               Zenime Account &amp; Profile
             </h2>

@@ -32,7 +32,7 @@ import { BugReportModal } from './components/BugReportModal.tsx';
 import { AnimeArtwork } from './components/AnimeArtwork.tsx';
 import { CompareAnimeView } from './components/CompareAnimeView.tsx';
 import { AccountView } from './components/AccountView.tsx';
-import { AnivexLogo } from './components/AnivexLogo.tsx';
+import { ZenimeLogo } from './components/ZenimeLogo.tsx';
 import { GuestRestrictionModal } from './components/GuestRestrictionModal.tsx';
 import { CinematicStartupScreen } from './components/CinematicStartupScreen.tsx';
 import {
@@ -511,13 +511,7 @@ export function App() {
     if (isSyncing) return;
     setIsSyncing(true);
     try {
-      const token = localStorage.getItem('anivault_owner_session_token') || '';
-      const headers: Record<string, string> = {};
-      if (token) {
-        headers['Authorization'] = `Bearer ${token}`;
-        headers['x-anivault-owner-session'] = token;
-      }
-      const res = await fetch('/api/sync', { method: 'POST', headers, credentials: 'include' });
+      const res = await fetch('/api/sync', { method: 'POST', credentials: 'include' });
       if (res.ok) {
         const interval = setInterval(async () => {
           try {
@@ -604,7 +598,7 @@ export function App() {
             <div className="relative overflow-hidden rounded-2xl bg-gradient-to-r from-slate-900 via-rose-950/40 to-slate-900 dark:from-slate-900 dark:via-rose-950/40 dark:to-slate-900 light:from-white light:via-rose-50 light:to-white border border-slate-800/80 dark:border-slate-800/80 light:border-slate-200 p-5 md:p-6 shadow-xl">
               <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 relative z-10">
                 <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
-                  <AnivexLogo
+                  <ZenimeLogo
                     variant="cinematic"
                     size="lg"
                     className="shrink-0 rounded-xl border border-slate-800/80 shadow-lg"
@@ -1040,9 +1034,9 @@ export function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-4">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <div className="flex items-center gap-3">
-              <AnivexLogo variant="cinematic" size="sm" />
+              <ZenimeLogo variant="cinematic" size="sm" />
               <div className="flex items-center gap-2">
-                <AnivexLogo variant="primary" size="xs" />
+                <ZenimeLogo variant="primary" size="xs" />
                 <span className="font-bold text-white dark:text-white light:text-slate-900">Zenime</span>
                 <span className="text-slate-500">•</span>
                 <span>Anime Discovery &amp; Metadata Engine</span>

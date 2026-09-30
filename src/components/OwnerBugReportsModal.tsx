@@ -44,17 +44,13 @@ export const OwnerBugReportsModal: React.FC<OwnerBugReportsModalProps> = ({
   const [savingNote, setSavingNote] = useState<boolean>(false);
   const [updateSuccess, setUpdateSuccess] = useState<string | null>(null);
 
-  const token = sessionToken || localStorage.getItem('anivault_owner_token') || '';
-
   const fetchReports = async () => {
     setIsLoading(true);
     setErrorMsg(null);
 
     try {
       const res = await fetch('/api/bug-reports/owner/list', {
-        headers: {
-          'X-Owner-Session': token
-        }
+        credentials: 'include'
       });
 
       const data = await res.json();
@@ -107,9 +103,9 @@ export const OwnerBugReportsModal: React.FC<OwnerBugReportsModalProps> = ({
       const res = await fetch(`/api/bug-reports/owner/report/${selectedReport.id}`, {
         method: 'PATCH',
         headers: {
-          'Content-Type': 'application/json',
-          'X-Owner-Session': token
+          'Content-Type': 'application/json'
         },
+        credentials: 'include',
         body: JSON.stringify({ status: newStatus })
       });
 
@@ -138,9 +134,9 @@ export const OwnerBugReportsModal: React.FC<OwnerBugReportsModalProps> = ({
       const res = await fetch(`/api/bug-reports/owner/report/${selectedReport.id}`, {
         method: 'PATCH',
         headers: {
-          'Content-Type': 'application/json',
-          'X-Owner-Session': token
+          'Content-Type': 'application/json'
         },
+        credentials: 'include',
         body: JSON.stringify({ internalNote: internalNoteInput })
       });
 

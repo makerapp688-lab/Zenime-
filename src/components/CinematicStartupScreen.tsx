@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState, useCallback } from 'react';
 import { Volume2, VolumeX } from 'lucide-react';
-import { zenimePrimaryLogo, zenimeCinematicLogo } from './AnivexLogo.tsx';
+import { zenimePrimaryLogo, zenimeCinematicLogo } from './ZenimeLogo.tsx';
 
 // Eagerly preload both permanent built-in Zenime logo assets into browser memory on module evaluation
 if (typeof window !== 'undefined') {

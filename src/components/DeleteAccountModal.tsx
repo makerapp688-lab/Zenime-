@@ -64,13 +64,7 @@ export const DeleteAccountModal: React.FC<DeleteAccountModalProps> = ({
     const headers: Record<string, string> = {
       'Content-Type': 'application/json'
     };
-    if (isOwner) {
-      const ownerToken = localStorage.getItem('anivault_owner_session_token');
-      if (ownerToken) {
-        headers['Authorization'] = `Bearer ${ownerToken}`;
-        headers['x-anivault-owner-session'] = ownerToken;
-      }
-    } else {
+    if (!isOwner) {
       const userToken = localStorage.getItem('anivault_user_session_token');
       if (userToken) {
         headers['Authorization'] = `Bearer ${userToken}`;

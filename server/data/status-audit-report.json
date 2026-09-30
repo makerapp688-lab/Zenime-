@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-09-29T13:21:25.507Z",
-  "totalSeries": 622,
-  "completedCount": 549,
-  "ongoingCount": 15,
-  "upcomingCount": 2,
+  "timestamp": "2026-09-29T14:17:12.342Z",
+  "totalSeries": 446,
+  "completedCount": 424,
+  "ongoingCount": 17,
+  "upcomingCount": 5,
   "changedCount": 190,
-  "completeEpisodeListsCount": 513,
-  "partialEpisodeListsCount": 109
+  "completeEpisodeListsCount": 330,
+  "partialEpisodeListsCount": 116
 }

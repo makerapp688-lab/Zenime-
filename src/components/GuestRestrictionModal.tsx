@@ -12,7 +12,7 @@ import {
   CheckCircle2
 } from 'lucide-react';
 import { RestrictedGuestFeature } from '../utils/userStorage.ts';
-import { AnivexLogo } from './AnivexLogo.tsx';
+import { ZenimeLogo } from './ZenimeLogo.tsx';
 
 interface GuestRestrictionModalProps {
   isOpen: boolean;
@@ -73,7 +73,7 @@ export const GuestRestrictionModal: React.FC<GuestRestrictionModalProps> = ({
         {/* Top bar */}
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-2.5">
-            <AnivexLogo size="sm" />
+            <ZenimeLogo size="sm" />
             <div className="flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-rose-400">
               <Lock className="w-3.5 h-3.5" />
               <span>Account Required</span>

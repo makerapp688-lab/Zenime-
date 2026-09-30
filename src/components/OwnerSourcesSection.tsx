@@ -55,12 +55,8 @@ export const OwnerSourcesSection: React.FC = () => {
   const [bannerMsg, setBannerMsg] = useState<{ type: 'success' | 'error'; text: string } | null>(null);
 
   const getOwnerHeaders = (): Record<string, string> => {
-    const token = localStorage.getItem('anivault_owner_session_token') || '';
     return {
-      'Content-Type': 'application/json',
-      'X-Owner-Session': token,
-      'x-anivault-owner-session': token,
-      Authorization: `Bearer ${token}`
+      'Content-Type': 'application/json'
     };
   };
 

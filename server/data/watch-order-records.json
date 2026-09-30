@@ -31,14 +31,6 @@
         "releaseYear": 2020,
         "type": "Movie",
         "seasonsCount": 1
-      },
-      {
-        "id": "anivault_rt_hindi_demon_slayer_kimetsu_no_yaiba_infinity_castle_2025_movie_hindi_dubbed_download_hd",
-        "title": "Demon Slayer Kimetsu no Yaiba Infinity Castle (2025) Movie",
-        "alternateTitle": "Kimetsu no Yaiba",
-        "releaseYear": 2025,
-        "type": "Movie",
-        "seasonsCount": 1
       }
     ],
     "status": "high_confidence",
@@ -193,8 +185,8 @@
           "isUnreleased": false,
           "note": "The first of three theatrical films adapting the manga's final arc. It follows on directly from the Hashira Training Arc and is where the anime currently ends.",
           "warning": "⚠ The story is not resolved in this film. The second and third films have been announced, but no release date has been confirmed for either.",
-          "matchedCatalogueId": "anivault_rt_hindi_demon_slayer_kimetsu_no_yaiba_infinity_castle_2025_movie_hindi_dubbed_download_hd",
-          "matchedCatalogueTitle": "Demon Slayer Kimetsu no Yaiba Infinity Castle (2025) Movie"
+          "matchedCatalogueId": null,
+          "matchedCatalogueTitle": null
         },
         {
           "step": 7,
@@ -363,8 +355,8 @@
           "isUnreleased": false,
           "note": null,
           "warning": null,
-          "matchedCatalogueId": "anivault_rt_hindi_demon_slayer_kimetsu_no_yaiba_infinity_castle_2025_movie_hindi_dubbed_download_hd",
-          "matchedCatalogueTitle": "Demon Slayer Kimetsu no Yaiba Infinity Castle (2025) Movie"
+          "matchedCatalogueId": null,
+          "matchedCatalogueTitle": null
         }
       ]
     },
@@ -530,8 +522,8 @@
           "isUnreleased": false,
           "note": null,
           "warning": null,
-          "matchedCatalogueId": "anivault_rt_hindi_demon_slayer_kimetsu_no_yaiba_infinity_castle_2025_movie_hindi_dubbed_download_hd",
-          "matchedCatalogueTitle": "Demon Slayer Kimetsu no Yaiba Infinity Castle (2025) Movie"
+          "matchedCatalogueId": null,
+          "matchedCatalogueTitle": null
         },
         {
           "step": 8,
@@ -703,8 +695,8 @@
         "isUnreleased": false,
         "note": "The first of three theatrical films adapting the manga's final arc. It follows on directly from the Hashira Training Arc and is where the anime currently ends.",
         "warning": "⚠ The story is not resolved in this film. The second and third films have been announced, but no release date has been confirmed for either.",
-        "matchedCatalogueId": "anivault_rt_hindi_demon_slayer_kimetsu_no_yaiba_infinity_castle_2025_movie_hindi_dubbed_download_hd",
-        "matchedCatalogueTitle": "Demon Slayer Kimetsu no Yaiba Infinity Castle (2025) Movie"
+        "matchedCatalogueId": null,
+        "matchedCatalogueTitle": null
       },
       {
         "step": 7,

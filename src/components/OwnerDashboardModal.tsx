@@ -39,7 +39,7 @@ import { Anime } from '../types.ts';
 import { ArtworkManager } from './ArtworkManager.tsx';
 import { InformationManager } from './InformationManager.tsx';
 import { OwnerWorkersSection } from './OwnerWorkersSection.tsx';
-import { AnivexLogo } from './AnivexLogo.tsx';
+import { ZenimeLogo } from './ZenimeLogo.tsx';
 import { OwnerSourcesSection } from './OwnerSourcesSection.tsx';
 
 interface OwnerDashboardModalProps {
@@ -174,9 +174,8 @@ export const OwnerDashboardModal: React.FC<OwnerDashboardModalProps> = ({
   const fetchAdminStats = async () => {
     setLoading(true);
     try {
-      const token = localStorage.getItem('anivault_owner_session_token') || '';
       const res = await fetch('/api/owner/admin-stats', {
-        headers: { 'Authorization': `Bearer ${token}` }
+        credentials: 'include'
       });
       if (res.ok) {
         const data = await res.json();
@@ -191,9 +190,8 @@ export const OwnerDashboardModal: React.FC<OwnerDashboardModalProps> = ({
 
   const fetchDiagData = async () => {
     try {
-      const token = localStorage.getItem('anivault_owner_session_token') || '';
       const res = await fetch('/api/owner/settings-diagnostics', {
-        headers: { 'Authorization': `Bearer ${token}` }
+        credentials: 'include'
       });
       if (res.ok) {
         const data = await res.json();
@@ -206,9 +204,8 @@ export const OwnerDashboardModal: React.FC<OwnerDashboardModalProps> = ({
 
   const fetchBugReports = async () => {
     try {
-      const token = localStorage.getItem('anivault_owner_session_token') || '';
       const res = await fetch('/api/bug-reports/owner/list', {
-        headers: { 'X-Owner-Session': token, 'Authorization': `Bearer ${token}` }
+        credentials: 'include'
       });
       if (res.ok) {
         const data = await res.json();
@@ -233,9 +230,8 @@ export const OwnerDashboardModal: React.FC<OwnerDashboardModalProps> = ({
 
   const fetchUsers = async () => {
     try {
-      const token = localStorage.getItem('anivault_owner_session_token') || '';
       const res = await fetch('/api/owner/users', {
-        headers: { 'Authorization': `Bearer ${token}` }
+        credentials: 'include'
       });
       if (res.ok) {
         const data = await res.json();
@@ -248,9 +244,8 @@ export const OwnerDashboardModal: React.FC<OwnerDashboardModalProps> = ({
 
   const fetchAuditLogs = async () => {
     try {
-      const token = localStorage.getItem('anivault_owner_session_token') || '';
       const res = await fetch('/api/owner/audit-logs', {
-        headers: { 'Authorization': `Bearer ${token}` }
+        credentials: 'include'
       });
       if (res.ok) {
         const data = await res.json();
@@ -261,56 +256,22 @@ export const OwnerDashboardModal: React.FC<OwnerDashboardModalProps> = ({
     }
   };
 
-  const ensureOwnerToken = async (): Promise<string> => {
-    let token = localStorage.getItem('anivault_owner_session_token') || '';
-    if (token) {
-      const checkRes = await fetch('/api/owner/session', {
-        headers: {
-          'Authorization': `Bearer ${token}`,
-          'x-anivault-owner-session': token
-        },
-        credentials: 'include'
-      }).catch(() => null);
-      if (checkRes && checkRes.ok) {
-        const checkData = await checkRes.json().catch(() => null);
-        if (checkData?.authenticated) {
-          if (checkData.sessionToken && checkData.sessionToken !== token) {
-            token = checkData.sessionToken;
-            localStorage.setItem('anivault_owner_session_token', token);
-          }
-          return token;
-        }
-      }
-    }
-
-    return token;
-  };
-
   const fetchSourcePackageInfo = async () => {
     try {
-      const token = await ensureOwnerToken();
       const res = await fetch('/api/owner/source-package/info', {
-        headers: {
-          'Authorization': `Bearer ${token}`,
-          'x-anivault-owner-session': token
-        },
         credentials: 'include',
         cache: 'no-store'
       });
       if (res.ok) {
         const data = await res.json();
         setSourcePkgInfo(data.metadata || null);
-        if (data.sessionToken) {
-          localStorage.setItem('anivault_owner_session_token', data.sessionToken);
-        }
       }
     } catch (err) {
       console.error('Failed to fetch source package metadata', err);
     }
   };
 
-  const getDirectOwnerSaveUrl = (filenameOverride?: string, tokenOverride?: string) => {
-    const token = tokenOverride ?? (localStorage.getItem('anivault_owner_session_token') || '');
+  const getDirectOwnerSaveUrl = (filenameOverride?: string) => {
     const rawName =
       filenameOverride ||
       sourcePkgInfo?.packageName ||
@@ -318,10 +279,6 @@ export const OwnerDashboardModal: React.FC<OwnerDashboardModalProps> = ({
     const targetName = rawName.endsWith('.zip')
       ? rawName
       : rawName.replace(/\.(tar\.gz|tgz)$/i, '') + '.zip';
-    if (token) {
-      const safePathToken = token.replace(/\./g, '_dot_');
-      return `/api/owner/source-package/download/t/${encodeURIComponent(safePathToken)}/${encodeURIComponent(targetName)}`;
-    }
     return `/api/owner/source-package/download/${encodeURIComponent(targetName)}`;
   };
 
@@ -344,16 +301,9 @@ export const OwnerDashboardModal: React.FC<OwnerDashboardModalProps> = ({
     });
 
     try {
-      const token = await ensureOwnerToken();
-      const headers: Record<string, string> = { 'Content-Type': 'application/json' };
-      if (token) {
-        headers['Authorization'] = `Bearer ${token}`;
-        headers['x-anivault-owner-session'] = token;
-      }
-
       const res = await fetch('/api/owner/source-package/update', {
         method: 'POST',
-        headers,
+        headers: { 'Content-Type': 'application/json' },
         credentials: 'include',
         cache: 'no-store'
       });
@@ -367,10 +317,6 @@ export const OwnerDashboardModal: React.FC<OwnerDashboardModalProps> = ({
         return;
       }
 
-      if (data.sessionToken) {
-        localStorage.setItem('anivault_owner_session_token', data.sessionToken);
-      }
-
       const pkg = data.package || {};
       const compressedMB = ((pkg.compressedBytes || 0) / (1024 * 1024)).toFixed(2);
       if (data.metadata) {
@@ -382,13 +328,13 @@ export const OwnerDashboardModal: React.FC<OwnerDashboardModalProps> = ({
 
       setSourceDownloadStatus({
         type: 'success',
-        message: `Latest Zenime source archive (${pkg.totalFiles} files, ${compressedMB} MB) has been generated and replaced the previous version. Tap "Download Latest App Source" to download it.`,
+        message: `Latest website source package rebuilt and updated (${pkg.totalFiles || 0} files, ${compressedMB} MB). Ready for download.`,
         filename: pkg.filename,
         sha256: pkg.sha256,
         totalFiles: pkg.totalFiles,
         compressedMB,
         generatedAt: pkg.generatedAt,
-        directSaveUrl: getDirectOwnerSaveUrl(pkg.filename, data.sessionToken || token)
+        directSaveUrl: getDirectOwnerSaveUrl(pkg.filename)
       });
     } catch (err: any) {
       setSourceDownloadStatus({
@@ -404,7 +350,6 @@ export const OwnerDashboardModal: React.FC<OwnerDashboardModalProps> = ({
     setDownloadingSource(true);
 
     try {
-      const activeToken = localStorage.getItem('anivault_owner_session_token') || '';
       const rawFilename =
         sourcePkgInfo?.packageName ||
         `zenime-latest-source-${new Date().toISOString().slice(0, 10)}.zip`;
@@ -412,8 +357,8 @@ export const OwnerDashboardModal: React.FC<OwnerDashboardModalProps> = ({
         ? rawFilename
         : rawFilename.replace(/\.(tar\.gz|tgz)$/i, '') + '.zip';
 
-      if (activeToken && sourcePkgInfo?.available) {
-        const downloadUrl = getDirectOwnerSaveUrl(finalFilename, activeToken);
+      if (sourcePkgInfo?.available) {
+        const downloadUrl = getDirectOwnerSaveUrl(finalFilename);
         triggerBrowserAttachmentDownload(downloadUrl, finalFilename);
 
         const finalMB = sourcePkgInfo?.lastCompressedBytes
@@ -443,12 +388,7 @@ export const OwnerDashboardModal: React.FC<OwnerDashboardModalProps> = ({
         message: 'Verifying the latest Zenime source archive exists and is readable before starting browser download...'
       });
 
-      const token = await ensureOwnerToken();
       const infoRes = await fetch('/api/owner/source-package/info', {
-        headers: {
-          'Authorization': `Bearer ${token}`,
-          'x-anivault-owner-session': token
-        },
         credentials: 'include',
         cache: 'no-store'
       });
@@ -462,16 +402,12 @@ export const OwnerDashboardModal: React.FC<OwnerDashboardModalProps> = ({
         return;
       }
 
-      const verifiedToken = infoData.sessionToken || token;
-      if (verifiedToken) {
-        localStorage.setItem('anivault_owner_session_token', verifiedToken);
-      }
       setSourcePkgInfo(infoData.metadata);
 
       const verifiedFilename =
         infoData.metadata.packageName ||
         `zenime-latest-source-${new Date().toISOString().slice(0, 10)}.zip`;
-      const downloadUrl = getDirectOwnerSaveUrl(verifiedFilename, verifiedToken);
+      const downloadUrl = getDirectOwnerSaveUrl(verifiedFilename);
       triggerBrowserAttachmentDownload(downloadUrl, verifiedFilename);
 
       const finalMB = infoData.metadata.lastCompressedBytes
@@ -489,11 +425,14 @@ export const OwnerDashboardModal: React.FC<OwnerDashboardModalProps> = ({
         directSaveUrl: downloadUrl
       });
 
-      fetchAuditLogs();
+      setTimeout(() => {
+        fetchSourcePackageInfo();
+        fetchAuditLogs();
+      }, 800);
     } catch (err: any) {
       setSourceDownloadStatus({
         type: 'error',
-        message: err?.message || 'Failed to download the latest application source archive.'
+        message: err.message || 'Error downloading latest source package.'
       });
     } finally {
       setDownloadingSource(false);
@@ -512,14 +451,12 @@ export const OwnerDashboardModal: React.FC<OwnerDashboardModalProps> = ({
     if (!selectedBug) return;
     setUpdatingBug(true);
     try {
-      const token = localStorage.getItem('anivault_owner_session_token') || '';
       const res = await fetch(`/api/bug-reports/owner/report/${selectedBug.id}`, {
         method: 'PATCH',
         headers: {
-          'Content-Type': 'application/json',
-          'X-Owner-Session': token,
-          'Authorization': `Bearer ${token}`
+          'Content-Type': 'application/json'
         },
+        credentials: 'include',
         body: JSON.stringify({
           status: bugStatusInput,
           internalNote: bugNoteInput
@@ -542,10 +479,9 @@ export const OwnerDashboardModal: React.FC<OwnerDashboardModalProps> = ({
   const handleToggleUserAccess = async (userId: string) => {
     setTogglingUserId(userId);
     try {
-      const token = localStorage.getItem('anivault_owner_session_token') || '';
       const res = await fetch(`/api/owner/users/${userId}/toggle-access`, {
         method: 'POST',
-        headers: { 'Authorization': `Bearer ${token}` }
+        credentials: 'include'
       });
       if (res.ok) {
         fetchUsers();
@@ -582,13 +518,12 @@ export const OwnerDashboardModal: React.FC<OwnerDashboardModalProps> = ({
     setCatSuccessMsg('');
     setCatErrorMsg('');
     try {
-      const token = localStorage.getItem('anivault_owner_session_token') || '';
       const res = await fetch(`/api/owner/catalogue/${selectedAnime.id}/update`, {
         method: 'POST',
         headers: {
-          'Content-Type': 'application/json',
-          'Authorization': `Bearer ${token}`
+          'Content-Type': 'application/json'
         },
+        credentials: 'include',
         body: JSON.stringify({
           title: editTitle,
           alternateTitle: editAltTitle,
@@ -625,10 +560,9 @@ export const OwnerDashboardModal: React.FC<OwnerDashboardModalProps> = ({
     }
     setIsDeletingAnime(true);
     try {
-      const token = localStorage.getItem('anivault_owner_session_token') || '';
       const res = await fetch(`/api/owner/catalogue/${selectedAnime.id}/delete`, {
         method: 'POST',
-        headers: { 'Authorization': `Bearer ${token}` }
+        credentials: 'include'
       });
       if (res.ok) {
         alert('Anime title has been permanently deleted.');
@@ -658,13 +592,12 @@ export const OwnerDashboardModal: React.FC<OwnerDashboardModalProps> = ({
     if (!selectedArtAnime) return;
     setSavingArtwork(true);
     try {
-      const token = localStorage.getItem('anivault_owner_session_token') || '';
       const res = await fetch(`/api/owner/artwork/${selectedArtAnime.id}/update`, {
         method: 'POST',
         headers: {
-          'Content-Type': 'application/json',
-          'Authorization': `Bearer ${token}`
+          'Content-Type': 'application/json'
         },
+        credentials: 'include',
         body: JSON.stringify({
           verifiedArtworkUrl: artUrlInput,
           verificationStatus: artStatusInput
@@ -784,7 +717,7 @@ export const OwnerDashboardModal: React.FC<OwnerDashboardModalProps> = ({
         {/* Header (BLACK & GOLD) */}
         <div className="flex items-center justify-between border-b border-amber-500/30 p-3.5 sm:p-5 shrink-0 bg-black gap-2">
           <div className="flex items-center gap-2.5 sm:gap-3 min-w-0">
-            <AnivexLogo size="sm" />
+            <ZenimeLogo size="sm" />
             <div className="min-w-0">
               <h2 className="text-sm sm:text-xl font-black tracking-tight text-white flex flex-wrap items-center gap-1.5 sm:gap-2">
                 <span className="truncate">OWNER COMMAND CENTER</span>

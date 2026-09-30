@@ -1,15 +1,15 @@
 import { Anime, AnimeType, AnimeStatus, Artwork } from '../types.ts';
 
 /**
- * Permanent AniVault Catalogue Verification Engine
+ * Permanent Zenime Catalogue Verification Engine
  * Cross-references metadata against MyAnimeList (MAL) & AniList standards.
  * 
  * Rules:
- * 1. Truthful identity: Real titles, alternate titles, canonical IDs (MAL, AniList, Provider, AniVault).
+ * 1. Truthful identity: Real titles, alternate titles, canonical IDs (MAL, AniList, Provider, Zenime).
  * 2. Strict media types: TV, Movie, OVA, ONA, Special separated without conflation.
  * 3. Verified seasons & episode calculations.
  * 4. Safe fallback: 'Not available' for any unverified field. Never guess.
- * 5. Official artwork check: Official AniList/MAL CDNs or verified provider assets. AniVault placeholder fallback.
+ * 5. Official artwork check: Official AniList/MAL CDNs or verified provider assets. Zenime fallback.
  * 6. Deduplication: Stable ID collision + exact normalized title matching.
  */
 
@@ -35,7 +35,7 @@ export function normalizeTitleForDeduplication(title: string): string {
 }
 
 /**
- * Validates and sanitizes an anime record according to AniVault Verification Standards
+ * Validates and sanitizes an anime record according to Zenime Verification Standards
  */
 export function verifyAnimeRecord(raw: Partial<Anime> & Record<string, unknown>): VerificationResult {
   const malId = typeof raw.malId === 'number' && raw.malId > 0 ? raw.malId : undefined;

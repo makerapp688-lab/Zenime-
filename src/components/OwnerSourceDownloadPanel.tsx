@@ -13,18 +13,11 @@ interface OwnerSourceDownloadPanelProps {
   onAuditUpdated?: () => void;
 }
 
-function encodeOwnerPathToken(token: string): string {
-  return token.replace(/\./g, '_dot_');
-}
-
 export const OwnerSourceDownloadPanel: React.FC<OwnerSourceDownloadPanelProps> = ({
   compact = false,
   onAuditUpdated
 }) => {
   const [sourcePkgInfo, setSourcePkgInfo] = useState<any>(null);
-  const [ownerToken, setOwnerToken] = useState<string>(() =>
-    typeof window !== 'undefined' ? localStorage.getItem('anivault_owner_session_token') || '' : ''
-  );
   const [updatingSource, setUpdatingSource] = useState<boolean>(false);
   const [downloadingSource, setDownloadingSource] = useState<boolean>(false);
   const [statusBanner, setStatusBanner] = useState<{
@@ -38,73 +31,15 @@ export const OwnerSourceDownloadPanel: React.FC<OwnerSourceDownloadPanelProps> =
     generatedAt?: string;
   }>({ type: 'idle', message: '' });
 
-  const ensureOwnerToken = async (): Promise<string> => {
-    let token = localStorage.getItem('anivault_owner_session_token') || ownerToken || '';
-    if (token) {
-      const checkRes = await fetch('/api/owner/session', {
-        headers: {
-          'Authorization': `Bearer ${token}`,
-          'x-anivault-owner-session': token
-        },
-        credentials: 'include'
-      }).catch(() => null);
-      if (checkRes && checkRes.ok) {
-        const checkData = await checkRes.json().catch(() => null);
-        if (checkData?.authenticated) {
-          if (checkData.sessionToken && checkData.sessionToken !== token) {
-            token = checkData.sessionToken;
-            localStorage.setItem('anivault_owner_session_token', token);
-          }
-          setOwnerToken(token);
-          return token;
-        }
-      }
-    }
-
-    // Synchronize active Owner session via /api/owner/switch if authorized
-    try {
-      const switchRes = await fetch('/api/owner/switch', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        credentials: 'include',
-        body: JSON.stringify({})
-      });
-      if (switchRes.ok) {
-        const switchData = await switchRes.json();
-        if (switchData.sessionToken) {
-          localStorage.setItem('anivault_owner_session_token', switchData.sessionToken);
-          setOwnerToken(switchData.sessionToken);
-          return switchData.sessionToken;
-        }
-      }
-    } catch {
-      // Fallback to current token
-    }
-
-    return token;
-  };
-
   const fetchSourceMetadata = async () => {
     try {
-      const token = await ensureOwnerToken();
-      const headers: Record<string, string> = {};
-      if (token) {
-        headers['Authorization'] = `Bearer ${token}`;
-        headers['x-anivault-owner-session'] = token;
-      }
-
       const infoRes = await fetch('/api/owner/source-package/info', {
-        headers,
         credentials: 'include',
         cache: 'no-store'
       });
       if (infoRes.ok) {
         const infoData = await infoRes.json();
         setSourcePkgInfo(infoData.metadata || null);
-        if (infoData.sessionToken) {
-          localStorage.setItem('anivault_owner_session_token', infoData.sessionToken);
-          setOwnerToken(infoData.sessionToken);
-        }
       }
     } catch (err) {
       console.error('Failed to fetch source package metadata:', err);
@@ -115,13 +50,10 @@ export const OwnerSourceDownloadPanel: React.FC<OwnerSourceDownloadPanelProps> =
     fetchSourceMetadata();
   }, []);
 
-  const buildStandardDownloadUrl = (token: string, filename: string): string => {
+  const buildStandardDownloadUrl = (filename: string): string => {
     const cleanFilename = filename.endsWith('.zip')
       ? filename
       : filename.replace(/\.(tar\.gz|tgz)$/i, '') + '.zip';
-    if (token) {
-      return `/api/owner/source-package/download/t/${encodeURIComponent(encodeOwnerPathToken(token))}/${encodeURIComponent(cleanFilename)}`;
-    }
     return `/api/owner/source-package/download/${encodeURIComponent(cleanFilename)}`;
   };
 
@@ -146,16 +78,9 @@ export const OwnerSourceDownloadPanel: React.FC<OwnerSourceDownloadPanelProps> =
     });
 
     try {
-      const token = await ensureOwnerToken();
-      const headers: Record<string, string> = { 'Content-Type': 'application/json' };
-      if (token) {
-        headers['Authorization'] = `Bearer ${token}`;
-        headers['x-anivault-owner-session'] = token;
-      }
-
       const upRes = await fetch('/api/owner/source-package/update', {
         method: 'POST',
-        headers,
+        headers: { 'Content-Type': 'application/json' },
         credentials: 'include',
         cache: 'no-store'
       });
@@ -171,11 +96,6 @@ export const OwnerSourceDownloadPanel: React.FC<OwnerSourceDownloadPanelProps> =
           message: upData.error || `Failed to rebuild latest source archive (HTTP ${upRes.status}).`
         });
         return;
-      }
-
-      if (upData.sessionToken) {
-        localStorage.setItem('anivault_owner_session_token', upData.sessionToken);
-        setOwnerToken(upData.sessionToken);
       }
 
       if (upData.metadata) {
@@ -214,7 +134,6 @@ export const OwnerSourceDownloadPanel: React.FC<OwnerSourceDownloadPanelProps> =
     setDownloadingSource(true);
 
     try {
-      const activeToken = ownerToken || localStorage.getItem('anivault_owner_session_token') || '';
       const rawFilename =
         sourcePkgInfo?.packageName ||
         `zenime-latest-source-${new Date().toISOString().slice(0, 10)}.zip`;
@@ -222,11 +141,8 @@ export const OwnerSourceDownloadPanel: React.FC<OwnerSourceDownloadPanelProps> =
         ? rawFilename
         : rawFilename.replace(/\.(tar\.gz|tgz)$/i, '') + '.zip';
 
-      // If we already have the verified Owner session token and archive metadata, trigger the standard
-      // HTTP attachment download synchronously inside the user tap gesture so iPhone/Safari shows the
-      // native bottom download sheet ("Download" / "Save to Drive") without redirecting or opening Files.
-      if (activeToken && sourcePkgInfo?.available) {
-        const downloadUrl = buildStandardDownloadUrl(activeToken, filename);
+      if (sourcePkgInfo?.available) {
+        const downloadUrl = buildStandardDownloadUrl(filename);
         triggerBrowserAttachmentDownload(downloadUrl, filename);
 
         const compressedMB = sourcePkgInfo?.lastCompressedBytes
@@ -251,22 +167,13 @@ export const OwnerSourceDownloadPanel: React.FC<OwnerSourceDownloadPanelProps> =
         return;
       }
 
-      // Fallback if token or archive was not yet initialized: verify on server first, then trigger download
       setStatusBanner({
         type: 'generating',
         title: 'Verifying Source Archive...',
         message: 'Verifying the latest Zenime source archive exists and is readable before starting browser download...'
       });
 
-      const token = await ensureOwnerToken();
-      const headers: Record<string, string> = {};
-      if (token) {
-        headers['Authorization'] = `Bearer ${token}`;
-        headers['x-anivault-owner-session'] = token;
-      }
-
       const infoRes = await fetch('/api/owner/source-package/info', {
-        headers,
         credentials: 'include',
         cache: 'no-store'
       });
@@ -284,17 +191,12 @@ export const OwnerSourceDownloadPanel: React.FC<OwnerSourceDownloadPanelProps> =
         return;
       }
 
-      const verifiedToken = infoData.sessionToken || token;
-      if (verifiedToken) {
-        localStorage.setItem('anivault_owner_session_token', verifiedToken);
-        setOwnerToken(verifiedToken);
-      }
       setSourcePkgInfo(infoData.metadata);
 
       const verifiedFilename =
         infoData.metadata.packageName ||
         `zenime-latest-source-${new Date().toISOString().slice(0, 10)}.zip`;
-      const downloadUrl = buildStandardDownloadUrl(verifiedToken, verifiedFilename);
+      const downloadUrl = buildStandardDownloadUrl(verifiedFilename);
       triggerBrowserAttachmentDownload(downloadUrl, verifiedFilename);
 
       const compressedMB = infoData.metadata.lastCompressedBytes

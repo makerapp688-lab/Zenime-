@@ -1,7 +1,7 @@
 {
-  "inspectedAt": "2026-09-29T13:21:25.510Z",
-  "totalCatalogue": 622,
-  "validArtworkCount": 622,
+  "inspectedAt": "2026-09-29T13:53:09.404Z",
+  "totalCatalogue": 446,
+  "validArtworkCount": 446,
   "missingArtworkCount": 0,
   "incorrectArtworkCount": 0,
   "requiresReplacementCount": 0,
@@ -10,13 +10,6 @@
   "needsReviewCount": 0,
   "possibleFakeCount": 0,
   "items": [
-    {
-      "id": "anivault_rt_doraemon_nobitas_little_star_wars_2021_remake",
-      "title": "Doraemon Nobita’s Little Star Wars (2021 Remake)",
-      "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx2669-IVycnrkH5Sq5.jpg",
-      "status": "verified",
-      "hasArtwork": true
-    },
     {
       "id": "anivault_rt_doraemon_tv_series",
       "title": "Doraemon",
@@ -130,13 +123,6 @@
       "hasArtwork": true
     },
     {
-      "id": "anivault_rt_doraemon_the_movie_nobita_aur_birdopia_ka_sultan_hd",
-      "title": "Doraemon The Movie Nobita Aur Birdopia ka Sultan",
-      "artworkUrl": "https://raretoonindia.in/wp-content/uploads/2023/07/Doraemon-The-Movie-Nobita-Aur-Birdopia-ka-Sultan-Hindi-Download.webp",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
       "id": "anivault_rt_my_hero_academia",
       "title": "My Hero Academia",
       "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx100166-jUCZYbzn2XLw.jpg",
@@ -151,48 +137,6 @@
       "hasArtwork": true
     },
     {
-      "id": "anivault_rt_doraemon_the_movie_adventure_of_koya_koya_planet",
-      "title": "Doraemon The Movie Adventure of Koya Koya Planet",
-      "artworkUrl": "https://raretoonindia.in/wp-content/uploads/2023/05/Doraemon-The-Movie-Adventure-of-Koya-Koya.jpg",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_shin_chan_movie_robot_dad_hindi_dubbed",
-      "title": "Shin Chan Movie Robot Dad",
-      "artworkUrl": "https://raretoonindia.in/wp-content/uploads/2025/01/Shin-Chan-Movie-Robot-Dad.png",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_shin_chan_in_very_very_tasty_tasty",
-      "title": "Shin Chan In Very Very Tasty Tasty",
-      "artworkUrl": "https://raretoonindia.in/wp-content/uploads/2025/01/Shin-Chan-In-Very-Very-Tasty-Tasty2.png",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_shin_chan_movie_villain_aur_dulhan",
-      "title": "Shin Chan Movie Villain Aur Dulhan",
-      "artworkUrl": "https://raretoonindia.in/wp-content/uploads/2024/02/zyro-image-2-3.jpg",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_shin_chan_movie_treasure_of_the_buri_buri_kingdom",
-      "title": "Shin Chan Movie Treasure Of the Buri Buri Kingdom",
-      "artworkUrl": "https://raretoonindia.in/wp-content/uploads/2023/08/Shin-Chan-Movie-Treasure-Of-the-Buri-Buri-Kingdom.jpg",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_shin_chan_movie_adventures_in_henderland",
-      "title": "Shin Chan Movie Adventures In Henderland",
-      "artworkUrl": "https://raretoonindia.in/wp-content/uploads/2023/08/zyro-image-1-1.jpg",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
       "id": "anivault_rt_pokemon",
       "title": "Pokémon",
       "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b527-t6dBVJ5OVcXK.png",
@@ -200,226 +144,9 @@
       "hasArtwork": true
     },
     {
-      "id": "anivault_rt_doraemon_nobita_aur_dinosaur_yoddha",
-      "title": "Doraemon Nobita Aur Dinosaur Yoddha",
-      "artworkUrl": "https://raretoonindia.in/wp-content/uploads/2024/04/Doraemon-Nobita-Aur-Dinosaur-Yoddha-Hindi-.jpg",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_doraemon_nobita_and_the_steel_troops_hd",
-      "title": "Doraemon Nobita And The Steel Troops Download",
-      "artworkUrl": "https://raretoonindia.in/wp-content/uploads/2024/04/Doraemon-Nobita-And-The-Steel-Troops-Download-Hindi-Dubbed.jpg",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_doraemon_nobita_and_the_spiral_city_remastered_hd",
-      "title": "Doraemon Nobita and the Spiral City (1997) Remastered",
-      "artworkUrl": "https://raretoonindia.in/wp-content/uploads/2024/04/Doraemon-Nobita-and-the-Spiral-City.jpg",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_doraemon_nobita_and_the_birth_of_japan_hd",
-      "title": "Doraemon Nobita and the Birth of Japan",
-      "artworkUrl": "https://raretoonindia.in/wp-content/uploads/2023/07/Doraemon-Nobita-and-the-Birth-of-Japan-1.jpg",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_doraemon_movie_nobitas_little_star_wars",
-      "title": "Doraemon Movie Nobitas Little Star Wars 2021 Download [480/720/1080]",
-      "artworkUrl": "https://raretoonindia.in/wp-content/uploads/2023/07/zyro-image-2-2-scaled.jpg",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_doraemon_the_movie_underwater_adventure",
-      "title": "Doraemon The Movie Underwater Adventure",
-      "artworkUrl": "https://raretoonindia.in/wp-content/uploads/2023/07/zyro-image-5.jpg",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_doraemon_the_movie_stand_by_me_2",
-      "title": "Doraemon The Movie Stand By Me 2",
-      "artworkUrl": "https://raretoonindia.in/wp-content/uploads/2023/07/zyro-image-1-2-scaled.jpg",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_doraemon_the_movie_nobitas_chronicle_of_the_moon_exploration",
-      "title": "Doraemon The Movie Nobitas Chronicle of the Moon Exploration (2019) English,",
-      "artworkUrl": "https://raretoonindia.in/wp-content/uploads/2023/06/Doraemon-The-Movie-Nobitas-Chronicle-of-the-Moon-Exploration.webp",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_doraemon_the_movie_toofani_adventure",
-      "title": "Doraemon The Movie Toofani Adventure",
-      "artworkUrl": "https://raretoonindia.in/wp-content/uploads/2023/05/Doraemon-The-Movie-Gadget-Museum-Ka-Rahasya-1.jpg",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_doraemon_the_movie_nobita_the_explorer_bow_bow",
-      "title": "Doraemon The Movie Nobita The Explorer Bow Bow",
-      "artworkUrl": "https://raretoonindia.in/wp-content/uploads/2023/05/Doraemon-The-Movie-Nobita-The-Explorer-Bow-Bow-2.jpg",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_doraemon_the_movie_nobita_in_jannat_no_1",
-      "title": "Doraemon The Movie Nobita In Jannat No 1",
-      "artworkUrl": "https://raretoonindia.in/wp-content/uploads/2023/05/Doraemon-The-Movie-Nobita-In-Jannat-No-1-Hindi-Download.jpg",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_doraemon_the_movie_nobitas_three_magical_swordsmen",
-      "title": "Doraemon The Movie Nobitas Three Magical Swordsmen",
-      "artworkUrl": "https://raretoonindia.in/wp-content/uploads/2023/05/Doraemon-The-Movie-Nobitas-Three-Magical-Swordsmen-Hindi-Download-1.png",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_doraemon_the_movie_nobitas_dorabian_nights",
-      "title": "Doraemon The Movie Nobitas Dorabian Nights",
-      "artworkUrl": "https://raretoonindia.in/wp-content/uploads/2023/05/Doraemon-The-Movie-Nobitas-Dorabian-Nights-Hindi-Dubbed-Download-720P-1.png",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_doraemon_the_movie_nobitas_dinosaur",
-      "title": "Doraemon The Movie Nobitas Dinosaur",
-      "artworkUrl": "https://raretoonindia.in/wp-content/uploads/2023/05/zyro-image-1.jpg",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_doraemon_nobitas_great_adventure_in_the_south_seas",
-      "title": "Doraemon Nobitas Great Adventure in The South Seas",
-      "artworkUrl": "https://raretoonindia.in/wp-content/uploads/2023/05/Doraemon-Nobitas-Great-Adventure-in-The-South-Seas.jpg",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_doraemon_nobitas_little_space_war_hd",
-      "title": "Doraemon Nobita&#039;s Little Space War",
-      "artworkUrl": "https://raretoonindia.in/wp-content/uploads/2023/05/Doraemon-Nobitas-Little-Space-War-Movie.jpg",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_doraemon_the_movie_2017_great_adventure_in_the_antarctic_kachi_kochi",
-      "title": "Doraemon The Movie 2017: Great Adventure in the Antarctic Kachi Kochi (Nobita Chal Pada Antarctica)",
-      "artworkUrl": "https://raretoonindia.in/wp-content/uploads/2023/12/Great-Adventure-in-the-Antarctic-Kachi-Kochi-Nobita-Chal-Pada-Antarctica.jpg",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_doraemon_the_movie_2018_nobitas_treasure_island",
-      "title": "Doraemon the Movie 2018: Nobitas Treasure Island",
-      "artworkUrl": "https://raretoonindia.in/wp-content/uploads/2024/01/Doraemon-the-Movie-2018-Nobitas-Treasure-Island.jpg",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_doraemon_the_movie_gadget_museum_ka_rahasya_hd",
-      "title": "Doraemon The Movie Gadget Museum Ka Rahasya",
-      "artworkUrl": "https://raretoonindia.in/wp-content/uploads/2023/06/Doraemon-The-Movie-Gadget-Museum-Ka-Rahasya.jpg",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_doraemon_the_movie_galaxy_super_express_hd",
-      "title": "Doraemon The Movie Galaxy Super Express",
-      "artworkUrl": "https://raretoonindia.in/wp-content/uploads/2023/05/Doraemon-The-Movie-Galaxy-Super-Express.jpg",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_doraemon_the_movie_jadoo_mantar_aur_jahnoom_hd",
-      "title": "Doraemon The Movie Jadoo Mantar Aur Jahnoom",
-      "artworkUrl": "https://raretoonindia.in/wp-content/uploads/2023/05/Doraemon-The-Movie-Jadoo-Mantar-Aur-Jahnoom.jpg",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_doraemon_the_movie_khel_khilona_bhool_bhulaiya",
-      "title": "Doraemon The Movie Khel Khilona Bhool Bhulaiya",
-      "artworkUrl": "https://raretoonindia.in/wp-content/uploads/2023/05/Doraemon-The-Movie-Khel-Khilona-Bhool-Bhulaiya-Hindi-Download-720P.jpg",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_doraemon_the_movie_nobita_and_jungle_mein_dangal_hd",
-      "title": "Doraemon The Movie Nobita and Jungle Mein Dangal",
-      "artworkUrl": "https://raretoonindia.in/wp-content/uploads/2023/06/Doraemon-The-Movie-Nobita-and-Jungle-Mein-Dangal.jpg",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_doraemon_the_movie_nobita_and_the_kingdom_of_robot_singham_hd",
-      "title": "Doraemon The Movie Nobita and The Kingdom of Robot Singham",
-      "artworkUrl": "https://raretoonindia.in/wp-content/uploads/2023/07/Doraemon-The-Movie-Nobita-and-The-Kingdom-of-Robot-Singham.jpg",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_doraemon_the_movie_nobita_aur_antariksh_daku",
-      "title": "Doraemon The Movie Nobita Aur Antariksh Daku",
-      "artworkUrl": "https://raretoonindia.in/wp-content/uploads/2023/06/Doraemon-The-Movie-Nobita-Aur-Antariksh-Daku.jpg",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_doraemon_the_movie_nobita_aur_ek_jalpari_hd",
-      "title": "Doraemon The Movie Nobita Aur Ek Jalpari",
-      "artworkUrl": "https://raretoonindia.in/wp-content/uploads/2023/06/Doraemon-The-Movie-Nobita-Aur-Ek-Jalpari-Hindi-Download.webp",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_doraemon_the_movie_nobita_aur_jadooi_tapu",
-      "title": "Doraemon The Movie Nobita Aur Jadooi Tapu Download",
-      "artworkUrl": "https://raretoonindia.in/wp-content/uploads/2023/05/Doraemon-The-Movie-Nobita-Aur-Jadooi-Tapu-Hindi.webp",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_doraemon_the_movie_nobita_bana_superhero",
-      "title": "Doraemon The Movie Nobita Bana Superhero",
-      "artworkUrl": "https://raretoonindia.in/wp-content/uploads/2024/06/Doraemon-The-Movie-Nobita-Bana-Superhero.webp",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_doraemon_the_movie_nobita_in_hara_hara_planet_hd",
-      "title": "Doraemon The Movie Nobita In Hara Hara Planet",
-      "artworkUrl": "https://raretoonindia.in/wp-content/uploads/2023/06/Doraemon-The-Movie-Nobita-In-Hara-Hara-Planet-Hindi-Movie.webp",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_doraemon_the_movie_nobita_in_ichi_mera_dost_hd",
-      "title": "Doraemon The Movie Nobita in Ichi Mera Dost",
-      "artworkUrl": "https://raretoonindia.in/wp-content/uploads/2024/06/Doraemon-The-Movie-Nobita-in-Ichi-Mera-Dost-Hindi-Movie.webp",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
       "id": "anivault_rt_naruto_shippuden",
       "title": "Naruto: Shippuden",
       "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx1735-kGfVm0YqCPcu.png",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_all_doraemon_movies_in",
-      "title": "All Doraemon Movies in",
-      "artworkUrl": "https://raretoonindia.in/wp-content/uploads/2023/05/Doraemon-Movies.jpg",
       "status": "verified",
       "hasArtwork": true
     },
@@ -455,90 +182,6 @@
       "id": "anivault_rt_solo_leveling",
       "title": "Solo Leveling",
       "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx176496-9BDMjAZGEbq4.png",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_shin_chan_movie_bungle_in_the_jungle",
-      "title": "Shin Chan Movie Bungle In The Jungle",
-      "artworkUrl": "https://raretoonindia.in/wp-content/uploads/2023/08/zyro-image-2.jpg",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_all_shinchan_movies_in",
-      "title": "All Shinchan Movies in",
-      "artworkUrl": "https://raretoonindia.in/wp-content/uploads/2023/07/All-Shinchan-Movies-in-Hindi-Download.webp",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_shin_chan_movie_dark_tama_tama_thrilling_chase",
-      "title": "Shin Chan Movie Dark Tama Tama Thrilling Chase",
-      "artworkUrl": "https://raretoonindia.in/wp-content/uploads/2024/02/zyro-image-1.jpg",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_shin_chan_movie_the_golden_sword_hindi",
-      "title": "Shin Chan Movie The Golden Sword",
-      "artworkUrl": "https://raretoonindia.in/wp-content/uploads/2024/02/zyro-image-3.jpg",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_shin_chan_movie_the_spy_hindi",
-      "title": "Shin Chan Movie The Spy",
-      "artworkUrl": "https://raretoonindia.in/wp-content/uploads/2024/02/zyro-image-4.jpg",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_shin_chan_movie_himawari_banegi_rajkumari",
-      "title": "Shin Chan Movie Himawari Banegi Rajkumari",
-      "artworkUrl": "https://raretoonindia.in/wp-content/uploads/2024/02/zyro-image-6.jpg",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_shin_chan_the_movie_masala_story",
-      "title": "Shin Chan The Movie Masala Story",
-      "artworkUrl": "https://raretoonindia.in/wp-content/uploads/2024/02/zyro-image-2-5.jpg",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_doraemon_the_movie_yeh_bhi_tha_nobita_woh_bhi_tha_nobita",
-      "title": "Doraemon The Movie Yeh Bhi Tha Nobita Woh Bhi Tha Nobita",
-      "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/501.jpg",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_doraemon_the_movie_stand_by_me",
-      "title": "Doraemon The Movie Stand By Me",
-      "artworkUrl": "https://raretoonindia.in/wp-content/uploads/2023/06/Doraemon-The-Movie-Stand-By-Me-2-e1590517235111.jpg",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_doraemon_the_movie_nobita_ki_nayi_duniya",
-      "title": "Doraemon The Movie Nobita Ki Nayi Duniya",
-      "artworkUrl": "https://raretoonindia.in/wp-content/uploads/2023/06/Doraemon_The_Movie_Nobita_Ki_Nayi_Duniya_1-N0ykhChs.jpg",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_doraemon_the_movie_nobita_ki_universe_yatra",
-      "title": "Doraemon The Movie Nobita Ki Universe Yatra",
-      "artworkUrl": "https://raretoonindia.in/wp-content/uploads/2023/06/48808433096-L0b18Chs.jpg",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_spider_man_across_the_spider_verse_hindi",
-      "title": "Spider Man: Across the Spider Verse",
-      "artworkUrl": "https://raretoonindia.in/wp-content/uploads/2023/07/Across-the-Spider-Verse.jpg",
       "status": "verified",
       "hasArtwork": true
     },
@@ -581,20 +224,6 @@
       "id": "anivault_rt_bleach_thousand_year_blood_war",
       "title": "Bleach: Thousand-Year Blood War",
       "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx185874-aU3e6tBT6wwA.jpg",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_doraemon_nobitas_sky_utopia",
-      "title": "Doraemon Nobita’s Sky Utopia Hindi Dubbed",
-      "artworkUrl": "https://raretoonindia.in/wp-content/uploads/2025/05/Doraemon-Nobitas-Sky-Utopia-movie-e1746426976452.jpg",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_doraemon_nobitas_new_dinosaur_hd",
-      "title": "Doraemon Nobita’s New Dinosaur Hindi",
-      "artworkUrl": "https://raretoonindia.in/wp-content/uploads/2024/01/Doraemon-Nobitas-New-Dinosaur-1024x576.jpg",
       "status": "verified",
       "hasArtwork": true
     },
@@ -924,13 +553,6 @@
       "id": "anivault_rt_zom_100_bucket_list_of_the_dead",
       "title": "Zom 100: Bucket List of the Dead",
       "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx159831-cJUNqCqzuApc.png",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_chainsaw_man_the_movie_reze_arc",
-      "title": "Chainsaw Man – The Movie: Reze Arc",
-      "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx171627-ZN9D7P46yHnw.png",
       "status": "verified",
       "hasArtwork": true
     },
@@ -3014,160 +2636,6 @@
       "hasArtwork": true
     },
     {
-      "id": "mal_50593",
-      "title": "The Tunnel to Summer, the Exit of Goodbyes",
-      "artworkUrl": "https://media.kitsu.app/anime/45598/poster_image/990b59f8da7ee0d7595b7bb7978600dd.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "mal_42847",
-      "title": "Sing a Bit of Harmony",
-      "artworkUrl": "https://media.kitsu.app/anime/poster_images/43537/original.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "mal_38735",
-      "title": "Ride Your Wave",
-      "artworkUrl": "https://media.kitsu.app/anime/42031/poster_image/1ac2cc14d97e70f5af6910d42eb033e0.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "mal_34792",
-      "title": "Lu Over the Wall",
-      "artworkUrl": "https://media.kitsu.app/anime/poster_images/13253/original.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "mal_34537",
-      "title": "The Night Is Short, Walk on Girl",
-      "artworkUrl": "https://media.kitsu.app/anime/poster_images/13138/original.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "mal_2418",
-      "title": "Sword of the Stranger",
-      "artworkUrl": "https://media.kitsu.app/anime/poster_images/2194/original.png",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "mal_617",
-      "title": "Ninja Scroll",
-      "artworkUrl": "https://media.kitsu.app/anime/poster_images/572/original.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "mal_543",
-      "title": "Vampire Hunter D: Bloodlust",
-      "artworkUrl": "https://media.kitsu.app/anime/501/poster_image/9908fb27d7c69ebf05a8add65b7a0f78.png",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "mal_570",
-      "title": "Jin-Roh: The Wolf Brigade",
-      "artworkUrl": "https://media.kitsu.app/anime/poster_images/527/original.png",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "mal_1462",
-      "title": "Memories",
-      "artworkUrl": "https://static.tvmaze.com/uploads/images/original_untouched/475/1188990.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "mal_1095",
-      "title": "Patlabor: The Movie",
-      "artworkUrl": "https://media.kitsu.app/anime/poster_images/980/original.png",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "mal_1096",
-      "title": "Patlabor 2: The Movie",
-      "artworkUrl": "https://media.kitsu.app/anime/poster_images/981/original.png",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "mal_522",
-      "title": "Metropolis",
-      "artworkUrl": "https://media.kitsu.app/anime/481/poster_image/042041a118de09ab1bdc4f344492c536.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "mal_2104",
-      "title": "Tekkonkinkreet",
-      "artworkUrl": "https://media.kitsu.app/anime/poster_images/1950/original.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "mal_53887",
-      "title": "Spy x Family Code: White",
-      "artworkUrl": "https://media.kitsu.app/anime/46874/poster_image/09f92ee11b80aa9b80a0445ce1b87f15.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "mal_54865",
-      "title": "Blue Lock: Episode Nagi",
-      "artworkUrl": "https://media.kitsu.app/anime/47244/poster_image/c841f33ef01a3894abf979bee98e10ce.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "mal_48895",
-      "title": "Overlord: The Sacred Kingdom",
-      "artworkUrl": "https://media.kitsu.app/anime/44530/poster_image/e8110521c373fc222a9c65fc69f1148d.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "mal_40382",
-      "title": "Inu-Oh",
-      "artworkUrl": "https://media.kitsu.app/anime/42389/poster_image/2652b483088444b93440ad6dd28027a0.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "mal_37765",
-      "title": "Mobile Suit Gundam: Hathaway",
-      "artworkUrl": "https://media.kitsu.app/anime/poster_images/41224/original.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "mal_48845",
-      "title": "Summer Ghost",
-      "artworkUrl": "https://media.kitsu.app/anime/44099/poster_image/caadecbd7ea7f993f2d3078a85b6da50.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "mal_38015",
-      "title": "The Deer King",
-      "artworkUrl": "https://media.kitsu.app/anime/41412/poster_image/ec04ace5fd07df891c76f85edc7066e9.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "mal_41361",
-      "title": "Pompo: The Cinéphile",
-      "artworkUrl": "https://media.kitsu.app/anime/43046/poster_image/23525154a69a411b658794e7fa5dac14.png",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
       "id": "mal_45",
       "title": "Rurouni Kenshin",
       "artworkUrl": "https://media.kitsu.app/anime/poster_images/27/original.jpg",
@@ -3238,258 +2706,6 @@
       "hasArtwork": true
     },
     {
-      "id": "anivault_rt_hindi_pokemon_movie_1_mewtwo_ka_badla_hindi_download_360p_480p_720p_1080p_fhd",
-      "title": "Pokemon Movie 1 Mewtwo Ka Badla",
-      "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx528-HIz7955MvEnN.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_pokemon_mewtwo_returns_movie_hindi_download_hd",
-      "title": "Pokemon Mewtwo Returns (2001) Movie",
-      "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx1709-vQoFgnySwLOq.jpg",
-      "status": "verified",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_pokemon_movie_2_ash_pikachu_aur_lugia_in_danger_hindi_tamil_telugu_download_hd",
-      "title": "Pokemon Movie 2 Ash Pikachu Aur Lugia in Danger Hindi – Tamil – Telugu",
-      "artworkUrl": "https://media.kitsu.app/anime/poster_images/1001/original.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_pokemon_movie_3_unown_ka_tehelka_hindi_tamil_telugu_download_hd",
-      "title": "Pokemon Movie 3 Unown ka Tehelka Hindi – Tamil – Telugu",
-      "artworkUrl": "https://media.kitsu.app/anime/poster_images/1002/original.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_pokemon_movie_4_khatre_ka_jungle_hindi_tamil_telugu_download_hd",
-      "title": "Pokemon Movie 4 Khatre Ka Jungle Hindi – Tamil – Telugu",
-      "artworkUrl": "https://media.kitsu.app/anime/poster_images/1003/original.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_pokemon_movie_5_soul_dew_ka_raaz_hindi_tamil_telugu_download_hd",
-      "title": "Pokemon Movie 5 Soul Dew Ka Raaz Hindi – Tamil – Telugu",
-      "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx1120-dSMPMrXYWlER.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_pokemon_movie_6_jirachi_ka_wonder_hindi_tamil_telugu_download_hd",
-      "title": "Pokemon Movie 6 Jirachi Ka Wonder Hindi – Tamil – Telugu",
-      "artworkUrl": "https://media.kitsu.app/anime/poster_images/1005/original.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_pokemon_movie_7_deoxy_aur_tory_ki_story_hindi_tamil_telugu_download_hd",
-      "title": "Pokemon Movie 7 Deoxy Aur Tory Ki Story Hindi – Tamil – Telugu",
-      "artworkUrl": "https://media.kitsu.app/anime/poster_images/1006/original.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_pokemon_movie_8_lucario_ki_toofani_shakti_hindi_tamil_telugu_download_hd",
-      "title": "Pokemon Movie 8 Lucario Ki Toofani Shakti Hindi – Tamil – Telugu",
-      "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b1526-ddJiHHGNikuY.png",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_pokemon_movie_9_ranger_and_the_temple_of_the_sea_hindi_download_hd",
-      "title": "Pokemon Movie 9 Ranger and the Temple of the Sea",
-      "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx2201-1B1dS0NLJ3g5.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_pokemon_movie_10_darkrai_dost_ya_dushman_hindi_tamil_telugu_download_hd",
-      "title": "Pokemon Movie 10 Darkrai Dost ya Dushman Hindi – Tamil – Telugu",
-      "artworkUrl": "https://media.kitsu.app/anime/poster_images/2597/original.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_pokemon_movie_11_giratina_aur_ek_mahaa_yodhha_hindi_tamil_telugu_download_hd",
-      "title": "Pokemon Movie 11 Giratina aur ek Mahaa Yodhha Hindi – Tamil – Telugu",
-      "artworkUrl": "https://media.kitsu.app/anime/poster_images/3419/original.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_pokemon_movie_12_arceus_aur_jeevan_ka_jewel_hindi_tamil_telugu_download_hd",
-      "title": "Pokemon Movie 12 Arceus aur Jeevan ka Jewel Hindi – Tamil – Telugu",
-      "artworkUrl": "https://media.kitsu.app/anime/poster_images/4460/original.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_pokemon_movie_13_zoroark_mayajaal_ka_ustaad_hindi_tamil_telugu_download_hd",
-      "title": "Pokemon Movie 13 Zoroark Mayajaal ka Ustaad Hindi – Tamil – Telugu",
-      "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx7695-bgE6h1GXxWMG.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_pokemon_movie_14_victini_aur_reshiram_hindi_tamil_telugu_download_hd",
-      "title": "Pokemon Movie 14 Victini Aur Reshiram Hindi – Tamil – Telugu",
-      "artworkUrl": "https://media.kitsu.app/anime/poster_images/6327/original.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_pokemon_movie_15_kyurem_ka_muqabala_hindi_tamil_telugu_download_hd",
-      "title": "Pokemon Movie 15 Kyurem Ka Muqabala Hindi – Tamil – Telugu",
-      "artworkUrl": "https://media.kitsu.app/anime/poster_images/6786/original.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_pokemon_movie_16_genesect_aur_mewtwo_ek_shaandar_kahani_hindi_tamil_telugu_download_hd",
-      "title": "Pokemon Movie 16 Genesect Aur Mewtwo Ek Shaandar Kahani Hindi – Tamil – Telugu",
-      "artworkUrl": "https://media.kitsu.app/anime/poster_images/7489/original.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_pokemon_movie_17_dabang_diancie_aur_diamond_hindi_tamil_telugu_download_hd",
-      "title": "Pokemon Movie 17 Dabang Diancie Aur Diamond Hindi – Tamil – Telugu",
-      "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b20644-qgK3C0fOFR8b.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_pokemon_movie_18_hoopa_and_the_magic_rings_hindi_tamil_telugu_download_hd",
-      "title": "Pokemon Movie 18 Hoopa and the Magic Rings Hindi – Tamil – Telugu",
-      "artworkUrl": "https://media.kitsu.app/anime/poster_images/8903/original.png",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_pokemon_movie_19_volcanion_ki_kahani_hindi_dubbed_download_hd",
-      "title": "Pokemon Movie 19 Volcanion Ki Kahani Hindi – Tamil – Telugu",
-      "artworkUrl": "https://www.rareanimes.mov/wp-content/uploads/2022/10/m4.jpg",
-      "status": "unable_to_verify",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_pokemon_movie_20_aap_selected_ho_hindi_tamil_telugu_download_hd",
-      "title": "Pokemon Movie 20 Aap Selected Ho Hindi – Tamil – Telugu",
-      "artworkUrl": "https://media.kitsu.app/anime/poster_images/8903/original.png",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_pokemon_movie_22_mewtwo_strikes_back_evolution_hindi_download_hd",
-      "title": "Pokemon Movie 22 Mewtwo Strikes Back Evolution",
-      "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx106287-THH8DMCFuVNc.png",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_pokemon_movie_23_jungle_ke_raaz_hindi_download_hd",
-      "title": "Pokemon Movie 23 Jungle Ke Raaz",
-      "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx114564-Imh6m5Tejii6.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_dragon_ball_z_movie_1_dead_zone_hindi_download_0_hd",
-      "title": "Dragon Ball Z Movie 1 Dead Zone",
-      "artworkUrl": "https://media.kitsu.app/anime/poster_images/794/original.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_dragon_ball_z_movie_2_the_worlds_strongest_hindi_download_hd",
-      "title": "Dragon Ball Z Movie 2 The World’s Strongest",
-      "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/895-GuuZOIRCBHhI.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_dragon_ball_z_movie_3_the_tree_of_might_hindi_download_hd",
-      "title": "Dragon Ball Z Movie 3 The Tree of Might",
-      "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/896.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_dragon_ball_z_movie_4_lord_slug_hindi_download_hd",
-      "title": "Dragon Ball Z Movie 4 Lord Slug",
-      "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/897-XgUEvu807MpG.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_dragon_ball_z_movie_5_coolers_revenge_hindi_watch_download_hd",
-      "title": "Dragon Ball Z Movie 5 Cooler’s Revenge Hindi Watch",
-      "artworkUrl": "https://media.kitsu.app/anime/poster_images/798/original.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_dragon_ball_z_movie_6_the_return_of_cooler_hindi_watch_download_hd",
-      "title": "Dragon Ball Z Movie 6 The Return of Cooler Hindi Watch",
-      "artworkUrl": "https://media.kitsu.app/anime/poster_images/799/original.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_dragon_ball_z_movie_7_super_android_13_hindi_watch_download_0_hd",
-      "title": "Dragon Ball Z Movie 7 Super Android 13 Hindi Watch",
-      "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/900-cNaooAiGtuYv.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_dragon_ball_z_movie_8_broly_the_legendary_super_saiyan_hindi_watch_download_hd",
-      "title": "Dragon Ball Z Movie 8 Broly The Legendary Super Saiyan Hindi Watch",
-      "artworkUrl": "https://media.kitsu.app/anime/poster_images/801/original.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_dragon_ball_z_movie_9_bojack_unbound_hindi_download_hd",
-      "title": "Dragon Ball Z Movie 9 Bojack Unbound",
-      "artworkUrl": "https://media.kitsu.app/anime/poster_images/802/original.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_dragon_ball_z_movie_10_broly_second_coming_hindi_watch_download_fhd",
-      "title": "Dragon Ball Z Movie 10 Broly – Second Coming",
-      "artworkUrl": "https://media.kitsu.app/anime/poster_images/803/original.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_dragon_ball_z_movie_11_bio_broly_hindi_watch_download_hd",
-      "title": "Dragon Ball Z Movie 11 Bio-Broly Hindi Watch",
-      "artworkUrl": "https://media.kitsu.app/anime/poster_images/804/original.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_dragon_ball_z_movie_12_fusion_reborn_hindi_watch_download_hd",
-      "title": "Dragon Ball Z Movie 12 Fusion Reborn Hindi Watch",
-      "artworkUrl": "https://media.kitsu.app/anime/poster_images/805/original.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_dragon_ball_z_movie_15_resurrection_f_hindi_download_hd",
-      "title": "Dragon Ball Z Movie 15 Resurrection F",
-      "artworkUrl": "https://media.kitsu.app/anime/8676/poster_image/036f287f3b24ae0c1147e51e010f6e77.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
       "id": "anivault_rt_hindi_beyblade_season_1_remastered_hindi_episodes_download_hd",
       "title": "Beyblade",
       "artworkUrl": "https://media.kitsu.app/anime/poster_images/263/original.jpg",
@@ -3518,34 +2734,6 @@
       "hasArtwork": true
     },
     {
-      "id": "anivault_rt_hindi_beyblade_ek_bhayankar_yudh_movie_hindi_download_in_hd",
-      "title": "Beyblade Ek Bhayankar Yudh Movie",
-      "artworkUrl": "https://static.tvmaze.com/uploads/images/original_untouched/253/634524.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_beyblade_movie_gen_2_metal_fight_hindi_download_hd",
-      "title": "Beyblade Movie Gen 2 - Metal Fight",
-      "artworkUrl": "https://media.kitsu.app/anime/poster_images/4365/original.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_doraemon_all_movies_hindi_dubbed_download_hd",
-      "title": "Doraemon All Movies",
-      "artworkUrl": "https://media.kitsu.app/anime/poster_images/460/original.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_shinchan_all_movies_hindi_tamil_telugu_download_hd",
-      "title": "Shin Chan All Movies Hindi – Tamil – Telugu",
-      "artworkUrl": "https://static.tvmaze.com/uploads/images/original_untouched/116/291841.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
       "id": "anivault_rt_hindi_shinchan_season_1_hindi_episodes_download_in_hd",
       "title": "Shinchan",
       "artworkUrl": "https://media.kitsu.app/anime/47066/poster_image/83a6302116725b466e11b76b250545ca.jpg",
@@ -3563,13 +2751,6 @@
       "id": "anivault_rt_hindi_kochikame_hindi_dubbed_episodes_download_hd",
       "title": "Kochikame",
       "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx3545-rhUDPxf7DsBQ.png",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_kochikame_the_movie_hindi_subbed_download_in_hd",
-      "title": "Kochikame The Movie",
-      "artworkUrl": "https://media.kitsu.app/anime/poster_images/2632/original.jpg",
       "status": "auto_fixed",
       "hasArtwork": true
     },
@@ -3595,86 +2776,9 @@
       "hasArtwork": true
     },
     {
-      "id": "anivault_rt_hindi_big_hero_6_2014_movie_hindi_dubbed_download_in_hd",
-      "title": "Big Hero 6 2014 Movie",
-      "artworkUrl": "https://static.tvmaze.com/uploads/images/original_untouched/154/385049.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_big_hero_6_baymax_returns_2017_movie_hindi_tamil_download_in_hd",
-      "title": "Big Hero 6 Baymax Returns 2017 Movie Hindi",
-      "artworkUrl": "https://media.kitsu.app/anime/poster_images/41927/original.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_miraculous_world_new_york_united_heroez_movie_hindi_download_hd",
-      "title": "Miraculous World: New York, United Heroez Movie",
-      "artworkUrl": "https://media.kitsu.app/anime/50504/poster_image/cff4e76fd873f753ecce90b81e007173.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_miraculous_world_shanghai_the_legend_of_ladydragon_movie_hindi_download_360p_480p_720p_hd_1080p_fhd",
-      "title": "Miraculous World Shanghai - The Legend of Ladydragon Movie",
-      "artworkUrl": "https://media.kitsu.app/anime/poster_images/11572/original.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_phineas_and_ferb_movie_across_the_2nd_dimension_hindi_tamil_telugu_download_fhd",
-      "title": "Phineas And Ferb Movie Across the 2nd Dimension",
-      "artworkUrl": "https://static.tvmaze.com/uploads/images/original_untouched/595/1489325.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_phineas_and_ferb_star_wars_movie_hindi_tamil_telugu_download_fhd",
-      "title": "Phineas and Ferb Star Wars Movie",
-      "artworkUrl": "https://static.tvmaze.com/uploads/images/original_untouched/595/1489325.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_phineas_and_ferb_mission_marvel_movie_hindi_dubbed_download_hd",
-      "title": "Phineas and Ferb Mission Marvel Movie",
-      "artworkUrl": "https://static.tvmaze.com/uploads/images/original_untouched/595/1489325.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
       "id": "anivault_rt_hindi_digimon_xros_wars_season_1_hindi_episodes_download_720p_hd_1080p_fhd",
       "title": "Digimon Xros Wars",
       "artworkUrl": "https://media.kitsu.app/anime/poster_images/5404/original.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_cars_2006_movie_hindi_dubbed_download_hd_disney_movies",
-      "title": "Cars (2006) Movie",
-      "artworkUrl": "https://media.kitsu.app/anime/47741/poster_image/2a7333b7fb4f40f6725531ae19a84870.png",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_cars_2_2011_movie_hindi_dubbed_download_hd",
-      "title": "Cars 2 (2011) Movie",
-      "artworkUrl": "https://www.rareanimes.mov/wp-content/uploads/2020/03/Disney’s-Cars-2-Movie-Hindi-Dubbed-Download-1080p-FHD.jpg",
-      "status": "unable_to_verify",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_cars_3_2017_movie_hindi_dubbed_download_hd",
-      "title": "Cars 3 (2017) Movie",
-      "artworkUrl": "https://www.rareanimes.mov/wp-content/uploads/2020/03/Disney’s-Cars-3-Movie-Hindi-Dubbed-Download-1080p-FHD.jpg",
-      "status": "unable_to_verify",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_planes_2013_movie_hindi_dubbed_download_hd",
-      "title": "Planes (2013) Movie",
-      "artworkUrl": "https://static.tvmaze.com/uploads/images/original_untouched/522/1307120.jpg",
       "status": "auto_fixed",
       "hasArtwork": true
     },
@@ -3742,44 +2846,9 @@
       "hasArtwork": true
     },
     {
-      "id": "anivault_rt_hindi_thor_tales_of_asgard_movie_hindi_watch_download_hd",
-      "title": "Thor Tales of Asgard Movie Hindi Watch",
-      "artworkUrl": "https://www.rareanimes.mov/wp-content/uploads/2022/06/Thor-Tales-of-Asgard-Movie-Hindi-Watch-Download-HD.jpg",
-      "status": "unable_to_verify",
-      "hasArtwork": true
-    },
-    {
       "id": "anivault_rt_hindi_dinosaur_king_season_1_hindi_episodes_download_hd",
       "title": "Dinosaur King",
       "artworkUrl": "https://media.kitsu.app/anime/poster_images/3117/original.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_digimon_adventure_tri_movie_1_reunion_hindi_download_360p_480p_720p_hd_1080p",
-      "title": "Digimon Adventure tri Movie 1 Reunion",
-      "artworkUrl": "https://media.kitsu.app/anime/poster_images/8684/original.png",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_digimon_adventure_tri_movie_2_determination_hindi_download_360p_480p_720p_hd_1080p",
-      "title": "Digimon Adventure tri Movie 2 Determination",
-      "artworkUrl": "https://media.kitsu.app/anime/poster_images/11546/original.png",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_digimon_adventure_tri_movie_3_confession_hindi_download_360p_480p_720p_hd_1080p",
-      "title": "Digimon Adventure tri Movie 3 Confession",
-      "artworkUrl": "https://media.kitsu.app/anime/poster_images/11547/original.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_digimon_adventure_tri_movie_4_loss_hindi_download_360p_480p_720p_hd1080p",
-      "title": "Digimon Adventure tri Movie 4 Loss",
-      "artworkUrl": "https://media.kitsu.app/anime/poster_images/11548/original.jpg",
       "status": "auto_fixed",
       "hasArtwork": true
     },
@@ -3819,135 +2888,9 @@
       "hasArtwork": true
     },
     {
-      "id": "anivault_rt_hindi_ninja_hattori_the_movie_picture_dairy_hindi_download_hd",
-      "title": "Ninja Hattori The Movie Picture Dairy",
-      "artworkUrl": "https://media.kitsu.app/anime/poster_images/2394/original.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_ninja_hattori_home_town_movie_hindi_download_hd_remastered",
-      "title": "Ninja Hattori Home Town Movie",
-      "artworkUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/4936.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_winx_club_the_secret_of_the_lost_kingdom_movie_hindi_download_1080p_hd",
-      "title": "Winx Club The Secret of the Lost Kingdom Movie",
-      "artworkUrl": "https://media.kitsu.app/anime/poster_images/13555/original.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_winx_club_special_the_fate_of_bloom_2011_movie_hindi_download_1080p_hd",
-      "title": "Winx Club Special: The Fate of Bloom (2011) Movie",
-      "artworkUrl": "https://media.kitsu.app/anime/poster_images/13546/original.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_winx_club_special_2_revenge_of_the_trix_movie_hindi_download_1080p_hd",
-      "title": "Winx Club Special 2 Revenge of the Trix Movie",
-      "artworkUrl": "https://media.kitsu.app/anime/poster_images/13554/original.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_winx_club_special_3_the_battle_for_magix_movie_hindi_download_1080p_hd",
-      "title": "Winx Club Special 3 The Battle For Magix Movie",
-      "artworkUrl": "https://static.tvmaze.com/uploads/images/original_untouched/273/684918.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_winx_club_special_4_the_shadow_phoenix_movie_hindi_download_1080p_hd",
-      "title": "Winx Club Special 4 The Shadow Phoenix Movie",
-      "artworkUrl": "https://media.kitsu.app/anime/poster_images/13548/original.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
       "id": "anivault_rt_hindi_zatch_bell_season_1_hindi_episodes_download_hd",
       "title": "Zatch Bell",
       "artworkUrl": "https://media.kitsu.app/anime/poster_images/225/original.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_ben_10_secret_of_the_omnitrix_movie_hindi_tamil_telugu_watch_download_hd",
-      "title": "Ben 10 Secret of the Omnitrix Movie Hindi – Tamil – Telugu Watch",
-      "artworkUrl": "https://www.rareanimes.mov/wp-content/uploads/2019/07/Ben-10-Secret-of-the-Omnitrix-Movie-Hindi-–-Tamil-–-Telugu-Download-FHD.png",
-      "status": "unable_to_verify",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_the_powerpuff_girls_movie_2002_hindi_download_hd",
-      "title": "The Powerpuff Girls Movie 2002",
-      "artworkUrl": "https://static.tvmaze.com/uploads/images/original_untouched/11/27896.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_tom_and_jerrys_giant_adventure_2013_movie_hindi_dubbed_download_hd",
-      "title": "Tom and Jerry’s Giant Adventure (2013) Movie",
-      "artworkUrl": "https://media.kitsu.app/anime/46900/poster_image/7d484bc16971c2c997fed7792c2ab8a7.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_tom_and_jerry_willy_wonka_and_the_chocolate_factory_2017_movie_hindi_dubbed_download_hd",
-      "title": "Tom and Jerry Willy Wonka and the Chocolate Factory (2017) Movie",
-      "artworkUrl": "https://media.kitsu.app/anime/46893/poster_image/166e77654bc5a8ca41ba4598057b3f50.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_tom_and_jerry_shiver_me_whiskers_2006_movie_hindi_dubbed_download_hd",
-      "title": "Tom And Jerry Shiver Me Whiskers 2006 Movie",
-      "artworkUrl": "https://static.tvmaze.com/uploads/images/original_untouched/483/1209807.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_tom_and_jerry_back_to_oz_2016_movie_hindi_dubbed_download_hd",
-      "title": "Tom and Jerry Back to Oz (2016) Movie",
-      "artworkUrl": "https://media.kitsu.app/anime/46900/poster_image/7d484bc16971c2c997fed7792c2ab8a7.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_tom_and_jerry_robin_hood_and_his_merry_mouse_2012_movie_hindi_dubbed_download_hd",
-      "title": "Tom and Jerry Robin Hood and His Merry Mouse (2012) Movie",
-      "artworkUrl": "https://media.kitsu.app/anime/46900/poster_image/7d484bc16971c2c997fed7792c2ab8a7.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_tom_and_jerry_the_wizard_of_oz_2011_movie_hindi_dubbed_download_hd",
-      "title": "Tom and Jerry & The Wizard of Oz (2011) Movie",
-      "artworkUrl": "https://media.kitsu.app/anime/46900/poster_image/7d484bc16971c2c997fed7792c2ab8a7.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_tom_and_jerry_the_fast_and_the_furry_2005_movie_hindi_dubbed_download_hd",
-      "title": "Tom and Jerry The Fast and the Furry (2005) Movie",
-      "artworkUrl": "https://media.kitsu.app/anime/46900/poster_image/7d484bc16971c2c997fed7792c2ab8a7.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_tom_and_jerry_meet_sherlock_holmes_2010_movie_hindi_dubbed_download_hd",
-      "title": "Tom and Jerry Meet Sherlock Holmes (2010) Movie",
-      "artworkUrl": "https://media.kitsu.app/anime/46900/poster_image/7d484bc16971c2c997fed7792c2ab8a7.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_tom_and_jerry_the_lost_dragon_2014_movie_hindi_dubbed_download_hd",
-      "title": "Tom and Jerry The Lost Dragon (2014) Movie",
-      "artworkUrl": "https://media.kitsu.app/anime/46893/poster_image/166e77654bc5a8ca41ba4598057b3f50.jpg",
       "status": "auto_fixed",
       "hasArtwork": true
     },
@@ -3994,13 +2937,6 @@
       "hasArtwork": true
     },
     {
-      "id": "anivault_rt_hindi_toy_story_5_2026_movie_hindi_dubbed_download_hd",
-      "title": "Toy Story 5 (2026) Movie English Dubbed",
-      "artworkUrl": "https://static.tvmaze.com/uploads/images/original_untouched/399/998235.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
       "id": "anivault_rt_hindi_konosuba_an_explosion_on_this_wonderful_world_season_1_hindi_dubbed_episodes_download_hd",
       "title": "KONOSUBA – An Explosion on This Wonderful World!",
       "artworkUrl": "https://media.kitsu.app/anime/46139/poster_image/55c0e00c8e27514262c4cf44b2c9c0d7.jpg",
@@ -4015,30 +2951,9 @@
       "hasArtwork": true
     },
     {
-      "id": "anivault_rt_hindi_cloudy_with_a_chance_of_meatballs_2009_movie_hindi_download_hd",
-      "title": "Cloudy with a Chance of Meatballs (2009) Movie",
-      "artworkUrl": "https://static.tvmaze.com/uploads/images/original_untouched/98/245431.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
       "id": "anivault_rt_hindi_captain_tsubasa_junior_youth_arc_season_2_hindi_dubbed_episodes_download_hd",
       "title": "Captain Tsubasa Junior Youth Arc",
       "artworkUrl": "https://media.kitsu.app/anime/47229/poster_image/cab3e0f874416536412537ccea780f68.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_white_snake_2019_movie_hindi_dubbed_download_hd",
-      "title": "White Snake (2019) Movie",
-      "artworkUrl": "https://media.kitsu.app/anime/poster_images/42683/original.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_rio_2011_movie_hindi_dubbed_download_hd",
-      "title": "Rio (2011) Movie",
-      "artworkUrl": "https://media.kitsu.app/anime/poster_images/5262/original.jpg",
       "status": "auto_fixed",
       "hasArtwork": true
     },
@@ -4074,13 +2989,6 @@
       "id": "anivault_rt_hindi_the_100_girlfriends_who_really_really_really_really_really_love_you_season_1_hindi_dubbed_episodes_download_hd",
       "title": "The 100 Girlfriends Who Really, Really, Really, Really, REALLY Love You",
       "artworkUrl": "https://media.kitsu.app/anime/47179/poster_image/ae13f41cce60f3647893fd6e11bef247.png",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_avatar_aang_the_last_airbender_2026_movie_hindi_dubbed_download_480p_720p_1080p_2160p_4k",
-      "title": "Avatar Aang: The Last Airbender (2026) Movie English Dubbed",
-      "artworkUrl": "https://media.kitsu.app/anime/50666/poster_image/146a76180b45e94ec7e9e72bc2e7a945.jpg",
       "status": "auto_fixed",
       "hasArtwork": true
     },
@@ -4155,20 +3063,6 @@
       "hasArtwork": true
     },
     {
-      "id": "anivault_rt_hindi_lego_scooby_doo_knight_time_terror_2015_movie_hindi_download_hd",
-      "title": "LEGO Scooby-Doo! Knight Time Terror (2015) Movie",
-      "artworkUrl": "https://static.tvmaze.com/uploads/images/original_untouched/231/578285.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_the_boss_baby_2017_movie_hindi_dubbed_download_hd",
-      "title": "The Boss Baby (2017) Movie",
-      "artworkUrl": "https://static.tvmaze.com/uploads/images/original_untouched/168/420194.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
       "id": "anivault_rt_hindi_cinderella_chef_season_3_hindi_dubbed_episodes_download_hd",
       "title": "Cinderella Chef",
       "artworkUrl": "https://static.tvmaze.com/uploads/images/original_untouched/155/388023.jpg",
@@ -4176,37 +3070,9 @@
       "hasArtwork": true
     },
     {
-      "id": "anivault_rt_hindi_migration_2023_movie_hindi_dubbed_download_hd",
-      "title": "Migration (2023) Movie",
-      "artworkUrl": "https://static.tvmaze.com/uploads/images/original_untouched/154/385556.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_tom_and_jerry_forbidden_compass_2025_movie_english_dubbed_download_hd",
-      "title": "Tom and Jerry: Forbidden Compass (2025) Movie English Dubbed",
-      "artworkUrl": "https://media.kitsu.app/anime/46900/poster_image/7d484bc16971c2c997fed7792c2ab8a7.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
       "id": "anivault_rt_hindi_campfire_cooking_in_another_world_with_my_absurd_skill_season_1_hindi_dubbed_episodes_download_hd",
       "title": "Campfire Cooking in Another World with My Absurd Skill",
       "artworkUrl": "https://static.tvmaze.com/uploads/images/original_untouched/637/1593403.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_the_fixies_top_secret_2017_movie_hindi_dubbed_download_hd",
-      "title": "The Fixies: Top Secret (2017) Movie",
-      "artworkUrl": "https://www.rareanimes.mov/wp-content/uploads/2026/09/The-Fixies-Top-Secret-2017-Movie-Hindi-Dubbed-Download-HD-470x264.jpg",
-      "status": "unable_to_verify",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_death_note_relight_2_ls_successors_2009_movie_hindi_download_hd",
-      "title": "Death Note Relight 2: L's Successors (2009) Movie",
-      "artworkUrl": "https://media.kitsu.app/anime/poster_images/1376/original.png",
       "status": "auto_fixed",
       "hasArtwork": true
     },
@@ -4225,37 +3091,9 @@
       "hasArtwork": true
     },
     {
-      "id": "anivault_rt_hindi_paw_patrol_the_dino_movie_2026_movie_hindi_dubbed_download_480p_720p_1080p_2160p_4k",
-      "title": "PAW Patrol: The Dino Movie (2026) Movie",
-      "artworkUrl": "https://www.rareanimes.mov/wp-content/uploads/2026/09/PAW-Patrol-The-Dino-Movie-2026-Movie-Hindi-Dubbed-Download-480p-720p-1080p-2160p-4k-470x264.jpg",
-      "status": "unable_to_verify",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_that_time_i_got_reincarnated_as_a_slime_the_movie_tears_of_the_azure_sea_2026_movie_hindi_dubbed_download_hd",
-      "title": "That Time I Got Reincarnated as a Slime the Movie: Tears of the Azure Sea (2026) Movie Hindi Subbed",
-      "artworkUrl": "https://media.kitsu.app/anime/49236/poster_image/9d7d4eda4e1a8bd4a0c67f9359947be2.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
       "id": "anivault_rt_hindi_obocchama_kun_complete_all_episodes_hindi_dubbed_download_hd",
       "title": "Obocchama-kun",
       "artworkUrl": "https://media.kitsu.app/anime/poster_images/9501/original.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_death_note_relight_1_visions_of_a_god_2007_movie_hindi_download_hd",
-      "title": "Death Note Relight: Visions of a God (2007) Movie",
-      "artworkUrl": "https://media.kitsu.app/anime/2707/poster_image/f6d307a735d2d884142c6d971dc47779.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_demon_slayer_kimetsu_no_yaiba_infinity_castle_2025_movie_hindi_dubbed_download_hd",
-      "title": "Demon Slayer Kimetsu no Yaiba Infinity Castle (2025) Movie",
-      "artworkUrl": "https://media.kitsu.app/anime/50005/poster_image/3258857e1bf9d1f6797abed4b72bd151.png",
       "status": "auto_fixed",
       "hasArtwork": true
     },
@@ -4267,34 +3105,6 @@
       "hasArtwork": true
     },
     {
-      "id": "anivault_rt_hindi_rio_2_2014_movie_hindi_dubbed_download_hd",
-      "title": "Rio 2 (2014) Movie",
-      "artworkUrl": "https://www.rareanimes.mov/wp-content/uploads/2026/07/Rio-2-2014-Movie-Hindi-Dubbed-Download-HD-300x200.webp",
-      "status": "unable_to_verify",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_luca_2021_movie_hindi_dubbed_download_hd",
-      "title": "Luca (2021) Movie",
-      "artworkUrl": "https://media.kitsu.app/anime/50518/poster_image/c413eeecb52263051b81748e248470ff.png",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_tom_and_jerry_2021_movie_hindi_dubbed_download_hd",
-      "title": "Tom and Jerry (2021) Movie",
-      "artworkUrl": "https://media.kitsu.app/anime/46893/poster_image/166e77654bc5a8ca41ba4598057b3f50.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_tom_and_jerry_santas_little_helpers_2014_movie_hindi_dubbed_download_hd",
-      "title": "Tom and Jerry Santa's Little Helpers (2014) Movie",
-      "artworkUrl": "https://media.kitsu.app/anime/46900/poster_image/7d484bc16971c2c997fed7792c2ab8a7.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
       "id": "anivault_rt_hindi_skeleton_knight_in_another_world_season_1_hindi_dubbed_episodes_download_hd",
       "title": "Skeleton Knight in Another World",
       "artworkUrl": "https://media.kitsu.app/anime/44423/poster_image/d7000710e4c9585da5fb202414cb0f11.jpg",
@@ -4302,51 +3112,9 @@
       "hasArtwork": true
     },
     {
-      "id": "anivault_rt_hindi_snoopy_presents_theres_no_place_like_home_snoopy_2026_movie_hindi_dubbed_download_hd",
-      "title": "Snoopy Presents: There's No Place Like Home, Snoopy (2026) Movie",
-      "artworkUrl": "https://www.rareanimes.mov/wp-content/uploads/2026/09/Snoopy-Presents-Theres-No-Place-Like-Home-Snoopy-2026-Movie-Hindi-Dubbed-Download-HD-470x264.webp",
-      "status": "unable_to_verify",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_happy_halloween_scooby_doo_2020_hindi_download_hd_movie_34",
-      "title": "Happy Halloween, Scooby-Doo! (2020) English",
-      "artworkUrl": "https://static.tvmaze.com/uploads/images/original_untouched/231/578285.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
       "id": "anivault_rt_hindi_tamons_b_side_season_1_hindi_dubbed_episodes_download_hd",
       "title": "Tamon's B-Side",
       "artworkUrl": "https://media.kitsu.app/anime/48944/poster_image/4223765845a8be1c1471ce5f4c440244.webp",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_mobile_suit_gundam_hathaway_the_sorcery_of_nymph_circe_2026_movie_hindi_download_hd",
-      "title": "MOBILE SUIT GUNDAM HATHAWAY The Sorcery of Nymph Circe (2026) Movie",
-      "artworkUrl": "https://media.kitsu.app/anime/44536/poster_image/f74525fc3c5d3fbe3de60a48fa763e80.png",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_cloudy_with_a_chance_of_meatballs_2_2013_movie_hindi_download_hd",
-      "title": "Cloudy with a Chance of Meatballs 2 (2013) Movie",
-      "artworkUrl": "https://static.tvmaze.com/uploads/images/original_untouched/98/245431.jpg",
-      "status": "auto_fixed",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_grand_theft_auto_vi_an_extended_look_2026_english_dubbed_download_480p_720p_1080p_2160p_4k",
-      "title": "Grand Theft Auto VI An Extended Look (2026) Movie English Dubbed",
-      "artworkUrl": "https://www.rareanimes.mov/wp-content/uploads/2026/08/Grand-Theft-Auto-VI-An-Extended-Look-2026-Movie-English-Dubbed-Download-HD-470x264.png",
-      "status": "unable_to_verify",
-      "hasArtwork": true
-    },
-    {
-      "id": "anivault_rt_hindi_boonie_bears_the_hidden_protector_2026_movie_hindi_download_hd",
-      "title": "Boonie Bears The Hidden Protector (2026) Movie",
-      "artworkUrl": "https://media.kitsu.app/anime/poster_images/40993/original.jpg",
       "status": "auto_fixed",
       "hasArtwork": true
     },

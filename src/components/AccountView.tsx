@@ -50,7 +50,7 @@ import {
   triggerGuestRestriction
 } from '../utils/userStorage.ts';
 import { ThemeMode, UserAccount } from '../types.ts';
-import { AnivexLogo } from './AnivexLogo.tsx';
+import { ZenimeLogo } from './ZenimeLogo.tsx';
 import { OwnerLoginModal } from './OwnerLoginModal.tsx';
 import { OwnerDashboardModal } from './OwnerDashboardModal.tsx';
 import { AccountSwitcherModal } from './AccountSwitcherModal.tsx';
@@ -113,9 +113,8 @@ export const AccountView: React.FC<AccountViewProps> = ({ onOpenAuthModal }) => 
 
   const fetchNewBugCount = async () => {
     try {
-      const token = localStorage.getItem('anivault_owner_session_token') || '';
       const res = await fetch('/api/bug-reports/owner/list', {
-        headers: { 'X-Owner-Session': token }
+        credentials: 'include'
       });
       if (res.ok) {
         const data = await res.json();
@@ -126,26 +125,14 @@ export const AccountView: React.FC<AccountViewProps> = ({ onOpenAuthModal }) => 
     }
   };
 
-  const checkOwnerSession = async (overrideAcc?: UserAccount) => {
+  const checkOwnerSession = async (_overrideAcc?: UserAccount) => {
     try {
-      const activeAcc = overrideAcc || account;
-      const isAccOwner = activeAcc.role === 'owner' || activeAcc.id === 'usr_owner';
-      const token = isAccOwner ? localStorage.getItem('anivault_owner_session_token') : null;
-      const headers: Record<string, string> = {};
-      if (token) {
-        headers['Authorization'] = `Bearer ${token}`;
-        headers['x-anivault-owner-session'] = token;
-      }
       const res = await fetch('/api/owner/session', {
-        headers,
         credentials: 'include'
       });
       if (res.ok) {
         const data = await res.json();
         setOwnerSession(data);
-        if (!data.authenticated && token) {
-          localStorage.removeItem('anivault_owner_session_token');
-        }
       }
     } catch (err) {
       console.warn('Could not check owner session', err);
@@ -232,7 +219,7 @@ export const AccountView: React.FC<AccountViewProps> = ({ onOpenAuthModal }) => 
             Manage your Zenime profile, customization settings, and account session
           </p>
         </div>
-        <AnivexLogo variant="cinematic" size="lg" className="inline-flex shrink-0" />
+        <ZenimeLogo variant="cinematic" size="lg" className="inline-flex shrink-0" />
       </div>
 
       {/* 2. Profile Overview Card */}
@@ -1122,7 +1109,6 @@ export const AccountView: React.FC<AccountViewProps> = ({ onOpenAuthModal }) => 
             setIsOwnerBugReportsOpen(false);
             fetchNewBugCount();
           }}
-          sessionToken={localStorage.getItem('anivault_owner_session_token') || undefined}
         />
       )}
 
@@ -1164,7 +1150,6 @@ export const AccountView: React.FC<AccountViewProps> = ({ onOpenAuthModal }) => 
           const normalizedOwner = { ...owner, username: resolvedUsername };
           setOwnerSession({ authenticated: true, owner: normalizedOwner });
           setIsOwnerLoginOpen(false);
-          const ownerToken = localStorage.getItem('anivault_owner_session_token') || undefined;
           setSessionAccount({
             id: 'usr_owner',
             username: resolvedUsername,
@@ -1173,7 +1158,7 @@ export const AccountView: React.FC<AccountViewProps> = ({ onOpenAuthModal }) => 
             provider: 'email',
             role: 'owner',
             createdAt: new Date().toISOString()
-          }, ownerToken);
+          });
         }}
       />
 

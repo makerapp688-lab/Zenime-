@@ -1113,7 +1113,20 @@ class InformationManagerEngine {
       seasonsWithAtMostOneEp === actualSeasonsLen &&
       sumSeasonEpisodes === actualSeasonsLen;
 
-    if (isMultiSeasonCollapsedToSingleEpisodes) {
+    const hasOnlySingleImportedEpisodesAcrossAllSeasons =
+      anime.type === 'TV' &&
+      actualSeasonsLen >= 2 &&
+      seasonsArr.every((s: any) => (Array.isArray(s.episodes) ? s.episodes.length : 0) <= 1) &&
+      anime.isEpisodeListComplete !== true;
+
+    const isUncertainSeasonMapping =
+      isMultiSeasonCollapsedToSingleEpisodes ||
+      (hasOnlySingleImportedEpisodesAcrossAllSeasons &&
+        Boolean(topCandidate?.totalEpisodes) &&
+        (topCandidate?.confidence || 0) >= 0.88 &&
+        Math.abs(sumSeasonEpisodes - (topCandidate?.totalEpisodes || 0)) >= 5);
+
+    if (isUncertainSeasonMapping) {
       brokenSeasons.push(
         `All ${actualSeasonsLen} seasons have only 1 episode recorded (total ${sumSeasonEpisodes} episodes${
           topCandidate?.totalEpisodes ? ` vs ${topCandidate.totalEpisodes} on ${topCandidate.source}` : ''
@@ -1162,7 +1175,7 @@ class InformationManagerEngine {
         message: `Total episodes (${currentTotalEp}) does not match sum of season episodes (${sumSeasonEpisodes}).`
       });
     } else if (
-      isMultiSeasonCollapsedToSingleEpisodes ||
+      isUncertainSeasonMapping ||
       (topCandidate?.totalEpisodes &&
         topCandidate.confidence >= 0.88 &&
         actualSeasonsLen <= 1 &&

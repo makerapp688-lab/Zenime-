@@ -335,20 +335,37 @@ function loadSessions() {
   }
 }
 
+export function createOwnerSession(email: string, username: string, durationMs: number = 30 * 24 * 60 * 60 * 1000): string {
+  loadSessions();
+  const sessionExpires = Date.now() + durationMs;
+  const sessionId = generateSignedSessionToken(
+    'usr_owner',
+    email,
+    username,
+    'owner',
+    'password_auth',
+    sessionExpires
+  );
+  activeSessions.set(sessionId, {
+    sessionId,
+    email,
+    username,
+    role: 'owner',
+    createdAt: Date.now(),
+    expiresAt: sessionExpires
+  });
+  saveSessions();
+  return sessionId;
+}
+
 export function revokeOwnerSession(sessionId: string): void {
   if (!sessionId) return;
   loadSessions();
-  activeSessions.set(sessionId, {
-    sessionId,
-    email: '',
-    username: '',
-    role: 'owner',
-    createdAt: Date.now(),
-    expiresAt: Date.now() + 30 * 24 * 60 * 60 * 1000,
-    revoked: true
-  });
+  activeSessions.delete(sessionId);
   saveSessions();
 }
+
+export const destroySession = revokeOwnerSession;
 
 function saveSessions() {
   try {
@@ -503,9 +520,6 @@ export function authenticateSession(req: Request, res: Response, next: NextFunct
   const bearerToken = authHeader && authHeader.startsWith('Bearer ') ? authHeader.slice(7).trim() : null;
   const customOwnerHeader = (req.headers['x-anivault-owner-session'] || req.headers['x-owner-session']) as string;
   const customUserHeader = req.headers['x-anivault-user-session'] as string;
-  const rawPathToken = (req.params?.ownerToken) as string;
-  const pathToken = rawPathToken ? decodeURIComponent(rawPathToken).replace(/_dot_/g, '.') : '';
-  const queryToken = (req.query.token || req.query.ownerToken || pathToken) as string;
 
   // Detect if caller is explicitly using a normal user session
   if (customUserHeader && !customOwnerHeader) {
@@ -523,23 +537,15 @@ export function authenticateSession(req: Request, res: Response, next: NextFunct
     }
   }
 
-  if (queryToken) {
-    const decodedQuery = verifyAndDecodeSessionToken(queryToken);
-    if (decodedQuery && decodedQuery.role === 'user') {
-      (req as any).isNormalUserRequest = true;
-      (req as any).ownerSession = null;
-      return next();
-    }
-  }
-
-  // If no explicit owner token header/query was provided and a normal user session cookie is active without an owner cookie
-  if (!bearerToken && !customOwnerHeader && !queryToken && cookies['anivault_user_session'] && !cookies['anivault_owner_session']) {
+  // If no explicit owner token header was provided and a normal user session cookie is active without an owner cookie
+  if (!bearerToken && !customOwnerHeader && cookies['anivault_user_session'] && !cookies['anivault_owner_session']) {
     (req as any).isNormalUserRequest = true;
     (req as any).ownerSession = null;
     return next();
   }
 
-  const sessionId = bearerToken || customOwnerHeader || queryToken || cookies['anivault_owner_session'];
+  // Authorize strictly from HttpOnly secure cookie or explicit authorized headers
+  const sessionId = bearerToken || customOwnerHeader || cookies['anivault_owner_session'];
 
   if (!sessionId) {
     (req as any).ownerSession = null;
@@ -797,8 +803,7 @@ export function createOwnerRouter(): express.Router {
       res.json({
         success: true,
         message: 'Email verified successfully. Permanent Zenime Owner account created.',
-        owner: { email: newOwner.email, username: newOwner.username, role: newOwner.role },
-        sessionToken: sessionId
+        owner: { email: newOwner.email, username: newOwner.username, role: newOwner.role }
       });
     } catch (err: any) {
       const statusCode = err.statusCode || 400;
@@ -981,8 +986,7 @@ export function createOwnerRouter(): express.Router {
       res.json({
         success: true,
         message: 'Owner login verified.',
-        owner: { email: owner.email, username: owner.username, role: owner.role },
-        sessionToken: sessionId
+        owner: { email: owner.email, username: owner.username, role: owner.role }
       });
     } catch (err: any) {
       const statusCode = err.statusCode || 400;
@@ -1273,7 +1277,6 @@ export function createOwnerRouter(): express.Router {
       googleEmail: null,
       isGoogleAuthorized: false,
       ownerExists: ownerExists,
-      sessionToken: isOwnerSessionActive && session ? session.sessionId : undefined,
       owner: isOwnerSessionActive && owner ? {
         email: owner.email,
         username: owner.username,
@@ -1363,8 +1366,7 @@ export function createOwnerRouter(): express.Router {
         username: owner.username,
         role: 'owner',
         createdAt: owner.createdAt
-      },
-      sessionToken: sessionId
+      }
     });
   });
 
@@ -2777,8 +2779,7 @@ export function createOwnerRouter(): express.Router {
       const metadata = inspectLatestAppSourceMetadata();
       res.json({
         success: true,
-        metadata,
-        sessionToken: session?.sessionId
+        metadata
       });
     } catch (err: any) {
       res.status(500).json({
@@ -2809,7 +2810,6 @@ export function createOwnerRouter(): express.Router {
       res.json({
         success: true,
         message: `Latest website source package rebuilt and updated (${pkg.totalFiles} files, ${(pkg.compressedBytes / (1024 * 1024)).toFixed(2)} MB). Ready for download.`,
-        sessionToken: session?.sessionId,
         package: {
           filename: pkg.filename,
           generatedAt: pkg.generatedAt,
@@ -2913,8 +2913,6 @@ export function createOwnerRouter(): express.Router {
   };
 
   router.get('/source-package/download', authenticateSession, requireOwner, handleOwnerSourcePackageDownload);
-  router.get('/source-package/download/t/:ownerToken', authenticateSession, requireOwner, handleOwnerSourcePackageDownload);
-  router.get('/source-package/download/t/:ownerToken/:requestedFilename', authenticateSession, requireOwner, handleOwnerSourcePackageDownload);
   router.get('/source-package/download/:requestedFilename', authenticateSession, requireOwner, handleOwnerSourcePackageDownload);
 
   // ==========================================

@@ -2,7 +2,7 @@ import React from 'react';
 import { X, CheckCircle2, Database, ShieldCheck, RefreshCw, Layers, ExternalLink } from 'lucide-react';
 import { CatalogueStats } from '../types.ts';
 import { RARETOON_BASE_URL, RARETOON_PROVIDER_NAME } from '../utils/provider.ts';
-import { AnivexLogo } from './AnivexLogo.tsx';
+import { ZenimeLogo } from './ZenimeLogo.tsx';
 
 interface StatsModalProps {
   isOpen: boolean;
@@ -37,7 +37,7 @@ export const StatsModal: React.FC<StatsModalProps> = ({
         {/* Header */}
         <div className="flex items-center justify-between px-5 py-4 bg-slate-950/90 dark:bg-slate-950/90 light:bg-slate-100 border-b border-slate-800 dark:border-slate-800 light:border-slate-200">
           <div className="flex items-center gap-3">
-            <AnivexLogo size="sm" />
+            <ZenimeLogo size="sm" />
             <div>
               <h2 className="text-base font-bold text-white dark:text-white light:text-slate-900 tracking-tight">
                 Zenime Production Catalogue Report

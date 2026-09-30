@@ -27,23 +27,8 @@ import {
   Loader2
 } from 'lucide-react';
 
-function getOwnerToken(): string {
-  try {
-    return localStorage.getItem('anivault_owner_session_token') || '';
-  } catch {
-    return '';
-  }
-}
-
 function getOwnerHeaders(): Record<string, string> {
-  const token = getOwnerToken();
-  return token
-    ? {
-        'Content-Type': 'application/json',
-        Authorization: `Bearer ${token}`,
-        'X-Owner-Session': token
-      }
-    : { 'Content-Type': 'application/json' };
+  return { 'Content-Type': 'application/json' };
 }
 
 type InfoFilterTab =

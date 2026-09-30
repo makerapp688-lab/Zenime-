@@ -14,7 +14,7 @@ import {
   Sparkles
 } from 'lucide-react';
 import { UserAccount } from '../types.ts';
-import { AnivexLogo } from './AnivexLogo.tsx';
+import { ZenimeLogo } from './ZenimeLogo.tsx';
 import {
   getSavedAccounts,
   switchActiveAccount,
@@ -89,19 +89,7 @@ export const AccountSwitcherModal: React.FC<AccountSwitcherModalProps> = ({
 
   const fetchOwnerStatus = async () => {
     try {
-      const ownerToken = localStorage.getItem('anivault_owner_session_token');
-      const userToken = localStorage.getItem('anivault_user_session_token');
-      const headers: Record<string, string> = {};
-      if (ownerToken) {
-        headers['Authorization'] = `Bearer ${ownerToken}`;
-        headers['x-anivault-owner-session'] = ownerToken;
-      }
-      if (userToken) {
-        headers['x-anivault-user-session'] = userToken;
-      }
-
       const res = await fetch('/api/owner/session', {
-        headers,
         credentials: 'include'
       });
 
@@ -225,7 +213,7 @@ export const AccountSwitcherModal: React.FC<AccountSwitcherModalProps> = ({
         {/* Header */}
         <div className="flex items-center justify-between pb-3 border-b border-slate-800/80 dark:border-slate-800/80 light:border-slate-200">
           <div className="flex items-center gap-2.5">
-            <AnivexLogo size="sm" />
+            <ZenimeLogo size="sm" />
             <div>
               <h2
                 id="account-switcher-title"

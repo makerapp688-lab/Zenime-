@@ -11,7 +11,7 @@ import {
 import { RARETOON_BASE_URL, RARETOON_PROVIDER_NAME } from '../utils/provider.ts';
 import { useUserData } from '../hooks/useUserData.ts';
 import { getAccountAvatar, triggerGuestRestriction } from '../utils/userStorage.ts';
-import { AnivexLogo } from './AnivexLogo.tsx';
+import { ZenimeLogo } from './ZenimeLogo.tsx';
 
 export type NavTabType = 'browse' | 'mylist' | 'completed' | 'compare' | 'account' | 'watchlist' | 'favorites';
 
@@ -40,7 +40,7 @@ export const Navbar: React.FC<NavbarProps> = ({
           onClick={() => setActiveTab('browse')}
           id="nav-logo-group"
         >
-          <AnivexLogo size="md" />
+          <ZenimeLogo size="md" />
           <div>
             <div className="flex items-center gap-2">
               <span className="text-xl font-black text-white dark:text-white light:text-slate-900 tracking-tight font-display">

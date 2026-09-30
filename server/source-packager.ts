@@ -53,12 +53,17 @@ const EXCLUDED_SENSITIVE_FILES = new Set([
   'server/data/owner-account-deleted.json',
   'server/data/owner-sessions.json',
   'server/data/users-sessions.json',
-  'server/data/users-temp-verifications.json',
+  'server/data/zenime-owner-otp.json',
   'server/data/zenime-user-otp.json',
+  'server/data/catalogue-quarantine-backup.json',
   'public/anivault-source.tar.gz',
   'dist/anivault-source.tar.gz',
   'public/anivault-source.zip',
-  'dist/anivault-source.zip'
+  'dist/anivault-source.zip',
+  'public/zenime-source.zip',
+  'dist/zenime-source.zip',
+  'public/anivex-source.zip',
+  'dist/anivex-source.zip'
 ]);
 
 // Files that should be included as sanitized empty structures so the app boots cleanly with zero leaked user/audit data

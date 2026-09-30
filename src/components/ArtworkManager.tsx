@@ -31,17 +31,8 @@ import {
   Globe
 } from 'lucide-react';
 
-function getOwnerToken(): string {
-  try {
-    return localStorage.getItem('anivault_owner_session_token') || '';
-  } catch {
-    return '';
-  }
-}
-
 function getOwnerAuthHeaders(): Record<string, string> {
-  const token = getOwnerToken();
-  return token ? { Authorization: `Bearer ${token}`, 'X-Owner-Session': token } : {};
+  return { 'Content-Type': 'application/json' };
 }
 
 interface ArtworkManagerProps {
@@ -702,11 +693,7 @@ export const ArtworkManager: React.FC<ArtworkManagerProps> = () => {
 
     let es: EventSource | null = null;
     try {
-      const token = getOwnerToken();
-      const streamUrl = token
-        ? `/api/owner/artwork-manager/stream?token=${encodeURIComponent(token)}`
-        : '/api/owner/artwork-manager/stream';
-      es = new EventSource(streamUrl, { withCredentials: true });
+      es = new EventSource('/api/owner/artwork-manager/stream', { withCredentials: true });
       es.onmessage = (event) => {
         try {
           const parsed = JSON.parse(event.data);

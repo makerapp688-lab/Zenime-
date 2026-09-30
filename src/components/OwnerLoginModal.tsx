@@ -17,7 +17,7 @@ import {
   RotateCcw
 } from 'lucide-react';
 import { OtpInput } from './OtpInput.tsx';
-import { AnivexLogo } from './AnivexLogo.tsx';
+import { ZenimeLogo } from './ZenimeLogo.tsx';
 
 interface OwnerLoginModalProps {
   isOpen: boolean;
@@ -86,6 +86,7 @@ export const OwnerLoginModal: React.FC<OwnerLoginModalProps> = ({ isOpen, onClos
       const res = await fetch('/api/owner/login-init', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
+        credentials: 'include',
         body: JSON.stringify({ email: cleanEmail, password })
       });
       let data: any = {};
@@ -106,11 +107,9 @@ export const OwnerLoginModal: React.FC<OwnerLoginModalProps> = ({ isOpen, onClos
         setMode('login_verify');
         return;
       }
-      if (data.sessionToken) {
-        try {
-          localStorage.setItem('anivault_owner_session_token', data.sessionToken);
-        } catch {}
-      }
+      try {
+        localStorage.removeItem('anivault_owner_session_token');
+      } catch {}
       onLoginSuccess(data.owner);
       onClose();
     } catch (err: any) {
@@ -134,6 +133,7 @@ export const OwnerLoginModal: React.FC<OwnerLoginModalProps> = ({ isOpen, onClos
       const res = await fetch('/api/owner/login-verify', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
+        credentials: 'include',
         body: JSON.stringify({
           email: email.trim().toLowerCase(),
           code: cleanCode
@@ -143,11 +143,9 @@ export const OwnerLoginModal: React.FC<OwnerLoginModalProps> = ({ isOpen, onClos
       if (!res.ok) {
         throw new Error(data.error || 'Verification failed.');
       }
-      if (data.sessionToken) {
-        try {
-          localStorage.setItem('anivault_owner_session_token', data.sessionToken);
-        } catch {}
-      }
+      try {
+        localStorage.removeItem('anivault_owner_session_token');
+      } catch {}
       onLoginSuccess(data.owner);
       onClose();
     } catch (err: any) {
@@ -250,6 +248,7 @@ export const OwnerLoginModal: React.FC<OwnerLoginModalProps> = ({ isOpen, onClos
       const res = await fetch('/api/owner/setup-verify', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
+        credentials: 'include',
         body: JSON.stringify({
           email: email.trim().toLowerCase(),
           code: cleanCode
@@ -259,11 +258,9 @@ export const OwnerLoginModal: React.FC<OwnerLoginModalProps> = ({ isOpen, onClos
       if (!res.ok) {
         throw new Error(data.error || 'Owner setup verification failed.');
       }
-      if (data.sessionToken) {
-        try {
-          localStorage.setItem('anivault_owner_session_token', data.sessionToken);
-        } catch {}
-      }
+      try {
+        localStorage.removeItem('anivault_owner_session_token');
+      } catch {}
       onLoginSuccess(data.owner);
       onClose();
     } catch (err: any) {
@@ -307,7 +304,7 @@ export const OwnerLoginModal: React.FC<OwnerLoginModalProps> = ({ isOpen, onClos
         {/* Header */}
         <div className="flex items-center justify-between border-b border-amber-500/30 pb-4">
           <div className="flex items-center gap-3">
-            <AnivexLogo size="sm" />
+            <ZenimeLogo size="sm" />
             <div>
               <div className="flex items-center gap-2">
                 <h2 className="text-base font-black tracking-tight text-white uppercase">Zenime Owner</h2>

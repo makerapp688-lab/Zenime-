@@ -19,19 +19,7 @@ import {
 } from 'lucide-react';
 
 function getOwnerHeaders(): Record<string, string> {
-  try {
-    const token = localStorage.getItem('anivault_owner_session_token') || '';
-    return token
-      ? {
-          'Content-Type': 'application/json',
-          Authorization: `Bearer ${token}`,
-          'X-Owner-Session': token,
-          'x-anivault-owner-session': token
-        }
-      : { 'Content-Type': 'application/json' };
-  } catch {
-    return { 'Content-Type': 'application/json' };
-  }
+  return { 'Content-Type': 'application/json' };
 }
 
 function toSafeNumber(val: unknown): number | null {

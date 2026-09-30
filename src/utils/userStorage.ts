@@ -990,16 +990,9 @@ export function setSessionAccount(account: UserAccount, sessionToken?: string): 
   if (isOwner) {
     try {
       localStorage.removeItem('anivault_user_session_token');
+      localStorage.removeItem('anivault_owner_session_token');
       deleteClientCookie('anivault_user_session');
     } catch {}
-
-    if (sessionToken) {
-      try {
-        localStorage.setItem('anivault_owner_session_token', sessionToken);
-        setClientPersistentCookie('anivault_owner_session', sessionToken, 30);
-        saveSessionTokenForAccount('usr_owner', sessionToken);
-      } catch {}
-    }
   } else {
     // Normal user account: End active Owner session/context immediately
     try {
@@ -1067,17 +1060,11 @@ export async function syncWithServerSession(): Promise<UserAccount | null> {
     const current = getCurrentAccount();
     const isCurrentOwner = current.id === 'usr_owner' || current.role === 'owner';
     const userToken = localStorage.getItem('anivault_user_session_token') || getClientCookie('anivault_user_session');
-    const ownerToken = isCurrentOwner ? (localStorage.getItem('anivault_owner_session_token') || getClientCookie('anivault_owner_session')) : null;
-    const token = isCurrentOwner ? (ownerToken || userToken) : (userToken || ownerToken);
 
     const headers: Record<string, string> = {};
-    if (token) {
-      headers['Authorization'] = `Bearer ${token}`;
-      if (isCurrentOwner && ownerToken) {
-        headers['x-anivault-owner-session'] = ownerToken;
-      } else if (!isCurrentOwner && userToken) {
-        headers['x-anivault-user-session'] = userToken;
-      }
+    if (!isCurrentOwner && userToken) {
+      headers['Authorization'] = `Bearer ${userToken}`;
+      headers['x-anivault-user-session'] = userToken;
     }
 
     const res = await fetch('/api/auth/session', {
@@ -1111,7 +1098,7 @@ export async function syncWithServerSession(): Promise<UserAccount | null> {
           role: isOwnerUser ? 'owner' : (data.user.role || 'user'),
           createdAt: data.user.createdAt
         };
-        const activeToken = token || data.sessionToken;
+        const activeToken = !isOwnerUser ? (userToken || data.sessionToken) : undefined;
         setSessionAccount(serverAcc, activeToken || undefined);
         return serverAcc;
       } else {
@@ -1141,29 +1128,23 @@ export async function syncWithServerSession(): Promise<UserAccount | null> {
 export async function logoutFromServer(): Promise<void> {
   try {
     const userToken = localStorage.getItem('anivault_user_session_token') || getClientCookie('anivault_user_session');
-    const ownerToken = localStorage.getItem('anivault_owner_session_token') || getClientCookie('anivault_owner_session');
-    const token = ownerToken || userToken;
 
     const headers: Record<string, string> = {};
-    if (token) {
-      headers['Authorization'] = `Bearer ${token}`;
-      if (ownerToken) headers['x-anivault-owner-session'] = ownerToken;
-      if (userToken) headers['x-anivault-user-session'] = userToken;
+    if (userToken) {
+      headers['Authorization'] = `Bearer ${userToken}`;
+      headers['x-anivault-user-session'] = userToken;
     }
 
     await fetch('/api/auth/logout', {
       method: 'POST',
       headers,
       credentials: 'include'
-    });
+    }).catch(() => {});
 
-    if (ownerToken) {
-      await fetch('/api/owner/logout', {
-        method: 'POST',
-        headers,
-        credentials: 'include'
-      }).catch(() => {});
-    }
+    await fetch('/api/owner/logout', {
+      method: 'POST',
+      credentials: 'include'
+    }).catch(() => {});
 
     localStorage.removeItem('anivault_user_session_token');
     localStorage.removeItem('anivault_owner_session_token');
@@ -1197,19 +1178,9 @@ export async function switchActiveAccount(accountId: string): Promise<{
   // 1. Handle switching to Owner account
   if (accountId === 'usr_owner') {
     try {
-      const ownerToken =
-        localStorage.getItem('anivault_owner_session_token') ||
-        getClientCookie('anivault_owner_session') ||
-        getSavedSessionTokens()['usr_owner'];
-      const headers: Record<string, string> = { 'Content-Type': 'application/json' };
-      if (ownerToken) {
-        headers['Authorization'] = `Bearer ${ownerToken}`;
-        headers['x-anivault-owner-session'] = ownerToken;
-      }
-
       const res = await fetch('/api/owner/switch', {
         method: 'POST',
-        headers,
+        headers: { 'Content-Type': 'application/json' },
         credentials: 'include'
       });
 
@@ -1227,7 +1198,7 @@ export async function switchActiveAccount(accountId: string): Promise<{
             role: 'owner',
             createdAt: data.owner.createdAt || new Date().toISOString()
           };
-          setSessionAccount(ownerAcc, data.sessionToken);
+          setSessionAccount(ownerAcc);
           return { success: true, account: ownerAcc };
         }
       } else {
@@ -1246,13 +1217,8 @@ export async function switchActiveAccount(accountId: string): Promise<{
 
   // 2. Handle switching to Normal user account
   try {
-    const ownerToken = localStorage.getItem('anivault_owner_session_token') || getClientCookie('anivault_owner_session');
     const savedUserToken = getSavedSessionTokens()[accountId];
     const headers: Record<string, string> = { 'Content-Type': 'application/json' };
-    if (ownerToken) {
-      headers['x-anivault-owner-session'] = ownerToken;
-      headers['Authorization'] = `Bearer ${ownerToken}`;
-    }
     if (savedUserToken) {
       headers['x-anivault-user-session'] = savedUserToken;
     }
